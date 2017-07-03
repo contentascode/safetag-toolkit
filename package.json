@@ -1,6 +1,6 @@
 {
   "name": "@safetag/toolkit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "SAFETAG Toolkit - Audit Activity Planner",
   "main": "content.yml",
   "scripts": {
