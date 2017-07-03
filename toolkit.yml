@@ -1,0 +1,27 @@
+---
+source: content
+destination: .build/toolkit
+metadata:
+  site:
+    title: SAFETAG
+    baseurl: '/SAFETAG'
+plugins:
+  - metalsmith-transclude: true
+    metalsmith-assets-improved:
+      src: code/public
+      dest: .
+    metalsmith-pandoc:
+      pattern: "**/*.md"
+      from: markdown_github+definition_lists+raw_html+markdown_in_html_blocks+link_attributes
+    metalsmith-debug: {}
+    metalsmith-layouts:
+      engine: pug
+      pattern: "**/*.html"
+      directory: code/_layouts
+      includes: includes
+      default: page.pug
+    metalsmith-watch:
+      livereload: 35730
+      paths:
+        "${source}/**/*": true
+        templates/**/*: "**/*.md"

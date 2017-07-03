@@ -1,0 +1,30 @@
+# The audit toolkit module provides:
+#  - Git version controlled activity modules in `~/.content`
+#  - The dependency structure to bootstrap the workspace.
+#    - Uses https://docs.npmjs.com/misc/semver#caret-ranges-123-025-004
+#    - Using tilde in this context should mean that minor version changes of content packages might break transclusion structure.
+#    - Major version changes should be locked to the `contentascode` major version.
+#  - Offers the interface for the audit toolkit (i.e. activity planner).
+
+---
+# This is basically name resolution mappings
+# to use shorthand names in metadata and transclusion.
+packages:
+  context-research: activity-context-research@^1.0.0
+  network-mapping: activity-network-mapping@^1.0.0
+  physical-security-tour: activity-physical-security-tour@^1.0.0
+  minimum-audit: template-plan-minimum-audit@^1.0.0
+  # report-default: ^1.0.0
+
+# This will deploy the workspace when using `content init --template safetag-toolkit` or
+# the shorthand `safetag init`.
+workspace:
+  toolkit: toolkit.yml
+    # main: index.md
+    # # An `edit` mode should create symlinks and handle git and packaging workflow.
+    # mode: view
+
+# This will create an audits folder and watch for new *.audit.yml files and
+# use the audit.yml configuration to setup a new audit folder.
+  audits: audits.yml
+  # reports:

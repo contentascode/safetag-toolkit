@@ -1,0 +1,27 @@
+doctype html
+
+//if lt IE 7
+  <html class="ie ie6" lang="en">
+//if IE 7
+  <html class="ie ie7" lang="en">
+//if IE 8
+  <html class="ie ie8" lang="en">
+//if (gte IE 9)|!(IE)
+  <!--><html lang="en"> <!--
+
+html
+  include includes/head
+  include includes/navbar
+  body(class=header=="hero"?header:"has-docked-nav")
+    .container
+      block main
+        != content
+  include includes/foot
+
+  script.
+    $( document ).ready(function() {
+      anchors.options.placement = 'left';
+      anchors.add('h1,h2,h3');
+    })
+  
+  script(src='http://localhost:35730/livereload.js')
