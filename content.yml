@@ -10,10 +10,10 @@
 # This is basically name resolution mappings
 # to use shorthand names in metadata and transclusion.
 packages:
-  context-research: activity-context-research@^1.0.0
-  network-mapping: activity-network-mapping@^1.0.0
-  physical-security-tour: activity-physical-security-tour@^1.0.0
-  minimum-audit: template-plan-minimum-audit@^1.0.0
+  # context-research: activity-context-research@^1.0.0
+  # network-mapping: activity-network-mapping@^1.0.0
+  # physical-security-tour: activity-physical-security-tour@^1.0.0
+  # minimum-audit: template-plan-minimum-audit@^1.0.0
   # report-default: ^1.0.0
 
 # This will deploy the workspace when using `content init --template safetag-toolkit` or
