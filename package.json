@@ -1,6 +1,6 @@
 {
   "name": "@safetag/toolkit",
-  "version": "1.0.3",
+  "version": "0.1.0",
   "description": "SAFETAG Toolkit - Audit Activity Planner",
   "main": "content.yml",
   "scripts": {
@@ -9,5 +9,9 @@
     "postversion": "git push --follow-tags"
   },
   "author": "",
-  "license": "CC-BY-SA-3.0"
+  "license": "CC-BY-SA-3.0",
+  "dependencies": {
+    "metalsmith-debug": "^1.1.0",
+    "metalsmith-transclude": "0.0.3"
+  }
 }

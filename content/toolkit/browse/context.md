@@ -15,6 +15,6 @@ index:
     with-team:
 ---
 
-# Context
+### Context
 
 Context in which the activity can be performed.

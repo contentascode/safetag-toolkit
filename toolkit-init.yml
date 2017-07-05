@@ -1,0 +1,15 @@
+---
+source: content/toolkit
+clean: false
+metadata:
+  site:
+    title: SAFETAG
+    baseurl: '/SAFETAG'
+plugins:
+  # This needs to:
+  #  - deploy to the workspace folder with symlinks for multi parents
+  #  - and deploy taxonomy views also with synlinks
+  #  - and
+  - metalsmith-transclude:
+      conmments: true
+    metalsmith-debug: {}

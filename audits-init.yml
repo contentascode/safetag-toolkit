@@ -1,0 +1,11 @@
+---
+source: content/audits
+clean: false
+metadata:
+  site:
+    title: SAFETAG
+    baseurl: '/SAFETAG'
+plugins:
+  - metalsmith-transclude:
+      comments: true
+    metalsmith-debug: {}

@@ -18,6 +18,6 @@ index:
 
 ---
 
-# Tool
+### Tool
 
 Based on the tool needed to conduct the activity.

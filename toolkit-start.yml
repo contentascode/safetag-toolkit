@@ -1,7 +1,14 @@
-source: audits/
-destination: .build
+---
+source: content
+destination: .build/toolkit
+clean: false
+metadata:
+  site:
+    title: SAFETAG
+    baseurl: '/SAFETAG'
 plugins:
-  - metalsmith-transclude: true
+  - metalsmith-transclude:
+      conmments: true
     metalsmith-assets-improved:
       src: code/public
       dest: .
@@ -16,6 +23,7 @@ plugins:
       includes: includes
       default: page.pug
     metalsmith-watch:
-      livereload: 35740
+      livereload: 35730
       paths:
-        "${source}/*.yml": true
+        "${source}/**/*": true
+        templates/**/*: "**/*.md"
