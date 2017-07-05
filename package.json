@@ -12,6 +12,6 @@
   "license": "CC-BY-SA-3.0",
   "dependencies": {
     "metalsmith-debug": "^1.1.0",
-    "metalsmith-transclude": "0.0.3"
+    "metalsmith-transclude": "^0.2.0"
   }
 }
