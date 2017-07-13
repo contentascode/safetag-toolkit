@@ -1,6 +1,7 @@
 ---
 source: content/toolkit
 clean: false
+frontmatter: true
 metadata:
   site:
     title: SAFETAG
@@ -12,4 +13,4 @@ plugins:
   #  - and
   - metalsmith-transclude:
       conmments: true
-    metalsmith-debug: {}
+  - metalsmith-debug: {}

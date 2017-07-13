@@ -1,0 +1,20 @@
+.navbar-spacer
+nav.navbar
+  .container
+    ul.navbar-list
+      li.navbar-item
+        a.navbar-link(href=site.baseurl+"/") Home
+      li.navbar-item
+        a.navbar-link(href="#",data-popover="#codeNavAbout") Methods
+        #codeNavAbout.popover
+          ul.popover-list
+            li.popover-item: a.popover-link(href=site.baseurl+"/methods/context_research.guide.html") Context Research
+            li.popover-item: a.popover-link(href="#") ...
+      li.navbar-item
+        a.navbar-link(href="#",data-popover="#codeNavPopover") Activities
+        #codeNavPopover.popover
+          ul.popover-list
+            li.popover-item: a.popover-link(href=site.baseurl+"/exercises/interviews") Interviews
+            li.popover-item: a.popover-link(href=site.baseurl+"/exercises/regional_context_research") Regional Research
+            li.popover-item: a.popover-link(href=site.baseurl+"/exercises/technical_context_research") Technical Research
+            li.popover-item: a.popover-link(href="#") ..

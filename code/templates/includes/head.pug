@@ -1,0 +1,55 @@
+head
+
+    - // Basic Page Needs
+    - // ==================================================
+    meta(charset="utf8")
+    if title == "Home"
+      title #{site.title} &middot; #{site.tagline}
+    else
+      title #{title} &middot; #{site.title}
+
+    meta(name="description", content="")
+    meta(name="author", content="")
+
+    - // Mobile Specific Metas
+    - // ==================================================
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+
+    - // CSS
+    - // ==================================================
+    link(rel="stylesheet", href=site.baseurl+"/css/skeleton.css")
+    link(rel="stylesheet", href=site.baseurl+"/css/site.css")
+
+    - // CSS from filter.js example
+    link(href=site.baseurl+'/filter.js/assets/css/bootstrap.min.css', media='screen', rel='stylesheet', type='text/css')
+    link(href=site.baseurl+'/filter.js/assets/css/jquery-ui-1.10.2.custom.min.css', media='screen', rel='stylesheet', type='text/css')
+    link(href=site.baseurl+'/filter.js/assets/css/stream.css', media='screen', rel='stylesheet', type='text/css')
+
+    - // JS from filter.js example
+    script(src=site.baseurl+'/filter.js/assets/js/jquery-1.11.3.min.js', type='text/javascript')
+    script(src=site.baseurl+'/filter.js/assets/js/jquery-ui-1.10.2.custom.min.js', type='text/javascript')
+    script(src=site.baseurl+'/filter.js/assets/js/jquery-ui-1.10.2.custom.min.js', type='text/javascript')
+    //- script(src=site.baseurl+'/filter.js/data/movies.js', type='text/javascript')
+    script(src=site.baseurl+'/filter.js/index.js', type='text/javascript')
+
+    - // JS
+    //- script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+    script(src=site.baseurl+"/js/filter.min.js")
+    script(src=site.baseurl+"/js/anchor.min.js")
+    script(src=site.baseurl+"/js/site.js")
+
+    - // Favicons
+    - // ==================================================
+    link(rel="shortcut icon", href=site.baseurl+"/images/favicon.ico")
+    link(rel="apple-touch-icon", href=site.baseurl+"/images/apple-touch-icon.png")
+    link(rel="apple-touch-icon", sizes="72x72", href=site.baseurl+"/images/apple-touch-icon-72x72.png")
+    link(rel="apple-touch-icon", sizes="114x114", href=site.baseurl+"/images/apple-touch-icon-114x114.png")
+
+    - // Fonts
+    - // ==================================================
+    link(href='//fonts.googleapis.com/css?family=Raleway:400,300,600', rel='stylesheet', type='text/css')
+    link(href='//fonts.googleapis.com/css?family=Lora:400,300,600', rel='stylesheet', type='text/css')
+
+    - // RSS
+    - // ==================================================
+    link(rel="alternate", type="application/rss+xml", title="RSS", href=site.baseurl+"/atom.xml")

@@ -1,29 +1,70 @@
 ---
-source: content
-destination: .build/toolkit
+source: content/toolkit
 clean: false
+frontmatter: true
 metadata:
   site:
     title: SAFETAG
-    baseurl: '/SAFETAG'
+    baseurl: '/toolkit'
 plugins:
+
+  - metalsmith-transclude-transform:
+      permalinks: true
+      folders: true
+
+  # Transclude :[]() with hercule
   - metalsmith-transclude:
-      conmments: true
-    metalsmith-assets-improved:
-      src: code/public
-      dest: .
-    metalsmith-pandoc:
-      pattern: "**/*.md"
-      from: markdown_github+definition_lists+raw_html+markdown_in_html_blocks+link_attributes
-    metalsmith-debug: {}
-    metalsmith-layouts:
-      engine: pug
-      pattern: "**/*.html"
-      directory: code/_layouts
-      includes: includes
-      default: page.pug
-    metalsmith-watch:
-      livereload: 35730
-      paths:
-        "${source}/**/*": true
-        templates/**/*: "**/*.md"
+      comments: true
+
+      # Merge frontmatter of transcluded files into the parent file frontmatter.
+      frontmatter: true
+
+  # Deal with top level frontmatter.
+  # - metalsmith-matters: true
+
+  # DEBUG:
+  - metalsmith-debug: {}
+  - metalsmith-writemetadata:
+      pattern: [ "**/*.md "]
+      yaml: true
+      ignorekeys:
+        - contents
+        - stats
+        - mode
+
+  # # Copy client side assets
+  # - metalsmith-assets-improved:
+  #     src: code/assets
+  #     dest: .
+  #
+  # # Copy filter.js module
+  # - metalsmith-assets-improved:
+  #     src: node_modules/filter.js/dist
+  #     dest: ./js
+  #
+  # # Copy filter.js module example styles and jquery dependencies
+  # - metalsmith-assets-improved:
+  #     src: node_modules/filter.js/examples
+  #     dest: ./filter.js
+  # - metalsmith-assets-improved:
+  #     src: node_modules/filter.js/examples/data
+  #     dest: ./data
+  #
+  # # Load activities as a collection
+  # - metalsmith-collections:
+  #     activities: activities/**/index.md
+  #
+  # # Interpret Markdown with Pandoc
+  # - metalsmith-pandoc:
+  #     pattern: "**/*.md"
+  #     from: markdown_github+definition_lists+raw_html+markdown_in_html_blocks+link_attributes+header_attributes
+  #
+  # - metalsmith-debug: {}
+  #
+  # # Wrap rendered file in html templates.
+  # - metalsmith-layouts:
+  #     engine: pug
+  #     pattern: "**/*.html"
+  #     directory: code/templates
+  #     includes: includes
+  #     default: page.pug

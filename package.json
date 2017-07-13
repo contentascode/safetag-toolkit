@@ -11,7 +11,18 @@
   "author": "",
   "license": "CC-BY-SA-3.0",
   "dependencies": {
+    "filter.js": "github:perfectwebteam/filter.js",
+    "metalsmith-assets-improved": "github:contentascode/metalsmith-assets-improved#release",
     "metalsmith-debug": "^1.1.0",
-    "metalsmith-transclude": "^0.2.0"
+    "metalsmith-dynamic-collections": "^0.0.1",
+    "metalsmith-layouts": "^1.8.1",
+    "metalsmith-matters": "^1.2.0",
+    "metalsmith-pandoc": "^0.2.3",
+    "metalsmith-serve": "0.0.7",
+    "metalsmith-transclude": "^0.2.0",
+    "metalsmith-transclude-transform": "0.0.1",
+    "metalsmith-watch": "^1.0.3",
+    "metalsmith-writemetadata": "github:contentascode/metalsmith-writemetadata",
+    "pug": "^2.0.0-rc.2"
   }
 }

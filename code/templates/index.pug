@@ -1,0 +1,5 @@
+extends html
+
+block main
+  != content
+  - var capitalize = function(text){ return text.toLowerCase().replace( /\b\w/g, function (m) { return m.toUpperCase(); }) };

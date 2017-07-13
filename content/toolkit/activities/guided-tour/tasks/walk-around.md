@@ -1,15 +1,17 @@
 ---
-walk-around:
-  name: Walk around
-  description: Walk around the office
-  participants: it
-  variations:
-    small-office:
-      name: Small office
-      duration: 30 minutes
-    large-office:
-      duration: 2 hours
+name: Walk around
+type: index
+description: Walk around the office
+participants: it
+variations:
+  small-office:
+    name: Small office
+    duration: 30 minutes
+  large-office:
+    duration: 2 hours
 ---
+
+### Walk around
 
 As part of your first day, have your point of contact walk you around the office - this is primarily a chance to understand the office layout and meet the rest of the staff, but take mental note of the devices in use and laying out on desks as you walk around the office.  Note as well the location and access to components such as servers and networking components.
 

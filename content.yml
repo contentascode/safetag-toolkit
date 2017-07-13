@@ -5,8 +5,6 @@
 #    - Using tilde in this context should mean that minor version changes of content packages might break transclusion structure.
 #    - Major version changes should be locked to the `contentascode` major version.
 #  - Offers the interface for the audit toolkit (i.e. activity planner).
-
----
 # This is basically name resolution mappings
 # to use shorthand names in metadata and transclusion.
 name: SAFETAG Toolkit
@@ -19,7 +17,7 @@ packages:
 
 # This will deploy the workspaces when using `safetag init`.
 workspace:
-  toolkit:
+  '@safetag/toolkit':
     init: toolkit-init.yml
     start: toolkit-start.yml
     # main: index.md
@@ -28,7 +26,7 @@ workspace:
 
 # This will create an audits folder and watch for new *.audit.yml files and
 # use the audit.yml configuration to setup a new audit folder.
-  audits:
+  '@safetag/audits':
     init: audits-init.yml
     start: audits-start.yml
   # reports:

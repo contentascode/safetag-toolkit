@@ -1,12 +1,11 @@
 ---
-discuss-access-policies:
-  name: Discuss access policies
-  participants: it
-  duration: 1
-  variations:
-    small-office:
-      name: Small office
-      duration: 30 minutes
+name: Discuss access policies
+participants: it
+duration: 1
+variations:
+  small-office:
+    name: Small office
+    duration: 30 minutes
 ---
 
 ### Discuss access policies

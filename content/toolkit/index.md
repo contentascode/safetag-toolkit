@@ -21,12 +21,12 @@ Welcome to the safetag auditor toolkit which enables you to:
 
 <!--  This should open the faceted widget with an empty configuration. -->
 
-[New Plan](planner template:"new")
+:[New Plan](planner template:"new")
 : Start from an empty template and select the activities, tasks and relevant details to build your audit plan.
 
 <!-- This should open the faceted widget with a preset configuration. -->
 
-[Minimum Audit Template](planner template:"minimum-audit")
+:[Minimum Audit Template](planner template:"minimum-audit")
 : Start from our minimum viable audit plan for a small organisation and modify it according to the needs of the audited organisations.
 
 [](audit-timeline-planning collapsed:true)
@@ -37,4 +37,4 @@ Welcome to the safetag auditor toolkit which enables you to:
 
 > Will be both a bottom expanded nav and a top dropdown nav.
 
-:[](browse)
+:[](browse test:tests)
