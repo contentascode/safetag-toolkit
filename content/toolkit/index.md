@@ -29,12 +29,8 @@ Welcome to the safetag auditor toolkit which enables you to:
 :[Minimum Audit Template](planner template:"minimum-audit")
 : Start from our minimum viable audit plan for a small organisation and modify it according to the needs of the audited organisations.
 
-[](audit-timeline-planning collapsed:true)
+:[](audit-timeline-planning collapsed:true)
 
 <!-- This should transclude (maybe in a collapsible?) the existing `audit-timeline-planning` planning section of the guide, adapted to enable checking boxes as the plan is being developed. The planning guide should continue to be visible once the audit has been created to enable iterating. -->
 
 ## Browse
-
-> Will be both a bottom expanded nav and a top dropdown nav.
-
-:[](browse test:tests)

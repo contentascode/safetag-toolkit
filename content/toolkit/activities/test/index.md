@@ -1,11 +1,11 @@
 ---
-id: guided-tour
-name: Guided tour
+id: test
+name: Test
 activity: Meet
 context: On-site / With team
 framework: Physical Assessment
 tool: Physical
-description: Tour the office to take into account the physicality of devices, backup drives, servers, and hard-wired networks.
+description: Test!
 duration: 2
 template:
   minimum-viable:

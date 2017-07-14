@@ -1,23 +1,22 @@
 ### Activity
 
-#### Preparation {#preparation type=view}
+#### Preparation
 
 :[Assessment Plan](assessment-plan)
-
 :[Confidentiality Agreement](confidentiality-agreement)
+:[Incident Preparation](incident-preparation)
+:[Incident Preparation](travel-checklist)
+:[Password Dictionary Creation](password-dictionary-creation)
+:[Audit Timeline Planning](audit-timeline-planning)
 
-- incident-preparation
-- travel-checklist
-- password-dictionary-creation
-- audit-timeline-planning
+#### Correspond
 
-#### Correspond {#correspond type=view}
 
-#### Desk Research {#desk-research type=view}
+#### Desk Research
 
 :[Regional Context Research](regional-context-research)
 
-#### Meet {#meet type=view}
+#### Meet
 
 :[Guided Tour](guided-tour)
 

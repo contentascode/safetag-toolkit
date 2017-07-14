@@ -1,23 +1,28 @@
 ---
 type: index
-index:
-  notes:
-    title: Note taking
-    description: Only requires some note taking tool or a good memory!
-    activities:
-    - assessment-plan
-    - confidentiality-agreement
-    - incident-preparation
-    - travel-checklist
-    - password-dictionary-creation
-    - audit-timeline-planning
-  desk:
-  network:
-  device:
-  physical:
-
 ---
 
 ### Tool
 
 Based on the tool needed to conduct the activity.
+
+#### Note Taking
+
+Only requires some note taking tool or a good memory!
+
+#### Desk
+
+:[Assessment Plan](assessment-plan)
+:[Confidentiality Agreement](confidentiality-agreement)
+:[Incident Response and Emergency Contact](incident-preparation)
+:[Travel Checklist](travel-checklist)
+
+#### Network
+
+#### Computer
+
+:[Password Dictionary Creation](password-dictionary-creation)
+:[Audit Timeline Planning](audit-timeline-planning)
+
+
+#### Physical

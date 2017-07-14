@@ -22,6 +22,55 @@ plugins:
   # Deal with top level frontmatter.
   # - metalsmith-matters: true
 
+
+  # Add tags to activities based on their location in the taxonomy page ASTs.
+
+
+  # Load activities as a collection
+  - metalsmith-dynamic-collections:
+      activities: activities/**/index.md
+
+
+  # Copy client side assets
+  - metalsmith-assets-improved:
+      replace: all
+      src: code/assets
+      dest: .
+
+  # Add lodash
+  - metalsmith-assets-improved:
+      replace: old
+      src: node_modules/lodash/lodash.min.js
+      dest: ./js/lodash.min.js
+
+  # Copy filter.js module
+  - metalsmith-assets-improved:
+      replace: old
+      src: node_modules/filter.js/dist
+      dest: ./js
+
+  # Copy filter.js module example styles and jquery dependencies
+  - metalsmith-assets-improved:
+      replace: old
+      src: node_modules/filter.js/examples
+      dest: ./filter.js
+  - metalsmith-assets-improved:
+      replace: old
+      src: node_modules/filter.js/examples/data
+      dest: ./data
+
+  # Add metadata
+  - metalsmith-filemetadata:
+    - pattern: "activities/*/*.md"
+      preserve: 'true'
+      metadata:
+        content_type: activity
+        lunr: true
+    - pattern: "activities/*/tasks/*.md"
+      preserve: 'true'
+      metadata:
+        content_type: task
+
   # DEBUG:
   - metalsmith-debug: {}
   - metalsmith-writemetadata:
@@ -32,39 +81,48 @@ plugins:
         - stats
         - mode
 
-  # # Copy client side assets
-  # - metalsmith-assets-improved:
-  #     src: code/assets
-  #     dest: .
-  #
-  # # Copy filter.js module
-  # - metalsmith-assets-improved:
-  #     src: node_modules/filter.js/dist
-  #     dest: ./js
-  #
-  # # Copy filter.js module example styles and jquery dependencies
-  # - metalsmith-assets-improved:
-  #     src: node_modules/filter.js/examples
-  #     dest: ./filter.js
-  # - metalsmith-assets-improved:
-  #     src: node_modules/filter.js/examples/data
-  #     dest: ./data
-  #
-  # # Load activities as a collection
-  # - metalsmith-collections:
-  #     activities: activities/**/index.md
-  #
-  # # Interpret Markdown with Pandoc
-  # - metalsmith-pandoc:
-  #     pattern: "**/*.md"
-  #     from: markdown_github+definition_lists+raw_html+markdown_in_html_blocks+link_attributes+header_attributes
-  #
-  # - metalsmith-debug: {}
-  #
-  # # Wrap rendered file in html templates.
-  # - metalsmith-layouts:
-  #     engine: pug
-  #     pattern: "**/*.html"
-  #     directory: code/templates
-  #     includes: includes
-  #     default: page.pug
+  # Process metadata
+  - metalsmith-lunr:
+      fields:
+        name: 10
+        content_type: 10
+        activity: 10
+        context: 10
+        framework: 10
+        situation: 10
+        tool: 10
+        description: 10
+        # keywords: 10
+
+  - metalsmith-search-meta:
+      path: searchMeta.json
+      pad: true
+      properties:
+      - name
+      - tags
+      - content_type
+      - keywords
+      - content_type
+      - activity
+      - context
+      - framework
+      - tool
+      - situation
+      - tasks
+      - description
+      - duration
+
+  # Interpret Markdown with Pandoc
+  - metalsmith-pandoc:
+      pattern: "**/*.md"
+      from: markdown_github+definition_lists+raw_html+markdown_in_html_blocks+link_attributes+header_attributes
+
+  - metalsmith-debug: {}
+
+  # Wrap rendered file in html templates.
+  - metalsmith-layouts:
+      engine: pug
+      pattern: "**/*.html"
+      directory: code/templates
+      includes: includes
+      default: page.pug
