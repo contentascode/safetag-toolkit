@@ -1,4 +1,16 @@
 $(document).ready(function() {
+  // State for current audit plan
+  // TODO: Serialize to localstorage.
+  var audit = [];
+
+  //if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
+  var $L = 1200,
+    $menu_navigation = $('#main-nav'),
+    $cart_trigger = $('#cd-cart-trigger'),
+    $hamburger_icon = $('#cd-hamburger-menu'),
+    $lateral_cart = $('#cd-cart'),
+    $shadow_layer = $('#cd-shadow-layer');
+
   /*
    * Faceted search component configuration
    */
@@ -160,7 +172,7 @@ $(document).ready(function() {
       });
     })
     .then(function() {
-      var productCustomization = $('.cd-customization'),
+      var productCustomization = $('.movie'),
         cart = $('.cd-cart'),
         animating = false;
 
@@ -171,11 +183,10 @@ $(document).ready(function() {
       function initCustomization(items) {
         items.each(function(key, item) {
           var actual = $(this),
-            addToCartBtn = actual.find('.add-to-cart');
-          console.log('item', item.data('activity'));
+            addToCartBtn = actual.find('.add-to-cart'),
+            data = actual.data('activity');
           //detect click on the add-to-cart button
           addToCartBtn.on('click', function() {
-            console.log('animating', animating);
             if (!animating) {
               //animate if not already animating
               animating = true;
@@ -185,7 +196,6 @@ $(document).ready(function() {
                 'stroke-dashoffset': 0
               }, 100, function() {
                 setTimeout(function() {
-                  updateCart();
                   addToCartBtn
                     .removeClass('is-added')
                     .find('span')
@@ -200,6 +210,7 @@ $(document).ready(function() {
                     addToCartBtn.find('path').eq(0).css('stroke-dashoffset', '19.79');
                     animating = false;
                   }
+                  updateCart(data);
                 }, 600);
               });
             }
@@ -207,13 +218,148 @@ $(document).ready(function() {
         });
       }
 
-      function updateCart() {
+      function updateCartCounter(count) {
         //show counter if this is the first item added to the cart
         !cart.hasClass('items-added') && cart.addClass('items-added');
 
-        var cartItems = cart.find('span'),
-          text = parseInt(cartItems.text()) + 1;
-        cartItems.text(text);
+        var cartItemsCount = cart.find('span');
+        if (count === 0) {
+          cart.removeClass('items-added');
+          $('#cd-cart .cd-cart-items').remove();
+          $('#cd-cart .cd-cart-total').remove();
+          $('a.export-btn').text('Add activities or select an Audit template');
+          // Close plan pane when plan is empty.
+          $('a.export-btn').off();
+          $('a.export-btn').on('click', function(e) {
+            close_panel();
+          });
+        } else {
+          cartItemsCount.text(count);
+        }
+      }
+
+      function updateCart(activity) {
+        audit = audit.concat(
+          Object.keys(activity.tasks).map(function(task) {
+            return { activity: activity, task: activity.tasks[task], variation: task.variation || 0 };
+          })
+        );
+
+        console.log('audit', audit);
+
+        // Object.keys(tasks).reduce(function(sum, task) { var varDurations = Object.keys(tasks[task].variations).map(function(variation) { return tasks[task].variations[variation].duration }); return [(varDurations.length !== 0 ? Math.min(...varDurations) : tasks[task].duration ) < sum[0] ? (varDurations.length !== 0 ? Math.min(...varDurations) : tasks[task].duration ) : sum[0], (varDurations.length !== 0 ? Math.max(...varDurations) : tasks[task].duration ) > sum[1] ? (varDurations.length !== 0 ? Math.max(...varDurations) : tasks[task].duration ) + sum[1] : sum[1]] },[9999,0]).join(' ~ ') || duration || "?"
+
+        $('#cd-cart').html(renderPlan(audit));
+        attachEvents();
+
+        animating = false;
+      }
+
+      // View render
+      function renderPlan(state) {
+        return (
+          '<ul class="cd-cart-items">' +
+          state
+            .map(function(item) {
+              var duration = item.task.variations
+                ? item.task.variations[item.variation].duration
+                : item.task.duration ||
+                  (item.activity.duration && item.activity.duration / Object.keys(item.activity.tasks).length) ||
+                  '?';
+              return (
+                '<li class="cd-single-item"><span class="cd-qty"><strong>' +
+                item.activity.name +
+                '</strong></span> ' +
+                item.task.name +
+                '<div class="cd-price">' +
+                duration +
+                'h</div>' +
+                (item.task.variations
+                  ? '<div class="cd-customization">' +
+                    '    <select>' +
+                    item.task.variations
+                      .map(function(variation, idx) {
+                        return (
+                          '<option value="' +
+                          idx +
+                          '" ' +
+                          (idx === parseInt(item.variation) ? 'selected="selected"' : '') +
+                          '>' +
+                          variation.name +
+                          '</option>'
+                        );
+                      })
+                      .join('') +
+                    '    </select>' +
+                    '  </div> <!-- .cd-customization -->'
+                  : '') +
+                '<a class="cd-item-remove cd-img-replace" href="#0">Remove</a></li>'
+              );
+            })
+            .join('') +
+          '</ul><div class="cd-cart-total"><p>Duration <span>' +
+          state.reduce(function(sum, item) {
+            console.log('sum', sum);
+            return (
+              sum +
+              (item.task.variations
+                ? item.task.variations[item.variation].duration
+                : item.task.duration ||
+                  (item.activity.duration && item.activity.duration / Object.keys(item.activity.tasks).length) ||
+                  0)
+            );
+          }, 0) +
+          'h</span></p></div><a class="export-btn" href="#0">Export</a>' +
+          '<div class="form-group hidden" id="export">' +
+          '<label for="comment">Comment:</label>' +
+          '<textarea class="form-control" rows="5" id="text">' +
+          jsyaml.safeDump(audit, { noRefs: true }) +
+          '</textarea>' +
+          '</div>'
+        );
+      }
+
+      function attachEvents() {
+        var cartItemList = $('#cd-cart .cd-cart-items');
+
+        // console.log($('#cd-cart .cd-cart-items li'));
+        updateCartCounter($('#cd-cart .cd-cart-items li.cd-single-item').length);
+
+        //detect click on select elements
+        $('.cd-customization select').on('change', function(event) {
+          var index = $(this).parent().parent('li').index();
+          console.log('$(this).parent(li)', $(this).parent().parent('li'));
+          console.log('index', index);
+          console.log('value', this.value);
+          audit[index].variation = this.value;
+          $('#cd-cart').html(renderPlan(audit));
+          attachEvents();
+        });
+
+        var sortable = Sortable.create(cartItemList.get(0), {
+          onEnd: function(/**Event*/ evt) {
+            var tmp = audit[evt.newIndex];
+            audit[evt.newIndex] = audit[evt.oldIndex];
+            audit[evt.oldIndex] = tmp;
+          }
+        });
+
+        cartItemList.on('click', 'li .cd-item-remove', function(e) {
+          var index = $(this).parent('li').index();
+          audit = audit.filter(function(val, key) {
+            return key != index;
+          });
+          $(this).parent().remove();
+          updateCartCounter($('#cd-cart .cd-cart-items li.cd-single-item').length);
+          $('#cd-cart').html(renderPlan(audit));
+          attachEvents();
+        });
+
+        $('a.export-btn').off();
+
+        $('a.export-btn').on('click', function(e) {
+          $('#export').toggleClass('hidden');
+        });
       }
     });
   /*
@@ -237,17 +383,41 @@ $(document).ready(function() {
       });
   */
 
+  $('body').on('click', function(event) {
+    //if user clicks outside the .cd-gallery list items - remove the .hover class and close the open ul.size/ul.color list elements
+    if ($(event.target).is('#cd-cart ul li.cd-single-item') || $(event.target).is('#cd-cart')) {
+      deactivateCustomization();
+    }
+  });
+
   /*
    * Side bar selection component configuration
    */
 
-  //if you change this breakpoint in the style.css file (or _layout.scss if you use SASS), don't forget to update this value as well
-  var $L = 1200,
-    $menu_navigation = $('#main-nav'),
-    $cart_trigger = $('#cd-cart-trigger'),
-    $hamburger_icon = $('#cd-hamburger-menu'),
-    $lateral_cart = $('#cd-cart'),
-    $shadow_layer = $('#cd-shadow-layer');
+  // Close plan pane when plan is empty.
+  $('a.export-btn').on('click', function(e) {
+    close_panel();
+  });
+
+  // Urgh... quick and dirty closure.
+  function close_panel() {
+    $shadow_layer.removeClass('is-visible');
+    if ($lateral_cart.hasClass('speed-in')) {
+      $lateral_cart
+        .removeClass('speed-in')
+        .on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
+          $('body').removeClass('overflow-hidden');
+        });
+      $menu_navigation.removeClass('speed-in');
+    } else {
+      $menu_navigation
+        .removeClass('speed-in')
+        .on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
+          $('body').removeClass('overflow-hidden');
+        });
+      $lateral_cart.removeClass('speed-in');
+    }
+  }
 
   //open lateral menu on mobile
   $hamburger_icon.on('click', function(event) {
@@ -447,6 +617,28 @@ function renderResults(results) {
     html: nunjucks.render('results.html', { results: results }),
     nb: results.length
   };
+}
+
+function resetCustomization(selectOptions) {
+  //close ul.clor/ul.size if they were left open and user is not interacting with them anymore
+  //remove the .hover class from items if user is interacting with a different one
+  selectOptions
+    .siblings('[data-type="select"]')
+    .removeClass('is-open')
+    .end()
+    .parents('.cd-single-item')
+    .addClass('hover')
+    .parent('li')
+    .siblings('li')
+    .find('.cd-single-item')
+    .removeClass('hover')
+    .end()
+    .find('[data-type="select"]')
+    .removeClass('is-open');
+}
+
+function deactivateCustomization() {
+  $('#cd-cart').find('[data-type="select"]').removeClass('is-open');
 }
 
 function initFacets() {

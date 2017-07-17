@@ -3,11 +3,10 @@ name: Walk around
 description: Walk around the office
 participants: it
 variations:
-  small-office:
-    name: Small office
-    duration: 30 minutes
-  large-office:
-    duration: 2 hours
+  - name: Small office
+    duration: 0.5
+  - name: Large Office
+    duration: 2
 ---
 
 ### Walk around

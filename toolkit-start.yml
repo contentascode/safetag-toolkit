@@ -43,10 +43,22 @@ plugins:
       src: node_modules/lodash/lodash.min.js
       dest: ./js/lodash.min.js
 
+  # Add SortableJS
+  - metalsmith-assets-improved:
+      replace: old
+      src: node_modules/sortablejs/Sortable.min.js
+      dest: ./js/sortable.min.js
+
   # Copy filter.js module
   - metalsmith-assets-improved:
       replace: old
       src: node_modules/filter.js/dist
+      dest: ./js
+
+  # Copy js-yaml module
+  - metalsmith-assets-improved:
+      replace: old
+      src: node_modules/js-yaml/dist
       dest: ./js
 
   # Copy filter.js module example styles and jquery dependencies

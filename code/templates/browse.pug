@@ -48,7 +48,7 @@
   #results.movies.content.row  
   
 script#result-template(type='text/html').
-  <div class="col-md-4 movie cd-customization" data-activity='<% JSON.stringify(Object.assign({}, this)) %>'>
+  <div class="col-md-4 movie" data-activity='<%= JSON.stringify({name: name, description: description, tasks: tasks, duration: duration}) %>'>
     <div class="thumbnail">
       <button class="label label-success rating add-to-cart">
         <span>Add 
@@ -64,7 +64,8 @@ script#result-template(type='text/html').
           <%= description %>
           <span class="runtime">
             <i class="glyphicon glyphicon-time"></i>
-            <%= duration %> hours.
+            <!-- // Calculate time interval from variations and defaults to task and then activity explicit duration. -->
+            <%= Object.keys(tasks).reduce(function(sum, task) { var varDurations = Object.keys(tasks[task].variations || {}).map(function(variation) { return tasks[task].variations[variation].duration }); return [(varDurations.length !== 0 ? Math.min(...varDurations) : tasks[task].duration ) < sum[0] ? (varDurations.length !== 0 ? Math.min(...varDurations) : tasks[task].duration ) : sum[0], (varDurations.length !== 0 ? Math.max(...varDurations) : tasks[task].duration ) > sum[1] ? (varDurations.length !== 0 ? Math.max(...varDurations) : tasks[task].duration ) + sum[1] : sum[1]] },[9999,0]).join(' ~ ') || duration || "?" %> hours.
           </span>
         </div>
         <div class="outline">

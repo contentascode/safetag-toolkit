@@ -1,13 +1,8 @@
 ---
-name: Walk around
-description: Walk around the office
+name: Test no variation
+description: Test
 participants: it
-variations:
-  small-office:
-    name: Small office
-    duration: 30 minutes
-  large-office:
-    duration: 2 hours
+duration: 1
 ---
 
 ### Walk around

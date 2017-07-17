@@ -4,9 +4,8 @@ content_type: task
 participants: it
 duration: 1
 variations:
-  small-office:
-    name: Small office
-    duration: 30 minutes
+  - name: Small office
+    duration: 0.5
 ---
 
 ### Discuss access policies

@@ -552,10 +552,32 @@ button:focus {
   transition: transform 0s;
 }
 
-#cd-cart .checkout-btn {
+#cd-cart .export-btn {
   background: black;
 }
 
 .movies.content {
   margin-top: 0px;
+}
+
+.cd-single-item:hover .cd-customization,
+.cd-single-item.hover .cd-customization {
+  /* product customization visible */
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s 0s, visiblity 0s 0s;
+  -moz-transition: opacity 0.2s 0s, visiblity 0s 0s;
+  transition: opacity 0.2s 0s, visiblity 0s 0s;
+}
+
+#cd-cart {
+  width: 550px;
+}
+
+#cd-cart .cd-customization {
+  float: right;
+  margin-right: 20px;
+  position: relative;
+  top: -8px;
 }
