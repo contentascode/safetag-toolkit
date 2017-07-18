@@ -1,26 +1,32 @@
-source: audits/
+source: content/audits
 clean: false
 frontmatter: true
+metadata:
+  site:
+    title: SAFETAG
+    baseurl: '/toolkit'
 plugins:
-  - metalsmith-transclude: true
+
+  - metalsmith-yaml: true
+  - metalsmith-debug: {}
+
+  # Copy client side assets
   - metalsmith-assets-improved:
-      src: code/public
+      replace: all
+      src: code/assets
       dest: .
   - metalsmith-pandoc:
       pattern: "**/*.md"
       from: markdown_github+definition_lists+raw_html+markdown_in_html_blocks+link_attributes
-  - metalsmith-debug: {}
+  # Wrap rendered file in html templates.
   - metalsmith-layouts:
       engine: pug
       pattern: "**/*.html"
-      directory: code/_layouts
+      directory: code/templates
       includes: includes
       default: page.pug
-  - metalsmith-watch:
-      livereload: 35740
-      paths:
-        "${source}/*.yml": true
-plugins:
+
+  # plugins:
   # metalsmith-env: {}
   # metalsmith-metadata:
   #   practices: data/practices.csv

@@ -1,6 +1,6 @@
 ---
-type: template
-metalsmith: ../audit.yml 
+layout: audit.pug
+metalsmith: ../audit.yml
 metadata:
   organisation:
   start-date:
