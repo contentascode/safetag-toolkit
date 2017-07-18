@@ -1,0 +1,17 @@
+---
+clean: false
+frontmatter: true
+plugins:
+
+  # Import folder structure
+  - metalsmith-migrate-safetag:
+      activities: true
+
+  - metalsmith-debug: {}
+
+  # Wrap rendered file in html templates.
+  - metalsmith-layouts:
+      engine: handlebars
+      pattern: "**/*.md"
+      directory: code/migrate
+      default: activity.md

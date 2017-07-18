@@ -17,6 +17,8 @@ packages:
 
 # This will deploy the workspaces when using `safetag init`.
 workspace:
+  '@safetag/migrate':
+    start: migrate.yml
   '@safetag/toolkit':
     init: toolkit-init.yml
     start: toolkit-start.yml
