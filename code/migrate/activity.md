@@ -1,7 +1,7 @@
 ---
 id: {{id}}
 name: {{title}}
-description: Tour the office to take into account the physicality of devices, backup drives, servers, and hard-wired networks.
+description: {{description}}
 {{#each tag}}
 {{key}}: {{value}}
 {{/each}}

@@ -82,6 +82,9 @@ p img {
 .links {
   margin-top: 1rem;
 }
+.section.categories {
+  margin-top: 50px;
+}
 /* Help
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .get-help {
@@ -412,7 +415,13 @@ blockquote p {
 .caption .detail {
   margin-top: 15px;
   position: absolute;
-  padding: 5px 5px;
+  margin-right: 20px;
+}
+
+.caption .outline {
+  margin-top: 15px;
+  left: 0px;
+  width: 100%;
 }
 
 #cd-cart-trigger a {
@@ -478,6 +487,9 @@ a.navbar-link i {
 }
 
 button.add-to-cart {
+  margin-top: -12px;
+  margin-right: -10px;
+  height: 26px;
   width: 64px;
   overflow: hidden;
   position: relative;
@@ -493,7 +505,7 @@ button:focus {
 .add-to-cart span {
   /* this is the button text message */
   position: absolute;
-  top: 11px;
+  top: 5px;
   left: 2px;
   width: 100%;
   height: 100%;
@@ -515,7 +527,7 @@ button:focus {
   /* this is the check icon */
   position: absolute;
   left: 30px;
-  top: 16px;
+  top: 12px;
   width: 100%;
   /* move the icon on the right - outside the button */
   -webkit-transform: translateX(50%) translateY(-50%);

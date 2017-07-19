@@ -1,5 +1,12 @@
 extends html
 
 block main
-  != content
-  - var capitalize = function(text){ return text.toLowerCase().replace( /\b\w/g, function (m) { return m.toUpperCase(); }) };
+  .docs-section
+    if (title) 
+      h1.docs-header= title
+    else
+      .space 
+    != contents
+
+  include browse
+  include selection

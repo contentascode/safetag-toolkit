@@ -5,25 +5,32 @@ frontmatter: true
 metadata:
   site:
     title: SAFETAG
-    baseurl: '/toolkit'
+    baseurl: '/@safetag/toolkit'
 plugins:
 
+  - metalsmith-packages:
+      key: packages
+
+  # Add tags to activities based on their location in the taxonomy page ASTs.
+  - metalsmith-markdown-taxonomy:
+      pattern: 'browse/categories/*.md'
+
+  # Transclude :[]() with hercule
   - metalsmith-transclude-transform:
       permalinks: true
       folders: true
 
-  # Transclude :[]() with hercule
   - metalsmith-transclude:
       comments: true
 
       # Merge frontmatter of transcluded files into the parent file frontmatter.
       frontmatter: true
 
+      # Merge frontmatter of transcluded files into the parent file frontmatter.
+      pattern: browse/**/*.md
+
   # Deal with top level frontmatter.
   # - metalsmith-matters: true
-
-
-  # Add tags to activities based on their location in the taxonomy page ASTs.
 
 
   # Load activities as a collection
@@ -49,11 +56,11 @@ plugins:
       src: node_modules/sortablejs/Sortable.min.js
       dest: ./js/sortable.min.js
 
-  # Copy filter.js module
-  - metalsmith-assets-improved:
-      replace: old
-      src: node_modules/filter.js/dist
-      dest: ./js
+  # Copy filter.js module. Using old version from previous project instead.
+  # - metalsmith-assets-improved:
+  #     replace: old
+  #     src: node_modules/filter.js/dist
+  #     dest: ./js
 
   # Copy js-yaml module
   - metalsmith-assets-improved:
@@ -84,14 +91,14 @@ plugins:
         content_type: task
 
   # DEBUG:
-  - metalsmith-debug: {}
-  - metalsmith-writemetadata:
-      pattern: [ "**/*.md "]
-      yaml: true
-      ignorekeys:
-        - contents
-        - stats
-        - mode
+  # - metalsmith-debug: {}
+  # - metalsmith-writemetadata:
+  #     pattern: [ "**/*.md "]
+  #     yaml: true
+  #     ignorekeys:
+  #       - contents
+  #       - stats
+  #       - mode
 
   # Process metadata
   - metalsmith-lunr:
@@ -110,6 +117,7 @@ plugins:
       path: searchMeta.json
       pad: true
       properties:
+      - id
       - name
       - tags
       - content_type
@@ -120,7 +128,7 @@ plugins:
       - framework
       - tool
       - situation
-      - tasks
+      - variations
       - description
       - duration
 

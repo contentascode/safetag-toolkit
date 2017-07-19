@@ -1,3 +1,5 @@
+h1 Browse
+  span#total_results 
 .sidebar.col-md-3
   div
     label.sr-only(for='searchbox') Search
@@ -11,11 +13,11 @@
   //-     #rating_slider.slider
   //-     input#rating_filter(type='hidden', value='8-10')
   .well
-    fieldset#activity_criteria
-      legend Activity
-  .well
     fieldset#framework_criteria
       legend Framework categories
+  .well
+    fieldset#activity_criteria
+      legend Activity
   .well
     fieldset#context_criteria
       legend Context
@@ -48,7 +50,8 @@
   #results.movies.content.row  
   
 script#result-template(type='text/html').
-  <div class="col-md-4 movie" data-activity='<%= JSON.stringify({name: name, description: description, tasks: tasks, duration: duration}) %>'>
+  <% var metadata = Object.assign({}, arguments[0]); %>
+  <div class="col-md-4 movie" data-activity='<%= JSON.stringify(arguments[0]) %>'>
     <div class="thumbnail">
       <button class="label label-success rating add-to-cart">
         <span>Add 
@@ -59,24 +62,22 @@ script#result-template(type='text/html').
         </svg>
       </button>
       <div class="caption">
-        <h4><%= _fid %>. <%= name %></h4>
+        <a href="activities/<%= id %>"><h4><%= name %></h4></a>
         <div class="detail">
           <%= description %>
           <span class="runtime">
             <i class="glyphicon glyphicon-time"></i>
-            <!-- // Calculate time interval from variations and defaults to task and then activity explicit duration. -->
-            <%= Object.keys(tasks).reduce(function(sum, task) { var varDurations = Object.keys(tasks[task].variations || {}).map(function(variation) { return tasks[task].variations[variation].duration }); return [(varDurations.length !== 0 ? Math.min(...varDurations) : tasks[task].duration ) < sum[0] ? (varDurations.length !== 0 ? Math.min(...varDurations) : tasks[task].duration ) : sum[0], (varDurations.length !== 0 ? Math.max(...varDurations) : tasks[task].duration ) > sum[1] ? (varDurations.length !== 0 ? Math.max(...varDurations) : tasks[task].duration ) + sum[1] : sum[1]] },[9999,0]).join(' ~ ') || duration || "?" %> hours.
+            <!-- // Calculate time interval from variations and defaults to explicit duration. -->
+            <!-- // Task based calculation. Object.keys(tasks).reduce(function(sum, task) { var varDurations = Object.keys(tasks[task].variations || {}).map(function(variation) { return tasks[task].variations[variation].duration }); return [(varDurations.length !== 0 ? Math.min(...varDurations) : tasks[task].duration ) < sum[0] ? (varDurations.length !== 0 ? Math.min(...varDurations) : tasks[task].duration ) : sum[0], (varDurations.length !== 0 ? Math.max(...varDurations) : tasks[task].duration ) > sum[1] ? (varDurations.length !== 0 ? Math.max(...varDurations) : tasks[task].duration ) + sum[1] : sum[1]] },[9999,0]).join(' ~ ') || duration || "?" -->
+            <%= ((arguments[0].variations && variations.length !== 0) ? variations.reduce(function(sum, variation) { return [ variation.duration < sum[0] ? variation.duration : sum[0], variation.duration > sum[1] ? variation.duration + sum[1] : sum[1]] }, [9999,0]).join(' ~ ') : duration) || "?" %> hours.
           </span>
         </div>
         <div class="outline">
-          <strong>Tasks</strong>
-          <% _.each(tasks, function(item,key) { %>
-            <dl>
-              <dt><%= item.name %></dt>
-              <dd><%= item.description %></dd>
-            </dl>
-          <% }); %>
+          <!-- // Ignore non relevant keys and print metadata key value pairs -->
+          <span><%= Object.keys(metadata).filter(function(key) {return !["id", "name", "variations", "_fid", "path", "content_type", "description", "duration"].includes(key) }).map(function(key) { return '<strong>' + key + '</strong><br>' + metadata[key] }).join('<br>') %></span>
         </div>
       </div>
     </div>
   </div>
+
+script(src=site.baseurl+"/js/browse.js")

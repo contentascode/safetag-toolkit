@@ -9,6 +9,7 @@
 # to use shorthand names in metadata and transclusion.
 name: SAFETAG Toolkit
 packages:
+  # activities: safetag-activities@^0.0.1
   # context-research: activity-context-research@^1.0.0
   # network-mapping: activity-network-mapping@^1.0.0
   # physical-security-tour: activity-physical-security-tour@^1.0.0
@@ -22,6 +23,9 @@ workspace:
   '@safetag/toolkit':
     init: toolkit-init.yml
     start: toolkit-start.yml
+    # can be used with metalsmith-symlink to override activities folder with migration folder
+    # packages:
+    #   activities: activities
     # main: index.md
     # # An `edit` mode should create symlinks and handle git and packaging workflow.
     # mode: view

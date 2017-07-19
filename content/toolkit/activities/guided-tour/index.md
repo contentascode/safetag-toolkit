@@ -6,7 +6,11 @@ context: On-site / With team
 framework: Physical Assessment
 tool: Physical
 description: Tour the office to take into account the physicality of devices, backup drives, servers, and hard-wired networks.
-duration: 2
+variations:
+  - name: Small office
+    duration: 0.5
+  - name: Large Office
+    duration: 2
 template:
   minimum-viable:
     - walk-around: small-office

@@ -1,5 +1,5 @@
 ---
-type: index
+layout: index.pug
 views:
   - planner
   - audit-timeline-planning
@@ -32,5 +32,3 @@ Welcome to the safetag auditor toolkit which enables you to:
 :[](audit-timeline-planning collapsed:true)
 
 <!-- This should transclude (maybe in a collapsible?) the existing `audit-timeline-planning` planning section of the guide, adapted to enable checking boxes as the plan is being developed. The planning guide should continue to be visible once the audit has been created to enable iterating. -->
-
-## Browse
