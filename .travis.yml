@@ -4,12 +4,14 @@ env:
   - TRAVIS_NODE_VERSION="7"
 
 install:
-  - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags` && ./install.sh) && nvm install $TRAVIS_NODE_VERSION && source ~/.nvm/nvm.sh
+  - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags` && ./install.sh) && nvm install $TRAVIS_NODE_VERSION && nvm use $TRAVIS_NODE_VERSION
+  - echo $PATH
   - npm i -g docsmith
   - npm i -g
 
 script:
   - git clone https://github.com/SAFETAG/SAFETAG
+  - echo $PATH
   - DEBUG=* safetag start --source $(pwd)/SAFETAG migrate
   - DEBUG=* safetag link activities ~/.content/build/@safetag/migrate/activities
   - DEBUG=* safetag start --debug toolkit
