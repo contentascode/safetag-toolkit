@@ -4,7 +4,6 @@
   "description": "SAFETAG Toolkit - Audit Activity Planner",
   "main": "content.yml",
   "scripts": {
-    "init": "content init",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postversion": "git push --follow-tags"
   },
