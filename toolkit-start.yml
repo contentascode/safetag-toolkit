@@ -119,15 +119,12 @@ plugins:
       properties:
       - id
       - name
-      - tags
       - content_type
-      - keywords
       - content_type
       - activity
       - context
       - framework
       - tool
-      - situation
       - variations
       - description
       - duration
