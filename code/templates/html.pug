@@ -12,7 +12,7 @@ doctype html
 html
   include includes/head
   include includes/navbar
-  body(class=header=="hero"?header:"has-docked-nav")
+  body(class=header=="hero"?header:"has-docked-nav",data-baseurl=site.baseurl)
     .container
       block main
         != content

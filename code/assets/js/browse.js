@@ -11,9 +11,8 @@ $(document).ready(function() {
     $lateral_cart = $('#cd-cart'),
     $shadow_layer = $('#cd-shadow-layer');
 
-
   // Display Planning button in navbar-link
-  $('#cd-cart-trigger').removeClass('hidden')
+  $('#cd-cart-trigger').removeClass('hidden');
 
   /*
    * Faceted search component configuration
@@ -22,10 +21,12 @@ $(document).ready(function() {
   // nunjucks.configure('assets/templates', { autoescape: true });
   initFacets();
 
+  var baseurl = $('body').data('baseurl');
+  console.log(baseurl);
   var tags,
     index,
-    store = $.getJSON('/searchMeta.json'),
-    data = $.getJSON('/searchIndex.json'),
+    store = $.getJSON(baseurl + '/searchMeta.json'),
+    data = $.getJSON(baseurl + '/searchIndex.json'),
     meta = {};
   res = {};
 
@@ -48,7 +49,13 @@ $(document).ready(function() {
               .keys()
               .filter(function(v) {
                 return (
-                  cur[v] != '' && v != 'name' && v != 'id' && v != 'description' && v != 'keywords' && v != 'tags' && v != 'duration'
+                  cur[v] != '' &&
+                  v != 'name' &&
+                  v != 'id' &&
+                  v != 'description' &&
+                  v != 'keywords' &&
+                  v != 'tags' &&
+                  v != 'duration'
                 );
               })
               .each(function(v, k, l) {
@@ -110,8 +117,8 @@ $(document).ready(function() {
           })
           .value();
 
-          console.log('results', results);
-          console.log('results[0].id', results[0].id);
+        console.log('results', results);
+        console.log('results[0].id', results[0].id);
 
         var FJS = FilterJS(results, '#results', {
           template: '#result-template',
