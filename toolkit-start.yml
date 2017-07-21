@@ -26,8 +26,10 @@ plugins:
       # Merge frontmatter of transcluded files into the parent file frontmatter.
       frontmatter: true
 
-      # Merge frontmatter of transcluded files into the parent file frontmatter.
-      pattern: browse/**/*.md
+      # Process .
+      patterns:
+        - browse/**/*.md
+        - methods/**/*.md
 
   # Deal with top level frontmatter.
   # - metalsmith-matters: true
