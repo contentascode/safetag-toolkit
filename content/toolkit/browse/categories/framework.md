@@ -25,7 +25,6 @@ Operational Security
 
 ## Context Research
 
-
   * :[Conduct Interviews](activities/interviews)
   * :[Regional Context Research](activities/regional-context-research)
   * :[Technical Context Research](activities/technical-context-research)
