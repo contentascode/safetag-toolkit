@@ -8,6 +8,7 @@ plugins:
       activities: true
       methods: true
       references: true
+      document_matter: true
       images: true
 
   - metalsmith-debug: {}
