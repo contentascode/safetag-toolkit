@@ -27,6 +27,10 @@ body .post {
   fontsize: 2em;
 }
 
+li > p {
+  display: inline;
+}
+
 .post a,
 .docs-section a,
 .links small a,
