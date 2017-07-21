@@ -346,6 +346,8 @@ blockquote p {
   }
   .popover {
     display: none;
+    top: initial;
+    left: -34px;
     position: absolute;
     background: #fff;
     border: 1px solid #eee;
@@ -431,6 +433,7 @@ blockquote p {
 #cd-cart-trigger a {
   background-color: white;
   background-image: none;
+  margin-right: 0px;
 }
 
 .cd-img-replace {
@@ -509,7 +512,7 @@ button:focus {
 .add-to-cart span {
   /* this is the button text message */
   position: absolute;
-  top: 5px;
+  top: 6px;
   left: 2px;
   width: 100%;
   height: 100%;
@@ -595,5 +598,25 @@ button:focus {
   float: right;
   margin-right: 20px;
   position: relative;
-  top: -8px;
+  top: -3px;
+}
+
+.browse-section {
+  font-size: 0.7em;
+}
+
+.browse-section h4 {
+  font-size: 20px;
+}
+
+.browse-section button {
+  text-transform: none;
+}
+
+.rating .glyphicon {
+  margin-top: -6px;
+}
+
+.search-icon {
+  margin-top: -42px;
 }

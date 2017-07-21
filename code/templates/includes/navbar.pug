@@ -1,5 +1,5 @@
 .navbar-spacer
-nav.navbar
+nav.navbar.navbar-fixed-top
   .container
     ul.navbar-list
       li.navbar-item
@@ -8,16 +8,21 @@ nav.navbar
         a.navbar-link(href="#",data-popover="#codeNavAbout") Methods
         #codeNavAbout.popover
           ul.popover-list
+            li.popover-item: a.popover-link(href=site.baseurl+"/methods/preparation.guide.html") Preparation
             li.popover-item: a.popover-link(href=site.baseurl+"/methods/context_research.guide.html") Context Research
-            li.popover-item: a.popover-link(href="#") ...
-      li.navbar-item
-        a.navbar-link(href="#",data-popover="#codeNavPopover") Activities
-        #codeNavPopover.popover
-          ul.popover-list
-            li.popover-item: a.popover-link(href=site.baseurl+"/exercises/interviews") Interviews
-            li.popover-item: a.popover-link(href=site.baseurl+"/exercises/regional_context_research") Regional Research
-            li.popover-item: a.popover-link(href=site.baseurl+"/exercises/technical_context_research") Technical Research
-            li.popover-item: a.popover-link(href="#") ..
+            li.popover-item: a.popover-link(href=site.baseurl+"/methods/capacity_assessment.guide.html") Capacity Assessment
+            li.popover-item: a.popover-link(href=site.baseurl+"/methods/reconnaissance.guide.html") Reconnaissance
+            li.popover-item: a.popover-link(href=site.baseurl+"/methods/network_discovery.guide.html") Network Discovery
+            li.popover-item: a.popover-link(href=site.baseurl+"/methods/network_access.guide.html") Network Access
+            li.popover-item: a.popover-link(href=site.baseurl+"/methods/network_mapping.guide.html") Network Mapping
+            li.popover-item: a.popover-link(href=site.baseurl+"/methods/user_device_assessment.guide.html") User Device Assessment
+            li.popover-item: a.popover-link(href=site.baseurl+"/methods/vulnerability_scanning.guide.html") Vulnerability Scanning and Assessment
+            li.popover-item: a.popover-link(href=site.baseurl+"/methods/data_assessment.guide.html") Data Asssessment
+            li.popover-item: a.popover-link(href=site.baseurl+"/methods/physical_assessment.guide.html") Physical Assessment
+            li.popover-item: a.popover-link(href=site.baseurl+"/methods/risk_modeling.guide.html") Process Mapping and Risk Modeling
+            li.popover-item: a.popover-link(href=site.baseurl+"/methods/threat_assessment.guide.html") Threat Assessment
+            li.popover-item: a.popover-link(href=site.baseurl+"/methods/responsive_support.guide.html") Responsive Support
+            li.popover-item: a.popover-link(href=site.baseurl+"/methods/follow_up.guide.html") Follow Up
       li.navbar-item.u-pull-right.hidden#cd-cart-trigger
         a.navbar-link.cd-img-replace.cd-cart(href='#0') Plan
           i.glyphicon.glyphicon-list-alt

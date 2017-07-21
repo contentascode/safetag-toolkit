@@ -11,9 +11,6 @@ $(document).ready(function() {
     $lateral_cart = $('#cd-cart'),
     $shadow_layer = $('#cd-shadow-layer');
 
-  // Display Planning button in navbar-link
-  $('#cd-cart-trigger').removeClass('hidden');
-
   /*
    * Faceted search component configuration
    */
@@ -22,7 +19,7 @@ $(document).ready(function() {
   initFacets();
 
   var baseurl = $('body').data('baseurl');
-  console.log(baseurl);
+
   var tags,
     index,
     store = $.getJSON(baseurl + '/searchMeta.json'),
@@ -84,7 +81,9 @@ $(document).ready(function() {
                 $('#' + k + '_criteria').append(
                   '<div class="checkbox">' +
                     ' <label>' +
-                    '    <input type="checkbox" value="' +
+                    '    <input type="checkbox" id="' +
+                    keyify(v) +
+                    '" value="' +
                     v +
                     '">' +
                     '    <span>' +
@@ -118,84 +117,89 @@ $(document).ready(function() {
           .value();
 
         console.log('results', results);
-        console.log('results[0].id', results[0].id);
 
-        var FJS = FilterJS(results, '#results', {
-          template: '#result-template',
-          search: { ele: '#searchbox' },
-          //search: {ele: '#searchbox', fields: ['runtime']}, // With specific fields
-          callbacks: {
-            afterAddRecords: function(records) {
-              $('#total_results').text(' (' + records.length + ')');
+        var FJS = FilterJS(
+          results.map(function(res) {
+            return Object.assign(res, { baseurl: baseurl });
+          }),
+          '#results',
+          {
+            template: '#result-template',
+            search: { ele: '#searchbox' },
+            //search: {ele: '#searchbox', fields: ['runtime']}, // With specific fields
+            callbacks: {
+              afterAddRecords: function(records) {
+                $('#total_results').text(' (' + records.length + ')');
 
-              _.chain(meta)
-                .keys()
-                .omit(
-                  'library',
-                  'data_modeling',
-                  'bulk_upload',
-                  'displays_lists',
-                  'network_viz',
-                  'network_editing',
-                  'network_analysis',
-                  'embeddable',
-                  'document_viz',
-                  'timelines',
-                  'maps'
-                )
-                .each(function(k) {
-                  var checkboxes = $('#' + k + '_criteria :input');
-                  var qResult = JsonQuery(records);
+                _.chain(meta)
+                  .keys()
+                  .omit(
+                    'library',
+                    'data_modeling',
+                    'bulk_upload',
+                    'displays_lists',
+                    'network_viz',
+                    'network_editing',
+                    'network_analysis',
+                    'embeddable',
+                    'document_viz',
+                    'timelines',
+                    'maps'
+                  )
+                  .each(function(k) {
+                    var checkboxes = $('#' + k + '_criteria :input');
+                    var qResult = JsonQuery(records);
 
-                  checkboxes.each(function() {
-                    var c = $(this);
-                    var q = {};
-                    q[k] = c.val();
-                    var count = qResult.where(q).count;
-                    c.next().text(c.val() + ' (' + count + ')');
-                  });
-                })
-                .value();
-            },
-            afterFilter: function(result) {
-              if (!result.length) {
-                $('#total_results').text(' (0)');
-              } else {
-                $('#total_results').text(' (' + result.length + ')');
+                    checkboxes.each(function() {
+                      var c = $(this);
+                      var q = {};
+                      q[k] = c.val();
+                      var count = qResult.where(q).count;
+                      c.next().text(c.val() + ' (' + count + ')');
+                    });
+                  })
+                  .value();
+              },
+              afterFilter: function(result) {
+                if (!result.length) {
+                  $('#total_results').text(' (0)');
+                } else {
+                  $('#total_results').text(' (' + result.length + ')');
+                }
+
+                _.chain(meta)
+                  .keys()
+                  .omit(
+                    'library',
+                    'data_modeling',
+                    'bulk_upload',
+                    'displays_lists',
+                    'network_viz',
+                    'network_editing',
+                    'network_analysis',
+                    'embeddable',
+                    'document_viz',
+                    'timelines',
+                    'maps'
+                  )
+                  .each(function(k) {
+                    var checkboxes = $('#' + k + '_criteria :input');
+                    var qResult = JsonQuery(result);
+
+                    checkboxes.each(function() {
+                      var c = $(this);
+                      var q = {};
+                      q[k] = c.val();
+                      var count = qResult.where(q).count;
+                      c.next().text(c.val() + ' (' + count + ')');
+                    });
+                  })
+                  .value();
               }
-
-              _.chain(meta)
-                .keys()
-                .omit(
-                  'library',
-                  'data_modeling',
-                  'bulk_upload',
-                  'displays_lists',
-                  'network_viz',
-                  'network_editing',
-                  'network_analysis',
-                  'embeddable',
-                  'document_viz',
-                  'timelines',
-                  'maps'
-                )
-                .each(function(k) {
-                  var checkboxes = $('#' + k + '_criteria :input');
-                  var qResult = JsonQuery(result);
-
-                  checkboxes.each(function() {
-                    var c = $(this);
-                    var q = {};
-                    q[k] = c.val();
-                    var count = qResult.where(q).count;
-                    c.next().text(c.val() + ' (' + count + ')');
-                  });
-                })
-                .value();
             }
+            //appendToContainer: appendToContainer
           }
-          //appendToContainer: appendToContainer
-        });
+        );
 
         FJS.addCriteria({ field: 'content_type', ele: '#content_type_criteria input:checkbox' });
 
@@ -205,6 +209,17 @@ $(document).ready(function() {
       });
     })
     .then(function() {
+      // Check if we are on a method page and grab its id.
+      var method = keyify(window.location.href.replace(/^.*methods\/(.*)\.guide.html/, '$1'));
+      var isHome = /@safetag\/toolkit\/?#?$/.test(window.location.href);
+      // Display Planning button in navbar-link (but not in methods)
+      if (isHome) {
+        $('#cd-cart-trigger').removeClass('hidden');
+        $('button.add-to-cart').removeClass('hidden');
+      }
+
+      $('#framework_criteria input#' + method).click();
+
       var productCustomization = $('.movie'),
         cart = $('.cd-cart'),
         animating = false;
@@ -254,7 +269,7 @@ $(document).ready(function() {
         !cart.hasClass('items-added') && cart.addClass('items-added');
 
         var cartItemsCount = cart.find('span');
-        console.log('count', count);
+        // console.log('count', count);
         if (count === 0) {
           cart.removeClass('items-added');
           $('#cd-cart .cd-cart-items').remove();
@@ -291,7 +306,7 @@ $(document).ready(function() {
                 (item.activity.variations
                   ? item.activity.variations[item.variation].duration
                   : item.activity.duration) || '?';
-              console.log('duration', duration);
+              // console.log('duration', duration);
               return (
                 '<li class="cd-single-item"><span class="cd-qty"><strong>' +
                 item.activity.name +
@@ -317,13 +332,13 @@ $(document).ready(function() {
                     '    </select>' +
                     '  </div> <!-- .cd-customization -->'
                   : '') +
-                '<a class="cd-item-remove cd-img-replace" href="#0">Remove</a></li>'
+                '<a class="cd-item-remove cd-img-replace" href="#">Remove</a></li>'
               );
             })
             .join('') +
           '</ul><div class="cd-cart-total"><p>Duration <span>' +
           state.reduce(function(sum, item) {
-            console.log('sum', sum);
+            // console.log('sum', sum);
             return (
               sum +
               (item.activity.variations
@@ -331,7 +346,7 @@ $(document).ready(function() {
                 : item.activity.duration || 0)
             );
           }, 0) +
-          'h</span></p></div><a class="export-btn" href="#0">Export</a>' +
+          'h</span></p></div><a class="export-btn" href="#">Export</a>' +
           '<div class="form-group hidden" id="export">' +
           '<label for="comment">Comment:</label>' +
           '<textarea class="form-control" rows="5" id="text">' +
@@ -356,9 +371,9 @@ $(document).ready(function() {
         //detect click on select elements
         $('.cd-customization select').on('change', function(event) {
           var index = $(this).parent().parent().parent('li').index();
-          console.log('$(this).parent(li)', $(this).parent().parent('li'));
-          console.log('index', index);
-          console.log('value', this.value);
+          // console.log('$(this).parent(li)', $(this).parent().parent('li'));
+          // console.log('index', index);
+          // console.log('value', this.value);
           audit[index].variation = this.value;
           $('#cd-cart').html(renderPlan(audit));
           attachEvents();
@@ -373,10 +388,10 @@ $(document).ready(function() {
         });
 
         cartItemList.on('click', 'li .cd-item-remove', function(e) {
-          console.log($(this).parent().parent('li'));
+          // console.log($(this).parent().parent('li'));
           var index = $(this).parent().parent('li').index();
           audit = audit.filter(function(val, key) {
-            console.log(`key ${key} / index ${index}`);
+            // console.log(`key ${key} / index ${index}`);
             return key != index;
           });
           $(this).parent().remove();
@@ -492,106 +507,6 @@ $(document).ready(function() {
       $('body').removeClass('overflow-hidden');
     }
   });
-
-  // Variables
-  var $codeSnippets = $('.code-example-body'),
-    $nav = $('.navbar'),
-    $body = $('body'),
-    $html = $('html'),
-    $window = $(window),
-    $popoverLink = $('[data-popover]'),
-    navOffsetTop = $nav.offset().top,
-    $document = $(document),
-    entityMap = {
-      '&': '&amp;',
-      '<': '&lt;',
-      '>': '&gt;',
-      '"': '&quot;',
-      "'": '&#39;',
-      '/': '&#x2F;'
-    };
-
-  function init() {
-    $window.on('scroll', onScroll);
-    $window.on('resize', resize);
-    $popoverLink.on('click', openPopover);
-    $document.on('click', closePopover);
-    // $('a[href^="#"]').on('click', smoothScroll);
-    //    buildSnippets();
-  }
-
-  function smoothScroll(e) {
-    e.preventDefault();
-    $(document).off('scroll');
-    var target = this.hash,
-      menu = target;
-    $target = $(target);
-    $('html, body').stop().animate({
-      scrollTop: $target.offset().top - 40
-    }, 0, 'swing', function() {
-      window.location.hash = target;
-      $(document).on('scroll', onScroll);
-    });
-  }
-
-  function openPopover(e) {
-    e.preventDefault();
-    closePopover();
-    var popover = $($(this).data('popover'));
-    popover.toggleClass('open');
-    e.stopImmediatePropagation();
-  }
-
-  function closePopover(e) {
-    if ($('.popover.open').length > 0) {
-      $('.popover').removeClass('open');
-    }
-  }
-
-  $('#button').click(function() {
-    $('html, body').animate(
-      {
-        scrollTop: $('#elementtoScrollToID').offset().top
-      },
-      2000
-    );
-  });
-
-  function resize() {
-    $body.removeClass('has-docked-nav');
-    navOffsetTop = $nav.offset().top;
-    onScroll();
-  }
-
-  function onScroll() {
-    // if(navOffsetTop < $window.scrollTop() && !$body.hasClass('has-docked-nav') && $html.hasClass('hero')) {
-    //   $body.addClass('has-docked-nav')
-    // }
-    // if(navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav') && $html.hasClass('hero')) {
-    //   $body.removeClass('has-docked-nav')
-    // }
-    if (navOffsetTop < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
-      $body.addClass('has-docked-nav');
-    }
-    if (navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
-      $body.removeClass('has-docked-nav');
-    }
-  }
-
-  function escapeHtml(string) {
-    return String(string).replace(/[&<>"'\/]/g, function(s) {
-      return entityMap[s];
-    });
-  }
-
-  function buildSnippets() {
-    $codeSnippets.each(function() {
-      var newContent = escapeHtml($(this).html());
-      $(this).html(newContent);
-    });
-  }
-
-  init();
 });
 
 function toggle_panel_visibility($lateral_panel, $background_layer, $body) {
@@ -670,4 +585,16 @@ function initFacets() {
   $('#content_type_audience').on('click', function() {
     $('#content_type_criteria :checkbox').prop('checked', $(this).is(':checked'));
   });
+}
+
+function keyify(text) {
+  return text
+    .toString()
+    .toLowerCase()
+    .replace(/\s+/g, '_') // Replace spaces with -
+    .replace(/[^\w\-]+/g, '') // Remove all non-word chars
+    .replace(/\-/g, '_') // Replace multiple - with single -
+    .replace(/\-\-+/g, '_') // Replace multiple - with single -
+    .replace(/^-+/, '') // Trim - from start of text
+    .replace(/-+$/, ''); // Trim - from end of text
 }

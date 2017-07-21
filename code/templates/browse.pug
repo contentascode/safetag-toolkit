@@ -1,59 +1,60 @@
-h1 Browse
-  span#total_results 
-.sidebar.col-md-3
-  div
-    label.sr-only(for='searchbox') Search
-    input#searchbox.form-control(type='text', placeholder='Search …')
-    span.glyphicon.glyphicon-search.search-icon
-  br
-  //- .well
-  //-   fieldset#rating_criteria
-  //-     legend Rating
-  //-     span#rating_range_label.slider-label 8 - 10
-  //-     #rating_slider.slider
-  //-     input#rating_filter(type='hidden', value='8-10')
-  .well
-    fieldset#framework_criteria
-      legend Framework categories
-  .well
-    fieldset#activity_criteria
-      legend Activity
-  .well
-    fieldset#context_criteria
-      legend Context
-  .well
-    fieldset#tool_criteria
-      legend Tool needed
-  //- .well
-  //-   fieldset#runtime_criteria
-  //-     legend Runtime
-  //-     span#runtime_range_label.slider-label 50 mins - 250 mins
-  //-     #runtime_slider.slider
-  //-     input#runtime_filter(type='hidden', value='50-250')
-  //- .well
-  //-   fieldset#year_criteria
-  //-     legend Year
-  //-     select#year_filter.form-control
-  //-       option(value='all') All (1920 - 2020)
-  //-       option(value='1920-1930') 1920 - 1930
-  //-       option(value='1931-1940') 1931 - 1940
-  //-       option(value='1941-1950') 1941 - 1950
-  //-       option(value='1951-1960') 1951 - 1960
-  //-       option(value='1961-1970') 1961 - 1970
-  //-       option(value='1971-1980') 1971 - 1980
-  //-       option(value='1981-1990') 1981 - 1990
-  //-       option(value='1991-2000') 1991 - 2000
-  //-       option(value='2001-2010') 2001 - 2010
-  //-       option(value='2011-2020') 2011 - 2020
+.browse-section
+  h1 Browse
+    span#total_results 
+  .sidebar.col-md-3
+    div
+      label.sr-only(for='searchbox') Search
+      input#searchbox.form-control(type='text', placeholder='Search …')
+      span.glyphicon.glyphicon-search.search-icon
+    br
+    //- .well
+    //-   fieldset#rating_criteria
+    //-     legend Rating
+    //-     span#rating_range_label.slider-label 8 - 10
+    //-     #rating_slider.slider
+    //-     input#rating_filter(type='hidden', value='8-10')
+    .well
+      fieldset#framework_criteria
+        legend Framework categories
+    .well
+      fieldset#activity_criteria
+        legend Activity
+    .well
+      fieldset#context_criteria
+        legend Context
+    .well
+      fieldset#tool_criteria
+        legend Tool needed
+    //- .well
+    //-   fieldset#runtime_criteria
+    //-     legend Runtime
+    //-     span#runtime_range_label.slider-label 50 mins - 250 mins
+    //-     #runtime_slider.slider
+    //-     input#runtime_filter(type='hidden', value='50-250')
+    //- .well
+    //-   fieldset#year_criteria
+    //-     legend Year
+    //-     select#year_filter.form-control
+    //-       option(value='all') All (1920 - 2020)
+    //-       option(value='1920-1930') 1920 - 1930
+    //-       option(value='1931-1940') 1931 - 1940
+    //-       option(value='1941-1950') 1941 - 1950
+    //-       option(value='1951-1960') 1951 - 1960
+    //-       option(value='1961-1970') 1961 - 1970
+    //-       option(value='1971-1980') 1971 - 1980
+    //-       option(value='1981-1990') 1981 - 1990
+    //-       option(value='1991-2000') 1991 - 2000
+    //-       option(value='2001-2010') 2001 - 2010
+    //-       option(value='2011-2020') 2011 - 2020
 
-.col-md-9
-  #results.movies.content.row  
-  
+  .col-md-9
+    #results.movies.content.row  
+    
 script#result-template(type='text/html').
   <% var metadata = Object.assign({}, arguments[0]); %>
   <div class="col-md-4 movie" data-activity='<%= JSON.stringify(arguments[0]) %>'>
     <div class="thumbnail">
-      <button class="label label-success rating add-to-cart">
+      <button class="label label-success rating add-to-cart hidden">
         <span>Add 
           <i class="glyphicon glyphicon-plus"></i>
         </span>
@@ -62,7 +63,7 @@ script#result-template(type='text/html').
         </svg>
       </button>
       <div class="caption">
-        <a href="activities/<%= id %>"><h4><%= name %></h4></a>
+        <a href="<%= baseurl %>/activities/<%= id %>"><h4><%= name %></h4></a>
         <div class="detail">
           <%= description %>
           <span class="runtime">
@@ -74,7 +75,7 @@ script#result-template(type='text/html').
         </div>
         <div class="outline">
           <!-- // Ignore non relevant keys and print metadata key value pairs -->
-          <span><%= Object.keys(metadata).filter(function(key) {return !["id", "name", "variations", "_fid", "path", "content_type", "description", "duration"].includes(key) }).map(function(key) { return '<strong>' + key + '</strong><br>' + metadata[key] }).join('<br>') %></span>
+          <span><%= Object.keys(metadata).filter(function(key) {return !["id", "name", "baseurl", "variations", "_fid", "path", "content_type", "description", "duration"].includes(key) }).map(function(key) { return '<strong>' + key + '</strong><br>' + metadata[key] }).join('<br>') %></span>
         </div>
       </div>
     </div>

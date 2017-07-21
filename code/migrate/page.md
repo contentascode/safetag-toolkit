@@ -1,6 +1,6 @@
 ---
 id: {{id}}
 name: {{title}}
-layout: method.pug
+layout: page.pug
 ---
 {{{contents}}}

@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   // Variables
   var $codeSnippets = $('.code-example-body'),
     $nav = $('.navbar'),
@@ -19,8 +18,8 @@ $(document).ready(function() {
     };
 
   function init() {
-    $window.on('scroll', onScroll);
-    $window.on('resize', resize);
+    // $window.on('scroll', onScroll);
+    // $window.on('resize', resize);
     $popoverLink.on('click', openPopover);
     $document.on('click', closePopover);
     // $('a[href^="#"]').on('click', smoothScroll);
