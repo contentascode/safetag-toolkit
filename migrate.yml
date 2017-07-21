@@ -6,6 +6,8 @@ plugins:
   # Import folder structure
   - metalsmith-migrate-safetag:
       activities: true
+      methods: true
+      references: true
 
   - metalsmith-debug: {}
 
