@@ -7,7 +7,7 @@ index:
 
 # SAFETAG Framework Categories
 
-## Reference
+## Methods
 
 Audit Lifecycle
 Risk Assessment and Analysis
@@ -55,35 +55,35 @@ Operational Security
 
 ## Network Mapping
 
-  * :[](activities/network-scanning)
-  * :[](activities/traffic-analysis)
-  * :[](activities/router-attacks)
-  * :[](activities/wireless-range-mapping)
-  * :[](activities/monitor-open-wireless-traffic)
+  * :[Network Scanning](activities/network-scanning)
+  * :[Traffic Analysis](activities/traffic-analysis)
+  * :[Router Attacks](activities/router-attacks)
+  * :[Wireless Range Mapping](activities/wireless-range-mapping)
+  * :[Monitor Open Wireless Traffic](activities/monitor-open-wireless-traffic)
 
 
 ## User Device Assessment
 
-  * :[](activities/device-checklist)
-  * :[](activities/day-in-the-life)
-  * :[](activities/firewire)
-  * :[](activities/password-security)
-  * :[](activities/guided-tour)
-  * :[](activities/check-user-browser-vulns)
+  * :[User Device Assessment](activities/device-checklist)
+  * :[Day in the Life](activities/day-in-the-life)
+  * :[Firewire](activities/firewire)
+  * :[Password Security](activities/password-security)
+  * :[Guided Tour](activities/guided-tour)
+  * :[Check User Browser Vulnerabilities](activities/check-user-browser-vulns)
 
 ## Vulnerability Scanning and Analysis
 
-  * :[](activities/vulnerability-scanning)
-  * :[](activities/cms-version)
-  * :[](activities/vulnerability-research)
-  * :[](activities/check-config-files)
-  * :[](activities/router-attacks)
+  * :[Vulnerability Scanning](activities/vulnerability-scanning)
+  * :[CMS Version](activities/cms-version)
+  * :[Vulnerablity Research](activities/vulnerability-research)
+  * :[Check Config Files](activities/check-config-files)
+  * :[Router Attacks](activities/router-attacks)
 
 ## Data Assessment
 
-  * :[](activities/sensitive-data)
-  * :[](activities/data-lost-and-found)
-  * :[](activities/impact-lost-device)
+  * :[Sensitive Data](activities/sensitive-data)
+  * :[Data Lost and Found](activities/data-lost-and-found)
+  * :[Impact Lost Device](activities/impact-lost-device)
   * :[](activities/impact-found-device)
   * :[](activities/private-data)
 
