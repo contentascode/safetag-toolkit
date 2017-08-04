@@ -1,7 +1,7 @@
 ---
 id: interviews
 name: Interviews
-description: Tour the office to take into account the physicality of devices, backup drives, servers, and hard-wired networks.
+description: The auditor conducts interviews with various staff members to gather information on the organizations risks and...
 duration: 2
 template:
   minimum-viable:
