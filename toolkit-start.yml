@@ -145,3 +145,4 @@ plugins:
       directory: code/templates
       includes: includes
       default: page.pug
+      cache: true
