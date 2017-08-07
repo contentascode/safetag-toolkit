@@ -6,6 +6,23 @@ metadata:
   site:
     title: SAFETAG
     baseurl: '/@safetag/toolkit'
+  navigation:
+    methods:
+      preparation: Preparation
+      context_research: Context Research
+      capacity_assessment: Capacity Assessment
+      reconnaissance: Reconnaissance
+      network_discovery: Network Discovery
+      network_access: Network Access
+      network_mapping: Network Mapping
+      user_device_assessment: User Device Assessment
+      vulnerability_scanning: Vulnerability Scanning and Assessment
+      data_assessment: Data Asssessment
+      physical_assessment: Physical Assessment
+      risk_modeling: Process Mapping and Risk Modeling
+      threat_assessment: Threat Assessment
+      responsive_support: Responsive Support
+      follow_up: Follow Up
 plugins:
 
   # - metalsmith-packages:
