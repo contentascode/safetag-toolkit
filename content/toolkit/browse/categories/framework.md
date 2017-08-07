@@ -90,21 +90,21 @@ Operational Security
 ## Physical Assessment
 
   * :[Guided Tour](activities/guided-tour)
-  * :[](activities/impact-lost-device)
-  * :[](activities/impact-found-device)
+  * :[The Impacts of a Lost Device](activities/impact-lost-device)
+  * :[The Impacts of a Found Device](activities/impact-found-device)
 
 ## Process Mapping and Risk Modeling
 
-  * :[](activities/process-mapping-activity)
-  * :[](activities/pre-mortum-risk-assessment-activity)
-  * :[](activities/risk-matrix)
-  * :[](activities/sensitive-data)
+  * :[Process Mapping](activities/process-mapping-activity)
+  * :[Risk Assessment](activities/pre-mortum-risk-assessment-activity)
+  * :[Creating a Risk Matrix](activities/risk-matrix)
+  * :[Sensitive Data](activities/sensitive-data)
 
 ## Threat Assessment
 
-  * :[](activities/pre-mortum-risk-assessment-activity)
-  * :[](activities/sensitive-data)
-  * :[](activities/threat-identification)
-  * :[](activities/risk-matrix)
-  * :[](activities/threat-interaction)
-  * :[](activities/regional-context-research)
+  * :[Risk Modeling Using the Pre-Mortum Strategy](activities/pre-mortum-risk-assessment-activity)
+  * :[Sensitive Data](activities/sensitive-data)
+  * :[Threat Identification](activities/threat-identification)
+  * :[Creating a Risk Matrix](activities/risk-matrix)
+  * :[Threat Interaction](activities/threat-interaction)
+  * :[Regional Context Research](activities/regional-context-research)
