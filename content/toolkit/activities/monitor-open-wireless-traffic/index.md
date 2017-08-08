@@ -2,11 +2,6 @@
 id: monitor-open-wireless-traffic
 name: Monitor Open Wireless Traffic
 description: Each wireless device maintains a &quot;memory&quot; of what networks it has successfully connected to. When it is connecting to a...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Monitor Open Wireless Traffic
 

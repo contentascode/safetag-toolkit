@@ -2,11 +2,6 @@
 id: device-checklist
 name: Device and Software Version Assessment
 description: The auditor checks staff devices for updated systems and software, anti-virus and other security capabilities, and...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Device and Software Version Assessment
 

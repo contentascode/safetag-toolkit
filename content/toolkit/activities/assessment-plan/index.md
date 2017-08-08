@@ -2,11 +2,6 @@
 id: assessment-plan
 name: Assessment Plan
 description: This component allows an auditor and host to come to an understanding of the level of access that an auditor will have,...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Assessment Plan
 

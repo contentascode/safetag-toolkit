@@ -2,11 +2,6 @@
 id: sensitive-data
 name: Sensitive Data
 description: Data and meta-data about an organization and its staff is incredibly difficult to keep track of over time, as people or...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Sensitive Data
 

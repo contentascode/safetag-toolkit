@@ -2,11 +2,6 @@
 id: regional-context-research
 name: Regional Context Research
 description: This exercise focuses on research and re-confirmation of regional issues from general trends to specific legal...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Regional Context Research
 

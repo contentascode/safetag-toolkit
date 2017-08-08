@@ -2,11 +2,6 @@
 id: pre-mortum-risk-assessment-activity
 name: Risk Modeling Using the Pre-Mortum Strategy
 description: The pre-mortum strategy was devised to take participants out of a perspective of defending their plans and strategies...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Risk Modeling Using the Pre-Mortum Strategy
 

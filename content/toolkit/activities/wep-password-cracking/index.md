@@ -2,11 +2,6 @@
 id: wep-password-cracking
 name: WEP Password Cracking
 description: WEP provides no effective protection for a wifi network. Most wifi routers offer WPA encryption as an option, and if...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # WEP Password Cracking
 

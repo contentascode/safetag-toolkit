@@ -2,11 +2,6 @@
 id: wps-pin-cracking
 name: WPS PIN Cracking
 description: WPS was built as an addition to WPA to make it easier to add devices without typing in secure passwords, but this ease...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # WPS PIN Cracking
 

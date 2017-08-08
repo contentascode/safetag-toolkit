@@ -2,11 +2,6 @@
 id: incident-response
 name: Incident Response and Emergency Contact
 description: Establish a procedure for incident handling and an emergency contact in the event that auditor cause or uncover an...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Incident Response and Emergency Contact
 

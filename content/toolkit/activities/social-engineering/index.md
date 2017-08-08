@@ -2,11 +2,6 @@
 id: social-engineering
 name: 
 description: This component allows the auditor to gauge staff awareness of social engineering risks. The staff take part in...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # 
 

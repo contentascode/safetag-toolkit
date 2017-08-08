@@ -2,11 +2,6 @@
 id: manual-recon
 name: Manual Reconnaissance
 description: This exercise suggests some targeted online search tools and tricks to gather information leakages from organizations. ...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Manual Reconnaissance
 

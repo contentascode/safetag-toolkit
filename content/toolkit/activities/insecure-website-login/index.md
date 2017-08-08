@@ -2,11 +2,6 @@
 id: insecure-website-login
 name: Insecure Website Login
 description: Administrative and user passwords on the site are submitted...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Insecure Website Login
 

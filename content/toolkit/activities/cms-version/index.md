@@ -2,11 +2,6 @@
 id: cms-version
 name: Check for common website vulnerabilities
 description: Content management systems require ongoing maintenance and updates to stay secure. Quite often these (or specific...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Check for common website vulnerabilities
 

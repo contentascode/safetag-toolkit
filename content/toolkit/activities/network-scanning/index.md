@@ -2,11 +2,6 @@
 id: network-scanning
 name: Network Scanning
 description: Local networks often have a variety of devices connected to them - servers, user devices, staff cellphones, and more. ...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Network Scanning
 

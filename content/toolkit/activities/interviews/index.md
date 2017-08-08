@@ -2,11 +2,6 @@
 id: interviews
 name: Interviews
 description: The auditor conducts interviews with various staff members to gather information on the organizations risks and...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Interviews
 

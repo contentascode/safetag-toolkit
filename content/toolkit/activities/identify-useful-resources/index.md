@@ -2,11 +2,6 @@
 id: identify-useful-resources
 name: Resource Identification
 description: In this component the auditor documents resources that the host may be able to leverage to address the technical,...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Resource Identification
 

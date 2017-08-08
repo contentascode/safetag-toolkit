@@ -2,11 +2,6 @@
 id: process-mapping-activity
 name: Process Mapping
 description: This activity helps to identify the processes that allow the organization to function (publishing, payment,...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Process Mapping
 

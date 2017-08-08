@@ -2,11 +2,6 @@
 id: dns-zone-transfer
 name: Anonymous DNS Zone Transfer
 description: Anonymous individuals online can request the full list of the hostnames on the organizations domain. Responding to zone...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Anonymous DNS Zone Transfer
 

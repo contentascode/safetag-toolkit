@@ -2,11 +2,6 @@
 id: check-mail-server-vulns
 name: Insecure Email Connections
 description: A common issue with e-mail services is the lack of proper encryption....
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Insecure Email Connections
 

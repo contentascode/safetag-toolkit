@@ -2,11 +2,6 @@
 id: traffic-analysis
 name: Network Traffic Analysis
 description: Any content that is sent out over the network without encryption is easy to intercept; this includes email, web...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Network Traffic Analysis
 

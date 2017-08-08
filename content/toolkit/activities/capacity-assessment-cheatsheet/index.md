@@ -2,11 +2,6 @@
 id: capacity-assessment-cheatsheet
 name: Capacity Assessment Checklist
 description: A monolithic, one-time interview with key staff is not always possible or advisable, but interacting with a variety of...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Capacity Assessment Checklist
 

@@ -2,11 +2,6 @@
 id: private-data
 name: Private Data
 description: Guide staff through an activity to have them list private data within the organization (e.g. Using the &quot;personal...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Private Data
 

@@ -2,11 +2,6 @@
 id: wireless-range-mapping
 name: Wireless Range Mapping
 description: Map the range of the organizations wireless network outside of office...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Wireless Range Mapping
 

@@ -2,11 +2,6 @@
 id: follow-up-meeting
 name: Follow-up Meeting
 description: Schedule and have a follow up call to discuss the audit report.  This provides a valuable touch-point for the...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Follow-up Meeting
 

@@ -2,11 +2,6 @@
 id: mx-record-search
 name: Mail Exchange Record Search
 description: MX, or Mail Exchange, records are required to be public for any domain you wish to receive email through. These records...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Mail Exchange Record Search
 

@@ -2,11 +2,6 @@
 id: threat-interaction
 name: Threat Interaction
 description: This helps the auditor enumerate threats that the organization is concerned about and the internal priorities of them. ...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Threat Interaction
 

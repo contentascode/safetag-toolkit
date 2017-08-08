@@ -2,11 +2,6 @@
 id: impact-found-device
 name: The Impacts of a &quot;Found&quot; Device
 description: Lead staff in an activity identifying what critical data (as identified in during the Data Assessment) would be...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # The Impacts of a &quot;Found&quot; Device
 

@@ -2,11 +2,6 @@
 id: password-security
 name: Password Security Survey
 description: Weak and &quot;shared&quot; passwords are prevalent - even after hundreds of well-publicized global password...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Password Security Survey
 

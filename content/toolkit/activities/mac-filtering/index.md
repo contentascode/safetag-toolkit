@@ -2,11 +2,6 @@
 id: mac-filtering
 name: Accessing a MAC-filtered Network
 description: Open and MAC-address-filtered wireless access points are not only open to anyone within range to join and listen in to,...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Accessing a MAC-filtered Network
 

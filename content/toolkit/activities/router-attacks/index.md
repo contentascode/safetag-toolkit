@@ -2,11 +2,6 @@
 id: router-attacks
 name: Router Based Attacks
 description: Many wireless routers still use the default password listed in [“Router Default Password...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Router Based Attacks
 

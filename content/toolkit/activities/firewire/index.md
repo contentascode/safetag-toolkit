@@ -2,11 +2,6 @@
 id: firewire
 name: Firewire Access to Encrypted/Locked computers
 description: Firewire ports and expansion slots can be abused to obtain data that are thought to be encryptedAny attacker who...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Firewire Access to Encrypted/Locked computers
 

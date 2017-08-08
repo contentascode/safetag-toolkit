@@ -2,11 +2,6 @@
 id: automated-recon
 name: Automated Reconnaisance
 description: This component allows the auditor to quickly identify publicly available resources (such as websites, extranets, email...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Automated Reconnaisance
 

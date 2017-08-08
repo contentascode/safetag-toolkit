@@ -2,11 +2,6 @@
 id: guided-tour
 name: Guided Tour
 description: The physical assessment methodology is focused on how to mitigate against threats that occur because of the arrangement...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Guided Tour
 

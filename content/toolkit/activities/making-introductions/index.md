@@ -2,11 +2,6 @@
 id: making-introductions
 name: Making Introductions
 description: Make introduction between host and known resources as...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Making Introductions
 

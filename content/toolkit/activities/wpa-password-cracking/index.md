@@ -2,11 +2,6 @@
 id: wpa-password-cracking
 name: WPA Password Cracking
 description: The organization’s wireless Local Area Network (WLAN) protects the network and its users with WPA encryption. This is...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # WPA Password Cracking
 

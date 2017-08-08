@@ -2,11 +2,6 @@
 id: risk-matrix
 name: Creating a Risk Matrix
 description: Creating a Risk Matrix
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Creating a Risk Matrix
 

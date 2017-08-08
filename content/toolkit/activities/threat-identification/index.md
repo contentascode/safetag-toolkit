@@ -2,11 +2,6 @@
 id: threat-identification
 name: Threat Identification
 description: These activities build off of a process or data mapping exercise to connect actual processes or assets and data of the...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Threat Identification
 

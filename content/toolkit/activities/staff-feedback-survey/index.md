@@ -2,11 +2,6 @@
 id: staff-feedback-survey
 name: Staff Feedback Survey
 description: Providing a space for anonymous, guided feedback is valuable to gather information about how your audit work and the...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Staff Feedback Survey
 

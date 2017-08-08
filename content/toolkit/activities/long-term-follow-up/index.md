@@ -2,11 +2,6 @@
 id: long-term-follow-up
 name: Long-Term Follow-up
 description: Follow up with host after a few months to check on progress, get long-term feedback and connect with any new...
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # Long-Term Follow-up
 
