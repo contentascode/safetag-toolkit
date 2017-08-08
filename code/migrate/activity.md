@@ -5,11 +5,6 @@ description: {{description}}
 {{#each tag}}
 {{key}}: {{value}}
 {{/each}}
-duration: 2
-template:
-  minimum-viable:
-    - walk-around: small-office
-    - interview: 3-interviewees
 ---
 # {{title}}
 
