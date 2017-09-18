@@ -138,8 +138,6 @@ header {
   #main-nav,
   #cd-cart {
     width: 30%;
-    /* header height has changed */
-    padding-top: 80px;
   }
 }
 
