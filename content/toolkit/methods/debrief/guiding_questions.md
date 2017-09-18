@@ -2,6 +2,8 @@
 id: methods/debrief/guiding_questions.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/debrief/guiding_questions.md
 ---
 
 * Is the organization empowered to make changes?

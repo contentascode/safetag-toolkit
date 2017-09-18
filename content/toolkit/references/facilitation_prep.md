@@ -1,6 +1,8 @@
 ---
 id: references/facilitation_prep.md
-name: [object Object]
+name: Facilitation Preparation
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/facilitation_prep.md
 ---
 
 #### Facilitation Preparation

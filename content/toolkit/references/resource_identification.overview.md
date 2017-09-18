@@ -1,6 +1,8 @@
 ---
 id: references/resource_identification.overview.md
 name: 
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/resource_identification.overview.md
 ---
 
   * *Directory:* ["Selected International and Regional Organisations providing support to HRD"](http://frontlinedefenders.org/files/workbook_eng.pdf#page=101) (Workbook on Security: Practical Steps for Human Rights Defenders at Risk)

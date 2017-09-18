@@ -2,6 +2,8 @@
 id: methods/responsive_support.guide.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/responsive_support.guide.md
 ---
 ## Responsive Support
 
@@ -34,5 +36,5 @@ layout: method.pug
 :[](../references/training_resources.md)
 </div>
 
-### Activities
+
 

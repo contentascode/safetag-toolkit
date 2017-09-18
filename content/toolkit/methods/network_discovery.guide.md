@@ -2,6 +2,8 @@
 id: methods/network_discovery.guide.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/network_discovery.guide.md
 ---
 ## Network Discovery
 
@@ -30,4 +32,4 @@ layout: method.pug
 :[](../references/network_discovery_methods.md)
 </div>
 
-### Activities
+

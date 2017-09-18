@@ -1,6 +1,8 @@
 ---
 id: references/recon-ng.md
-name: [object Object]
+name: Recon-ng
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/recon-ng.md
 ---
 
 #### Recon-ng

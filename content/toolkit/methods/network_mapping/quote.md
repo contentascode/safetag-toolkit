@@ -2,6 +2,8 @@
 id: methods/network_mapping/quote.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/network_mapping/quote.md
 ---
 "*A surprisingly common response from IT administrators, when confronted with a significant local vulnerability, is something like, 'Sure but that’s all inside the firewall, right?' Often, this statement is technically correct—that is, after all, the point of a firewall—but one hears this even from staff who are well aware that their wireless password is the name of the organization.*"
 

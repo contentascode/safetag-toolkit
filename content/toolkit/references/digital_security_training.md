@@ -1,6 +1,8 @@
 ---
 id: references/digital_security_training.md
-name: [object Object]
+name: Digital Security Trainings
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/digital_security_training.md
 ---
 
 #### Digital Security Trainings

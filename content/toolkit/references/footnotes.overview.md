@@ -1,6 +1,8 @@
 ---
 id: references/footnotes.overview.md
 name: 
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/footnotes.overview.md
 ---
 <!-- Overwrite any footnotes that are not found in the overview -->
 

@@ -2,6 +2,8 @@
 id: methods/debrief/output.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/debrief/output.md
 ---
 
   * A date scheduled for sending in the report.

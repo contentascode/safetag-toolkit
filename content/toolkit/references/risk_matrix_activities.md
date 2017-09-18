@@ -1,6 +1,8 @@
 ---
 id: references/risk_matrix_activities.md
-name: [object Object]
+name: Risk Matrix Activities
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/risk_matrix_activities.md
 ---
 
 #### Risk Matrix Activities

@@ -1,6 +1,8 @@
 ---
 id: references/operational_security.overview.md
 name: 
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/operational_security.overview.md
 ---
 
   * *Guide:* ["Step Zero: The Go / Don't Go Decision"](https://www.level-up.cc/leading-trainings/event-planning) (Level-Up)

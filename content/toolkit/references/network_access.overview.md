@@ -1,6 +1,8 @@
 ---
 id: references/network_access.overview.md
 name: 
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/network_access.overview.md
 ---
 
   * *Resource List:* ["Wireless Access Guides & Resources"](#wireless-access-guides-resources) (SAFETAG)

@@ -2,6 +2,8 @@
 id: methods/context_research.guide.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/context_research.guide.md
 ---
 ## Context Research
 
@@ -31,4 +33,4 @@ layout: method.pug
 :[](../references/context_research.md)
 </div>
 
-### Activities
+

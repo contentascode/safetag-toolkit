@@ -2,6 +2,8 @@
 id: methods/assessment_plan.guide.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/assessment_plan.guide.md
 ---
 ## Assessment Plan
 
@@ -41,5 +43,5 @@ layout: method.pug
 :[](../references/data_security_standards.md)
 </div>
 
-### Activities
+
 

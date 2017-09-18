@@ -2,6 +2,8 @@
 id: methods/follow_up/guiding_questions.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/follow_up/guiding_questions.md
 ---
 
 * What are the barriers the organization faced in implementing the recommended risk mitigation plan?

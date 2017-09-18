@@ -1,6 +1,8 @@
 ---
 id: references/risk_activities.md
-name: [object Object]
+name: Risk Assessment Activities
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/risk_activities.md
 ---
 
 #### Risk Assessment Activities

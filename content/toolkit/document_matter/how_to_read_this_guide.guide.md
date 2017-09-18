@@ -1,9 +1,10 @@
 ---
 id: document_matter/how_to_read_this_guide.guide.md
-name: [object Object]
+name: The Life Cycle of an Audit
 layout: page.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/document_matter/how_to_read_this_guide.guide.md
 ---
-## How to Read This Guide
 
 ### Major Sections
 

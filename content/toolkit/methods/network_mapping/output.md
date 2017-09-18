@@ -2,6 +2,8 @@
 id: methods/network_mapping/output.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/network_mapping/output.md
 ---
 
   * A list of hosts, servers, and other network hardware on LAN

@@ -2,6 +2,8 @@
 id: methods/interviews.guide.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/interviews.guide.md
 ---
 ## Interviews
 
@@ -39,6 +41,6 @@ layout: method.pug
 :[](../references/background_interviews.md)
 </div>
 
-### Activities
+
 
 

@@ -1,6 +1,8 @@
 ---
 id: references/setup_aircrack-ng.md
-name: [object Object]
+name: Setup Aircrack-ng
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/setup_aircrack-ng.md
 ---
 
 

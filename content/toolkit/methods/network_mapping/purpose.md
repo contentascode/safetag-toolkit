@@ -2,6 +2,8 @@
 id: methods/network_mapping/purpose.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/network_mapping/purpose.md
 ---
 Mapping an organization's network exposes the multitude of devices connected to it -- including mostly forgotten servers -- and provides the baseline for later work on device assessment and vulnerability research.
 

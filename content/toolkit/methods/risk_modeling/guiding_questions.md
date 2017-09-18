@@ -2,6 +2,8 @@
 id: methods/risk_modeling/guiding_questions.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/risk_modeling/guiding_questions.md
 ---
 
 * What are the critical organizational activities?

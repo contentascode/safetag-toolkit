@@ -1,6 +1,8 @@
 ---
 id: references/physical_assessment.md
 name: 
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/physical_assessment.md
 ---
 
   * *Guide:* ["Physical Penetration Test"](http://www.pentest-standard.org/index.php/Pre-engagement#Physical_Penetration_Test) (About The Penetration Testing Execution Standard)
@@ -10,5 +12,7 @@ name:
   * *Manual:* [Planning, improving and checking security in offices and homes](http://www.peacebrigades.org/fileadmin/user_files/groups/uk/files/Publications/Frontline_Manual_pdf.pdf#page=83)
 
   * *Guide:* ["Physical Security Assessment - pg. 122"](http://www.isecom.org/research/osstmm.html) (OSTTM)
-   
+
+  * *Policy Template:* [Information Security
+Policy Templates](https://www.sans.org/security-resources/policies) (SANS)
 

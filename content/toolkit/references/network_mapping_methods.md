@@ -1,6 +1,8 @@
 ---
 id: references/network_mapping_methods.md
-name: [object Object]
+name: Network Mapping Methods
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/network_mapping_methods.md
 ---
 
 #### Network Mapping Methods

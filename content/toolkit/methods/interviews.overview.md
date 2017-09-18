@@ -2,6 +2,8 @@
 id: methods/interviews.overview.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/interviews.overview.md
 ---
 ## Interviews
 

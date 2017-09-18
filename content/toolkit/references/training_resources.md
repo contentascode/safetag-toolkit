@@ -1,6 +1,8 @@
 ---
 id: references/training_resources.md
-name: [object Object]
+name: Training Resources
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/training_resources.md
 ---
 
 #### Training Resources

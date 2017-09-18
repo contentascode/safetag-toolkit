@@ -2,6 +2,8 @@
 id: methods/reconnaissance/guiding_questions.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/reconnaissance/guiding_questions.md
 ---
 
 * Depending on the organization's security needs, does it "leak" any sensitive information online (location, staff identities, program locations?)

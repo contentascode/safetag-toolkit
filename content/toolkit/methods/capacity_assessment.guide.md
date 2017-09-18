@@ -2,6 +2,8 @@
 id: methods/capacity_assessment.guide.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/capacity_assessment.guide.md
 ---
 ## Capacity Assessment
 
@@ -33,5 +35,5 @@ layout: method.pug
 :[](../references/background_interviews.md)
 </div>
 
-### Activities
+
 

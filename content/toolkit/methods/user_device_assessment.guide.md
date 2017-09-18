@@ -2,6 +2,8 @@
 id: methods/user_device_assessment.guide.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/user_device_assessment.guide.md
 ---
 ## User Device Assessment
 
@@ -37,5 +39,5 @@ layout: method.pug
 :[](../references/one_off_services.md)
 </div>
 
-### Activities
+
 

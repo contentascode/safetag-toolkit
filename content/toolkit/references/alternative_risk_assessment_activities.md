@@ -1,6 +1,8 @@
 ---
 id: references/alternative_risk_assessment_activities.md
-name: [object Object]
+name: Alternative Risk Modeling Activities
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/alternative_risk_assessment_activities.md
 ---
 
 #### Alternative Risk Modeling Activities

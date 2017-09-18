@@ -2,6 +2,8 @@
 id: methods/reconnaissance/output.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/reconnaissance/output.md
 ---
 
   * Dossier of organizational, partner, and beneficiary "open sources" information exposed online.

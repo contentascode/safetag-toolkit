@@ -1,6 +1,8 @@
 ---
 id: references/digi_sec_tech_reference_guides.md
-name: [object Object]
+name: Digital Security Guides
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/digi_sec_tech_reference_guides.md
 ---
 
 #### Digital Security Guides

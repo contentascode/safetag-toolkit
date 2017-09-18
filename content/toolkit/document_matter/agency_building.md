@@ -1,7 +1,9 @@
 ---
 id: document_matter/agency_building.md
-name: [object Object]
+name: Capacity
 layout: page.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/document_matter/agency_building.md
 ---
 
 ## Agency Building

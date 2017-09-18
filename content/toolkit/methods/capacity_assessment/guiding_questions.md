@@ -2,6 +2,8 @@
 id: methods/capacity_assessment/guiding_questions.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/capacity_assessment/guiding_questions.md
 ---
 
  * What is the organization's ability to adopt new technologies or practices?

@@ -1,6 +1,8 @@
 ---
 id: references/risk_modeling.overview.md
 name: 
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/risk_modeling.overview.md
 ---
 
   * *Overview:* ["An Introduction to Threat Modeling"](https://ssd.eff.org/en/module/introduction-threat-modeling) (Surveillance Self-Defense)

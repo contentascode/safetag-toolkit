@@ -2,19 +2,37 @@
 id: methods/operational_security.guide.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/operational_security.guide.md
 ---
-## Operational Security
+## Physical and Operational Security
 
-:[](guides/operational_security/quote.md)
 ### Summary
-
-:[](guides/operational_security/summary.md)
+:[](../methods/operational_security/summary.md)
 ### Purpose
+:[](../methods/operational_security/purpose.md)
+### The Flow Of Information
+![Data Assessment Information Flow](images/info_flows/physical_assessment.svg)
 
-:[](guides/operational_security/purpose.md)
-### General Guidelines
+### Guiding Questions
+:[](../methods/operational_security/guiding_questions.md)
+### Approaches
+:[](../methods/operational_security/approaches.md)
+### Outputs
+:[](../methods/operational_security/output.md)
+### Operational Security
+:[](../methods/operational_security/operational_security.md)
+### Preparation
+:[](../methods/operational_security/preparation.md)
 
-:[](guides/operational_security/guidelines.md)
+
+
 ### Resources
 
+<div class="greybox">
 :[](../references/operational_security.overview.md)
+:[](../references/operational_security.md)
+</div>
+
+
+

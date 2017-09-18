@@ -2,6 +2,8 @@
 id: methods/follow_up.guide.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/follow_up.guide.md
 ---
 ## Follow Up
 
@@ -35,5 +37,5 @@ layout: method.pug
 :[](../references/emergency_resources.md)
 </div>
 
-### Activities
+
 

@@ -1,6 +1,8 @@
 ---
 id: references/emergency_resources.md
-name: [object Object]
+name: Emergency Resources
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/emergency_resources.md
 ---
 
 #### Emergency Resources

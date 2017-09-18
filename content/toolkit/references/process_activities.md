@@ -1,6 +1,8 @@
 ---
 id: references/process_activities.md
-name: [object Object]
+name: Process Assessment Activities
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/process_activities.md
 ---
 
 #### Process Assessment Activities

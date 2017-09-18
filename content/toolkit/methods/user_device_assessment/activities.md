@@ -2,6 +2,8 @@
 id: methods/user_device_assessment/activities.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/user_device_assessment/activities.md
 ---
 <div class="boxtext">
 :[](../../activities/device_checklist/index.md)

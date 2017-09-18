@@ -1,6 +1,8 @@
 ---
 id: references/remote_assessment.overview.md
 name: 
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/remote_assessment.overview.md
 ---
 
   * *Guide:* ["Passive Reconnaissance"](http://www.securitysift.com/passive-reconnaissance/) (Security Sift)

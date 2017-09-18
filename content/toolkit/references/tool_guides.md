@@ -1,6 +1,8 @@
 ---
 id: references/tool_guides.md
 name: 
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/tool_guides.md
 ---
 
 # Auditor Trainee Tool Resource List

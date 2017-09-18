@@ -2,6 +2,8 @@
 id: methods/network_access.guide.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/network_access.guide.md
 ---
 ## Network Access
 
@@ -31,5 +33,5 @@ layout: method.pug
 :[](../references/network_access.md)
 </div>
 
-### Activities
+
 

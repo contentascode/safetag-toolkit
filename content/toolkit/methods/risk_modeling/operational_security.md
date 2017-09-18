@@ -2,6 +2,8 @@
 id: methods/risk_modeling/operational_security.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/risk_modeling/operational_security.md
 ---
 
   * Ensure that any physical notes/drawings are erased and destroyed once digitally recorded.

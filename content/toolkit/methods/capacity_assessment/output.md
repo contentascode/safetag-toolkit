@@ -2,6 +2,8 @@
 id: methods/capacity_assessment/output.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/capacity_assessment/output.md
 ---
  
   * Organization's ability to:

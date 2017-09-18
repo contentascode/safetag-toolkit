@@ -1,6 +1,8 @@
 ---
 id: references/context_research.md
-name: [object Object]
+name: Other Context Analysis Methodologies
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/context_research.md
 ---
 
 #### Other Context Analysis Methodologies

@@ -1,6 +1,8 @@
 ---
 id: references/threat_by_focus_area.md
-name: [object Object]
+name: Threat research by focus area
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/threat_by_focus_area.md
 ---
 
 #### Threat research by focus area

@@ -1,6 +1,8 @@
 ---
 id: references/org_info_gathering.md
-name: [object Object]
+name: Organizational Information Gathering
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/org_info_gathering.md
 ---
 
 #### Organizational Information Gathering

@@ -1,6 +1,8 @@
 ---
 id: references/examining_firewalls.md
-name: [object Object]
+name: Examining Firewalls Across OS
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/examining_firewalls.md
 ---
 #### Examining Firewalls Across OS
 

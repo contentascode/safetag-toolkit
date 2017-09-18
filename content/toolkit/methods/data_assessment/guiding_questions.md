@@ -2,6 +2,8 @@
 id: methods/data_assessment/guiding_questions.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/data_assessment/guiding_questions.md
 ---
 
 * What are the most important data sets to keep available? Are there backups?

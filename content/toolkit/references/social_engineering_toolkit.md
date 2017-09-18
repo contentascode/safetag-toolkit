@@ -1,6 +1,8 @@
 ---
 id: references/social_engineering_toolkit.md
-name: [object Object]
+name: Social Engineering Toolkit
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/social_engineering_toolkit.md
 ---
 
 #### Social Engineering Toolkit

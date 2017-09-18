@@ -1,7 +1,9 @@
 ---
 id: methods/network_access/preparation.md
-name: [object Object]
+name: Baseline Skills
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/network_access/preparation.md
 ---
 
 #### Baseline Skills

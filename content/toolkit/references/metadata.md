@@ -1,6 +1,8 @@
 ---
 id: references/metadata.md
-name: [object Object]
+name: Metadata
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/metadata.md
 ---
 
 #### Metadata

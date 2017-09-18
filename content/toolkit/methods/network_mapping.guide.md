@@ -2,6 +2,8 @@
 id: methods/network_mapping.guide.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/network_mapping.guide.md
 ---
 ## Network Mapping
 
@@ -33,4 +35,4 @@ layout: method.pug
 :[](../references/nmap_scanning.md)
 </div>
 
-### Activities
+

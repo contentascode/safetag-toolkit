@@ -2,6 +2,8 @@
 id: methods/network_access/operational_security.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/network_access/operational_security.md
 ---
 
 *Note:* This section is one of the few sections where the SAFETAG audit does go through attack scenarios, from attempting to "break in" to the wireless network to testing exposed ethernet jacks for connectivity. 

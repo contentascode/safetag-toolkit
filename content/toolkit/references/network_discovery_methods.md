@@ -1,6 +1,8 @@
 ---
 id: references/network_discovery_methods.md
-name: [object Object]
+name: Network Discovery Methods
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/network_discovery_methods.md
 ---
 
 #### Network Discovery Methods

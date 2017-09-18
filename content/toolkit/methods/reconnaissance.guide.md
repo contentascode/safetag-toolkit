@@ -2,6 +2,8 @@
 id: methods/reconnaissance.guide.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/reconnaissance.guide.md
 ---
 ## Reconnaissance
 
@@ -35,5 +37,5 @@ layout: method.pug
 :[](../references/recon-ng.md)
 </div>
 
-### Activities
+
 

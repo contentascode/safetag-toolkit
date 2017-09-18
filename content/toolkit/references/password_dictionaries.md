@@ -1,6 +1,8 @@
 ---
 id: references/password_dictionaries.md
-name: [object Object]
+name: Password Dictionary Creation
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/password_dictionaries.md
 ---
 
 #### Password Dictionary Creation

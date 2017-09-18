@@ -1,6 +1,8 @@
 ---
 id: references/assessment_plan.overview.md
 name: 
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/assessment_plan.overview.md
 ---
 
   * *Standard:* ["Pre-Engagement"](http://www.pentest-standard.org/index.php/Pre-engagement) (The Penetration Testing Execution Standard: Pre-Engagement Guidelines)

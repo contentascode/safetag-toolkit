@@ -1,6 +1,8 @@
 ---
 id: references/web_vuln_scanning.md
-name: [object Object]
+name: Website Vulnerability Scanning
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/web_vuln_scanning.md
 ---
 
 #### Website Vulnerability Scanning

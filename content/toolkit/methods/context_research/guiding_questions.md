@@ -2,6 +2,8 @@
 id: methods/context_research/guiding_questions.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/context_research/guiding_questions.md
 ---
 
 * What infrastructural barriers exist in the region?

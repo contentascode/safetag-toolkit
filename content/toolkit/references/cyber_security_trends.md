@@ -1,6 +1,8 @@
 ---
 id: references/cyber_security_trends.md
-name: [object Object]
+name: General Cyber-security reports and trends
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/cyber_security_trends.md
 ---
 
 #### General Cyber-security reports and trends

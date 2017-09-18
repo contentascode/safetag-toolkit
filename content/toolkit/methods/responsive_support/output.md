@@ -2,6 +2,8 @@
 id: methods/responsive_support/output.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/responsive_support/output.md
 ---
 
 * Organizational capacity to communicate and store data securely

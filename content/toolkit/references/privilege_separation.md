@@ -1,6 +1,8 @@
 ---
 id: references/privilege_separation.md
-name: [object Object]
+name: Privilege Separation Across OS
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/privilege_separation.md
 ---
 
 #### Privilege Separation Across OS

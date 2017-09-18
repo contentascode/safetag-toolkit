@@ -1,6 +1,8 @@
 ---
 id: references/network_env.adids.md
 name: 
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/network_env.adids.md
 ---
 
   *Database:* ["Database of Vulnerable Virtual Machines"](http://www.vulnhub.com) (VulnHub)

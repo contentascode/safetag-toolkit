@@ -1,6 +1,8 @@
 ---
 id: references/device_encryption.md
-name: [object Object]
+name: Device Encryption By OS
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/device_encryption.md
 ---
 
 #### Device Encryption By OS

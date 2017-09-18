@@ -1,6 +1,8 @@
 ---
 id: references/device_vuln_scanning.md
-name: [object Object]
+name: System Vulnerability Scanning
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/device_vuln_scanning.md
 ---
 
 #### System Vulnerability Scanning

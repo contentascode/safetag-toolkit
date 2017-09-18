@@ -1,6 +1,8 @@
 ---
 id: references/threat_assessment.md
-name: [object Object]
+name: Threat Modeling Resources (General)
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/threat_assessment.md
 ---
 
 #### Threat Modeling Resources (General)

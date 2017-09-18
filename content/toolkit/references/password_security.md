@@ -1,6 +1,8 @@
 ---
 id: references/password_security.md
-name: [object Object]
+name: Password Security
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/password_security.md
 ---
 
 #### Password Security

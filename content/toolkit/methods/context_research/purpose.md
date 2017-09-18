@@ -2,6 +2,8 @@
 id: methods/context_research/purpose.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/context_research/purpose.md
 ---
 Analysis of context is the foundation of effective risk management. Both at-risk organizations and auditors will develop assumptions based upon their experience. It is important that an audit is based on information that is current and accurate.
 

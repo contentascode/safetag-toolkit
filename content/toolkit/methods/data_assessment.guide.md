@@ -2,6 +2,8 @@
 id: methods/data_assessment.guide.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/data_assessment.guide.md
 ---
 ## Data Assessment
 
@@ -30,5 +32,5 @@ layout: method.pug
 :[](../references/data_assessment.overview.md)
 </div>
 
-### Activities
+
 

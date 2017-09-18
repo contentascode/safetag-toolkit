@@ -2,6 +2,8 @@
 id: methods/debrief.guide.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/debrief.guide.md
 ---
 ## Debrief
 
@@ -32,4 +34,4 @@ layout: method.pug
 :[](../references/facilitation_prep.md)
 </div>
 
-### Activities
+

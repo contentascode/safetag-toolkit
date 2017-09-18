@@ -1,6 +1,8 @@
 ---
 id: references/resource_lists.md
-name: [object Object]
+name: Resource Lists
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/resource_lists.md
 ---
 
 #### Resource Lists

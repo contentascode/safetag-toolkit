@@ -1,6 +1,8 @@
 ---
 id: references/financial_resources.md
-name: [object Object]
+name: Possible Financial Resources for Host Organizations
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/financial_resources.md
 ---
 
 #### Possible Financial Resources for Host Organizations

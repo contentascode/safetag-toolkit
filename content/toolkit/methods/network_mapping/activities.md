@@ -2,6 +2,8 @@
 id: methods/network_mapping/activities.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/network_mapping/activities.md
 ---
 
 <div class="boxtext">
@@ -10,6 +12,10 @@ layout: method.pug
 
 <div class="boxtext">
 :[](../../activities/traffic_analysis/index.md)
+</div>
+
+<div class="boxtext">
+:[](../../activities/remote_network_device_assessment/index.md)
 </div>
 
 <div class="boxtext">
@@ -24,7 +30,7 @@ Covered in full in  Vulnerability Scanning and Analysis
 
 ### Wireless Range Mapping
 
-Covered in full in Network Discovery
+Covered in full in Physical and Operational Security
 
 :[](../../activities/wireless_range_mapping/approach.md)
 </div>
@@ -33,7 +39,7 @@ Covered in full in Network Discovery
 
 ### Monitor Open Wireless Traffic
 
-Covered in full in Network Discovery
+Covered in full in Physical and Operational Security
 
 :[](../../activities/monitor_open_wireless_traffic/approach.md)
 </div>

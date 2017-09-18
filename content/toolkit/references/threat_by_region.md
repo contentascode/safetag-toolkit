@@ -1,6 +1,8 @@
 ---
 id: references/threat_by_region.md
-name: [object Object]
+name: General Threats by Region
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/threat_by_region.md
 ---
 #### General Threats by Region
 

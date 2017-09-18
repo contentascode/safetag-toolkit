@@ -1,6 +1,8 @@
 ---
 id: references/background_interviews.md
-name: [object Object]
+name: Background Interview Approaches
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/background_interviews.md
 ---
 
 #### Background Interview Approaches

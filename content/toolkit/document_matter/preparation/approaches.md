@@ -2,6 +2,8 @@
 id: document_matter/preparation/approaches.md
 name: 
 layout: page.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/document_matter/preparation/approaches.md
 ---
 
 * **Create an Assessment Plan:** Have a "scoping" meeting that outlines the level of access that an auditor will have, what is off limits, and the process for modifying the scope of the audit when new information arises. [^PETS_legal_considerations]^,^[^PETS_separate_permissions]

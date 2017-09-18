@@ -1,6 +1,8 @@
 ---
 id: references/open_source_intel.md
-name: [object Object]
+name: Open Source Intelligence (General)
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/open_source_intel.md
 ---
 
 #### Open Source Intelligence (General)

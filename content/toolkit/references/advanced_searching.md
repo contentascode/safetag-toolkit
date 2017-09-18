@@ -1,6 +1,8 @@
 ---
 id: references/advanced_searching.md
-name: [object Object]
+name: Searching
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/advanced_searching.md
 ---
 
 #### Searching

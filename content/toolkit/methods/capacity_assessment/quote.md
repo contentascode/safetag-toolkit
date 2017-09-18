@@ -2,6 +2,8 @@
 id: methods/capacity_assessment/quote.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/capacity_assessment/quote.md
 ---
 "*In human rights organisations where the HRDs are at risk, an organisational security plan will help to protect the workers and allow them to do their work more effectively. If your organisation acknowledges and plans for dealing with the risks, the staff and/or members will feel more supported and have increased allegiance to the organisation and its important work.*" - _Workbook on Security: Practical Steps for Human Rights Defenders at Risk_ [^workbook_on_security]
 

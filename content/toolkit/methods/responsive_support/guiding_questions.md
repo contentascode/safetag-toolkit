@@ -2,6 +2,8 @@
 id: methods/responsive_support/guiding_questions.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/responsive_support/guiding_questions.md
 ---
 
 * Are there any critical vulnerabilities or remediation activities that the organization needs a deeper understanding to give proper weight to in the report?

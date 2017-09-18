@@ -1,6 +1,8 @@
 ---
 id: references/vuln_prioritization.md
 name: 
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/vuln_prioritization.md
 ---
 
   * *Guide:* ["Severity Assessment: Threats, Events, Vulnerabilities, Risks"](https://www.symantec.com/content/en/us/about/media/securityintelligence/SSR-Severity-Assesment.pdf) (symantec)

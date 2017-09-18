@@ -2,6 +2,8 @@
 id: methods/follow_up/approaches.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/follow_up/approaches.md
 ---
 
 * **Staff Feedback Survey:** Receive feedback from the staff on the execution of the audit.

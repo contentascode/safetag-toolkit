@@ -1,6 +1,8 @@
 ---
 id: references/pastebin_searching.md
-name: [object Object]
+name: Pastebin Searching
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/pastebin_searching.md
 ---
 
 #### Pastebin Searching

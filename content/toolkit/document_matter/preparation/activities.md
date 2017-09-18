@@ -2,6 +2,8 @@
 id: document_matter/preparation/activities.md
 name: 
 layout: page.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/document_matter/preparation/activities.md
 ---
 
 <div class="boxtext">

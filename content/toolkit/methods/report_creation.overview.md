@@ -2,6 +2,8 @@
 id: methods/report_creation.overview.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/report_creation.overview.md
 ---
 ## Report Creation
 

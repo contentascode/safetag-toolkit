@@ -2,6 +2,8 @@
 id: document_matter/preparation/guiding_questions.md
 name: 
 layout: page.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/document_matter/preparation/guiding_questions.md
 ---
 
 * Does the organization have existing digital security practice or attempted to implement them in the past?

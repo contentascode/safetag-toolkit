@@ -1,6 +1,8 @@
 ---
 id: references/vuln_databases.md
-name: [object Object]
+name: Vulnerability Databases
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/vuln_databases.md
 ---
 
 #### Vulnerability Databases

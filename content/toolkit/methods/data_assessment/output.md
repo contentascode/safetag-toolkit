@@ -2,6 +2,8 @@
 id: methods/data_assessment/output.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/data_assessment/output.md
 ---
 
   * A map of the staff's understanding of critical organizational data:

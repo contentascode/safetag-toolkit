@@ -1,6 +1,8 @@
 ---
 id: references/financial_barriers.md
-name: [object Object]
+name: Addressing Host Organization Financial Barriers to Change
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/financial_barriers.md
 ---
 
 #### Addressing Host Organization Financial Barriers to Change

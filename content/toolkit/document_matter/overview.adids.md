@@ -1,7 +1,9 @@
 ---
 id: document_matter/overview.adids.md
-name: [object Object]
+name: Resources:
 layout: page.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/document_matter/overview.adids.md
 ---
 This SAFETAG curricula uses the ADIDS approach to adult learning. 
 

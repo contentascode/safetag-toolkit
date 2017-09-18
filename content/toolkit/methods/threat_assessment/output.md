@@ -2,6 +2,8 @@
 id: methods/threat_assessment/output.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/threat_assessment/output.md
 ---
 
   * A host driven threat-matrix including the following:

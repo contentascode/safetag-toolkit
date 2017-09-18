@@ -1,7 +1,9 @@
 ---
 id: document_matter/risk_assessment.md
-name: [object Object]
+name: Activities
 layout: page.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/document_matter/risk_assessment.md
 ---
 ## Risk Assessment & Analysis
 

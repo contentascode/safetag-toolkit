@@ -2,6 +2,8 @@
 id: document_matter/preparation/output.md
 name: 
 layout: page.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/document_matter/preparation/output.md
 ---
  * Any Visas or paperwork needed, plus travel arragements (tickets, hotels) for auditor travel.
  * A custom password dictionary. [^password_dictionary_resources] 

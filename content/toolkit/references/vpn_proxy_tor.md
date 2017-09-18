@@ -1,6 +1,8 @@
 ---
 id: references/vpn_proxy_tor.md
-name: [object Object]
+name: VPNs, Proxies, and Tor 
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/vpn_proxy_tor.md
 ---
 
 #### VPNs, Proxies, and Tor 

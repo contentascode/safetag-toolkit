@@ -1,6 +1,8 @@
 ---
 id: references/device_assessment.overview.md
 name: 
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/device_assessment.overview.md
 ---
 
   * *Guidelines:* ["Guidelines on Firewalls and Firewall Policy"](http://csrc.nist.gov/publications/nistpubs/800-41-Rev1/sp800-41-rev1.pdf) (NIST 800-41)

@@ -1,7 +1,9 @@
 ---
 id: document_matter/how_to_read_this_guide.handbook.md
-name: [object Object]
+name: Summary
 layout: page.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/document_matter/how_to_read_this_guide.handbook.md
 ---
 ## How to Read This Guide
 

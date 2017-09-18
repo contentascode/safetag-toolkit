@@ -1,6 +1,8 @@
 ---
 id: references/nmap_scanning.md
-name: [object Object]
+name: Nmap Scanning {#nmap-scanning}
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/nmap_scanning.md
 ---
 
 #### Nmap Scanning {#nmap-scanning}

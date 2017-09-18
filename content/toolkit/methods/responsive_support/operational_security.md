@@ -2,6 +2,8 @@
 id: methods/responsive_support/operational_security.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/responsive_support/operational_security.md
 ---
 
 * If you are providing software tools, make sure to check file signatures (and explain the process) - do not be the weak link or introduce malware into the organization!

@@ -1,6 +1,8 @@
 ---
 id: references/wireless_access_guides.md
-name: [object Object]
+name: Wireless Access Guides &amp; Resources
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/wireless_access_guides.md
 ---
 
 #### Wireless Access Guides & Resources

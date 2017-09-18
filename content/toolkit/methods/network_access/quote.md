@@ -2,6 +2,8 @@
 id: methods/network_access/quote.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/network_access/quote.md
 ---
 "*Most people demonstrate a cognitive response to digital threat, but there is very little emotional reaction. We know that these things are dangerous, but we don’t feel threatened. Security trainers need to help people feel the danger, not merely think about it...*
 

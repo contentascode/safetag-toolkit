@@ -2,6 +2,8 @@
 id: methods/reconnaissance.overview.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/reconnaissance.overview.md
 ---
 ## Reconnaissance
 

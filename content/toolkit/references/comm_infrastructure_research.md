@@ -1,6 +1,8 @@
 ---
 id: references/comm_infrastructure_research.md
-name: [object Object]
+name: Communications infrastructure research
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/comm_infrastructure_research.md
 ---
 
 #### Communications infrastructure research

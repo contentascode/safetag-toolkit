@@ -1,6 +1,8 @@
 ---
 id: references/report_supporting_references.md
-name: [object Object]
+name: Supporting References for Reports
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/report_supporting_references.md
 ---
 
 #### Supporting References for Reports

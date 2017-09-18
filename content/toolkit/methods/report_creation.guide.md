@@ -2,6 +2,8 @@
 id: methods/report_creation.guide.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/report_creation.guide.md
 ---
 ## Report Creation
 
@@ -38,4 +40,4 @@ layout: method.pug
 :[](reference/financial_barriers.md)
 </div>
 
-### Activities
+

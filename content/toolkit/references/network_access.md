@@ -1,6 +1,8 @@
 ---
 id: references/network_access.md
 name: 
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/network_access.md
 ---
 
 !INCLUDE "wireless_access_guides.md"

@@ -2,6 +2,8 @@
 id: methods/risk_modeling.guide.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/risk_modeling.guide.md
 ---
 ## Process Mapping and Risk Modeling
 
@@ -36,6 +38,6 @@ layout: method.pug
 :[](../references/alternative_risk_assessment_activities.md)
 </div>
 
-### Activities
+
 
 

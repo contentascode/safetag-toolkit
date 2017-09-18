@@ -1,6 +1,8 @@
 ---
 id: references/threat_activities.md
-name: [object Object]
+name: Threat Assessment Activities
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/threat_activities.md
 ---
 
 #### Threat Assessment Activities

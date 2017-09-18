@@ -2,6 +2,8 @@
 id: methods/preparation.guide.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/preparation.guide.md
 ---
 
 ## Preparation
@@ -33,7 +35,7 @@ layout: method.pug
 :[](../references/data_security_standards.md)
 </div>
 
-### Activities
+
 
 
 

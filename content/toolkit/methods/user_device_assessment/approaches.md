@@ -2,6 +2,8 @@
 id: methods/user_device_assessment/approaches.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/user_device_assessment/approaches.md
 ---
 
 * **Conduct a Hands on  Device Interview/Audit:** Inspect and record information on user devices (work & personal) for security concerns (patch levels, user privileges, drive encryption, ports/services running, anti-virus capabilities)

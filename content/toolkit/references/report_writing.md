@@ -1,6 +1,8 @@
 ---
 id: references/report_writing.md
-name: [object Object]
+name: Report Writing
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/report_writing.md
 ---
 
 #### Report Writing

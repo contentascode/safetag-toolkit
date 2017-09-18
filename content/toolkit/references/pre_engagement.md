@@ -1,6 +1,8 @@
 ---
 id: references/pre_engagement.md
-name: [object Object]
+name: Other Pre-Engagement Resources
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/pre_engagement.md
 ---
 
 #### Other Pre-Engagement Resources

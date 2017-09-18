@@ -1,6 +1,8 @@
 ---
 id: references/threat_by_method.md
-name: [object Object]
+name: Threat research by method
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/references/threat_by_method.md
 ---
 
 #### Threat research by method

@@ -2,6 +2,8 @@
 id: methods/threat_assessment.overview.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/threat_assessment.overview.md
 ---
 ## Threat Assessment
 

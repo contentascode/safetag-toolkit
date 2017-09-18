@@ -2,6 +2,8 @@
 id: methods/context_research/output.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/context_research/output.md
 ---
 
   * A summary of the most likely threats that the host and auditor may face:

@@ -2,6 +2,8 @@
 id: methods/follow_up/summary.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/follow_up/summary.md
 ---
 This component allows an auditor to explain and get feedback on their report as well as evaluate the success of the process over time through a continued relationship with the host.
 

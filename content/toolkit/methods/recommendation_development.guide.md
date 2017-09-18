@@ -1,7 +1,9 @@
 ---
 id: methods/recommendation_development.guide.md
-name: [object Object]
+name: Resource Links 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/recommendation_development.guide.md
 ---
 ## Recommendation Development and Resource Identification
 
@@ -42,5 +44,5 @@ layout: method.pug
 :[](../references/identifying_recommendations.md)
 </div>
 
-### Activities
+
 

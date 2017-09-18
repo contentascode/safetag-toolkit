@@ -2,6 +2,8 @@
 id: methods/network_access/approaches.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/network_access/approaches.md
 ---
 
   * Determine the security of the wireless access point (WAP).

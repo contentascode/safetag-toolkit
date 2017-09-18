@@ -2,6 +2,8 @@
 id: methods/network_mapping/guiding_questions.md
 name: 
 layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/network_mapping/guiding_questions.md
 ---
 
 * What operating systems, and services being hosted or used by an organization? Are any hosts running unusual, custom, or outdated operating systems and services?
