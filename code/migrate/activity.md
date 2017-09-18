@@ -45,3 +45,5 @@ description: {{description}}
 
 {{{recommendations}}}
 {{/if}}
+
+{{#if footnotes}}{{{footnotes}}}{{/if}}
