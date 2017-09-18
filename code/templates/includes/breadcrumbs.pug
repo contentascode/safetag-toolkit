@@ -1,16 +1,16 @@
-- var crumbs = path.split('/')
+- var crumbs = paths.href=="/index.md"?[]:paths.href.split('/').slice(1)
 - var crumbs_path = ""
 - var capitalize = function(text){ return text.toLowerCase().replace( /\b\w/g, function (m) { return m.toUpperCase(); }) };
 .crumb.u-pull-left
   a(href=site.baseurl) Home
   |  
   each crumb,i in crumbs 
-    - var crumb_display = crumb.replace('-',' ').replace('.html', '')
+    - var crumb_display = crumb.replace('-',' ').replace('_',' ').replace('.md', '').replace('.guide',' ').replace('.overview',' ')
     - crumbs_path = crumbs_path + "/" + crumb
     if i==crumbs.length -1 
       | / 
       = capitalize(crumb_display)
     else
       | / 
-      a(href=site.baseurl+crumbs_path+'/')= capitalize(crumb_display)
+      = capitalize(crumb_display)
       |   
