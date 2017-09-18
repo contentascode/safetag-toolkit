@@ -1,6 +1,6 @@
 {
   "name": "safetag-toolkit",
-  "version": "0.2.5",
+  "version": "0.2.4",
   "description": "SAFETAG Toolkit - Audit Activity Planner",
   "main": "content.yml",
   "scripts": {
@@ -24,6 +24,7 @@
     "metalsmith-matters": "^1.2.0",
     "metalsmith-migrate-safetag": "^0.1.2",
     "metalsmith-packages": "^0.1.0",
+    "metalsmith-pandoc": "^0.2.3",
     "metalsmith-search-meta": "github:iilab/metalsmith-search-meta",
     "metalsmith-serve": "0.0.7",
     "metalsmith-transclude": "^0.3.4",
