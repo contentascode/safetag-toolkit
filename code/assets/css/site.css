@@ -626,3 +626,13 @@ button:focus {
   background-color: lightgrey;
   padding: 15px;
 }
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+div#results {
+  margin-right: -15px;
+  margin-left: -15px;
+}
