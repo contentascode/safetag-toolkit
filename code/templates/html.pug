@@ -14,6 +14,10 @@ html
   include includes/navbar
   body(class=header=="hero"?header:"has-docked-nav",data-baseurl=site.baseurl)
     .container
+      .row.links
+        small
+          include includes/breadcrumbs
+          include includes/collaboration
       block main
         != content
   include includes/foot
