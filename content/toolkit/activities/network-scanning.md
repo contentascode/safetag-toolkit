@@ -53,6 +53,8 @@ While office networks are often treated as "trusted" spaces, measures should be 
 A policy should be in place for connecting personal devices to work networks, as well as work devices to non-work networks.
 
 
+
+
 <!-- Notes -->
 
 [^external_funding_and_reporting]:Usually when working with an external funder an engagement report, free of sensitive data about the host organization, will be created for submission the funder. The contents of this report should be clearly outlined and agreed to during the assessment plan stage.

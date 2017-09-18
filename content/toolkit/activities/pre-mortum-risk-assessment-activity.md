@@ -27,11 +27,13 @@ The pre-mortum strategy was devised to take participants out of a perspective of
 
 ## Walkthrough
 
-!INCLUDE "pre-mortum_sample_process.md"
+:[](pre-mortum_sample_process.md)
 
 ## Recommendation
 
 This activity can lead to feelings of hopelessness as well as stir up direct fears or challenges that the staff face. It is important to remind the staff that any risk can be mitigated, and indeed it is the goal of an audit to identify the highest priority ones based on actual likelihood and provide guidance on mitigation.
+
+
 
 
 <!-- Notes -->

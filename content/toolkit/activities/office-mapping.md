@@ -79,6 +79,8 @@ If doing this activity remotely and/or in advance of an audit, it may be useful 
 See recommendation section in the Guided Tour activity.
 
 
+
+
 <!-- Notes -->
 
 [^external_funding_and_reporting]:Usually when working with an external funder an engagement report, free of sensitive data about the host organization, will be created for submission the funder. The contents of this report should be clearly outlined and agreed to during the assessment plan stage.

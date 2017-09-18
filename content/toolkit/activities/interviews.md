@@ -3,7 +3,7 @@ id: interviews
 name: Interviews
 description: The auditor conducts interviews with various staff members to gather information on the organizations risks and...
 origin: https://github.com/SAFETAG/SAFETAG
-origin_path: master/en/exercises/interviews/summary.md
+origin_path: master/en/exercises/interviews/operational_security.md
 ---
 # Interviews
 
@@ -18,6 +18,8 @@ Q&A sessions are unabashedly _white box_ aspects of a security assessment, and y
 ## Considerations
 
   * If the auditor or organization believes that there is a good chance of surveillance on the channel you are communicating over, do the rest of the interview on a secured channel or in person where possible, though some information-gathering is critical to do before planning the audit. Inability to do so contributes towards a no-go situation.
+
+
 
 
 

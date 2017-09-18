@@ -3,7 +3,7 @@ id: assessment-plan
 name: Assessment Plan
 description: This component allows an auditor and host to come to an understanding of the level of access that an auditor will have,...
 origin: https://github.com/SAFETAG/SAFETAG
-origin_path: master/en/exercises/assessment_plan/summary.md
+origin_path: master/en/exercises/assessment_plan/reporting.md
 ---
 # Assessment Plan
 
@@ -35,6 +35,8 @@ A core tenet of SAFETAG is building agency in organizations to improve their dig
 
 
 See the Appendix for a DRAFT combined engagement and confidentiality agreement.
+
+
 
 
 

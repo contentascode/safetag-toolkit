@@ -31,6 +31,8 @@ While nominally "inside the firewall" and protected from remote attacks, leaving
 A common fear is forgetting the new router password.  A password management system is an obvious solution, but if the router is in a secure location, even a stickie note would be better than the default password.
 
 
+
+
 <!-- Notes -->
 
 [^external_funding_and_reporting]:Usually when working with an external funder an engagement report, free of sensitive data about the host organization, will be created for submission the funder. The contents of this report should be clearly outlined and agreed to during the assessment plan stage.

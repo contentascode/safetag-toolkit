@@ -3,7 +3,7 @@ id: wireless-range-mapping
 name: Wireless Range Mapping
 description: This component allows the auditor to show the &quot;visibility&quot; of an organization&#x27;s wireless network to determine how far...
 origin: https://github.com/SAFETAG/SAFETAG
-origin_path: master/en/exercises/wireless_range_mapping/recommendations.md
+origin_path: master/en/exercises/wireless_range_mapping/summary.md
 ---
 # Wireless Range Mapping
 
@@ -39,6 +39,8 @@ watch  "nmcli -f "CHAN,BARS,SIGNAL,SSID" d wifi list ifname wlx10feed21ae1d  | s
 Depending on office layout, moving the wireless access point may help to reduce how far the network is transmitted outside of the office space, and changing devices which do not move to better enable this without loss of functionality.
 
 See also Monitoring Open Wireless Traffic recommendations and Network Access security recommendations.
+
+
 
 
 <!-- Notes -->

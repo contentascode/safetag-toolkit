@@ -27,7 +27,9 @@ This is natural, but it is important to keep track of where your organization's 
 
 ## Walkthrough
 
-!INCLUDE "sensitive_data_activity.md"
+:[](sensitive_data_activity.md)
+
+
 
 
 

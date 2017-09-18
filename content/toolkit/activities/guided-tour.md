@@ -58,6 +58,8 @@ _De-activate unused network ports_
 Hard-wired network ports tend to connect directly into the most trusted parts of a network.  De-activating any that are in public areas of the office (front desk, conference rooms, break rooms), as well as any that are not needed is recommended.
 
 
+
+
 <!-- Notes -->
 
 [^external_funding_and_reporting]:Usually when working with an external funder an engagement report, free of sensitive data about the host organization, will be created for submission the funder. The contents of this report should be clearly outlined and agreed to during the assessment plan stage.

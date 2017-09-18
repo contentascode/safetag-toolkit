@@ -66,6 +66,8 @@ In most cases, the DNS Zone Transfer policies will be set by your domain name pr
 If your organization maintains its own DNS servers, the administrator of those servers should check the zone transfer policies to prevent anonymous transfers.
 
 
+
+
 <!-- Notes -->
 
 [^external_funding_and_reporting]:Usually when working with an external funder an engagement report, free of sensitive data about the host organization, will be created for submission the funder. The contents of this report should be clearly outlined and agreed to during the assessment plan stage.

@@ -3,7 +3,7 @@ id: device-checklist
 name: Device and Software Version Assessment
 description: The auditor checks staff devices for updated systems and software, anti-virus and other security capabilities, and...
 origin: https://github.com/SAFETAG/SAFETAG
-origin_path: master/en/exercises/device_checklist/recommendations.md
+origin_path: master/en/exercises/device_checklist/summary.md
 ---
 # Device and Software Version Assessment
 
@@ -63,6 +63,8 @@ Most AV tools automatically update, but this can sometimes get out of sync, or i
 ##### Encrypt Hard Drives
 
 ##### Activate a personal firewall
+
+
 
 
 <!-- Notes -->

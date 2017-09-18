@@ -61,6 +61,8 @@ Some of these services will be revealed by BuiltWith, but checking the HTTP Resp
 Guide for NGOs about DDoS: [Digital First Aid Kit](https://rarenet.github.io/DFAK/en/DDoSMitigation/)
 
 
+
+
 <!-- Notes -->
 
 [^external_funding_and_reporting]:Usually when working with an external funder an engagement report, free of sensitive data about the host organization, will be created for submission the funder. The contents of this report should be clearly outlined and agreed to during the assessment plan stage.

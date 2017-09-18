@@ -36,6 +36,8 @@ If an organization updates their website via FTP, it is worth noting that FTP is
 When switching to SSL/Secure FTP after having used the plain versions, webmasters should also update all administrative passwords, and watch to make sure that no step along the way (hosting provider management/panel, file upload, CMS editing) goes over “clear” channels.
 
 
+
+
 <!-- Notes -->
 
 [^external_funding_and_reporting]:Usually when working with an external funder an engagement report, free of sensitive data about the host organization, will be created for submission the funder. The contents of this report should be clearly outlined and agreed to during the assessment plan stage.

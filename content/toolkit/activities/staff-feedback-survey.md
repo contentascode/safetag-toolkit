@@ -27,7 +27,9 @@ This exercise provides a simple survey you can implement in a variety of setting
 
 #### Sample Survey Questions
 
-!INCLUDE "survey.md"
+:[](survey.md)
+
+
 
 
 

@@ -24,7 +24,7 @@
     "metalsmith-markdown-taxonomy": "^0.0.2",
     "metalsmith-matters": "^1.2.0",
     "metalsmith-metacopy": "^0.2.0",
-    "metalsmith-migrate-safetag": "^0.1.2",
+    "metalsmith-migrate-safetag": "^0.1.7",
     "metalsmith-packages": "^0.1.0",
     "metalsmith-pandoc": "^0.2.3",
     "metalsmith-paths": "^3.0.1",

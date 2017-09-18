@@ -68,6 +68,8 @@ EtterCap provides a powerful frontend to managing this process with multiple pot
 Only use services with ["SSL" encryption](https://securityinabox.org/en/guide/secure-communication) ("HTTPS"), and consider adding [HTTPS Everywhere](https://www.eff.org/https-everywhere) to browsers. This does not itself guarantee protection from all attacks, but it is a good first-step in protecting information (such as passwords or email) in transit from your computer to the service provider.
 
 
+
+
 <!-- Notes -->
 
 [^external_funding_and_reporting]:Usually when working with an external funder an engagement report, free of sensitive data about the host organization, will be created for submission the funder. The contents of this report should be clearly outlined and agreed to during the assessment plan stage.

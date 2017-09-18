@@ -3,7 +3,7 @@ id: process-mapping-activity
 name: Process Mapping
 description: This activity helps to identify the processes that allow the organization to function (publishing, payment,...
 origin: https://github.com/SAFETAG/SAFETAG
-origin_path: master/en/exercises/process_mapping_activity/summary.md
+origin_path: master/en/exercises/process_mapping_activity/recommendations.md
 ---
 # Process Mapping
 
@@ -29,11 +29,13 @@ Participants are asked to "brain-storm" a list of all the processes that are cri
 
 ## Walkthrough
 
-!INCLUDE "process_activity.md"
+:[](process_activity.md)
 
 ## Recommendation
 
 This activity can lead to feelings of hopelessness; it is important to remind the staff that any risk can be mitigated, and indeed it is the goal of an audit to identify the highest priority ones based on actual likelihood and provide guidance on mitigation.
+
+
 
 
 <!-- Notes -->
