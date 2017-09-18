@@ -7,10 +7,10 @@
   * :[Incident Preparation](activities/incident-preparation)
   * :[Incident Preparation](activities/travel-checklist)
   * :[Password Dictionary Creation](activities/password-dictionary-creation)
-  * :[Audit Timeline Planning](activities/audit-timeline-planning)
 
 ## Correspond
 
+  * :[Audit Timeline Planning](activities/assessment-plan)
   * :[Regional Context Research](activities/regional-context-research)
 
 ## Desk Research
