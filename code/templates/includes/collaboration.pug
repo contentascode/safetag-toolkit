@@ -1,8 +1,8 @@
 - var source_base = site.code.base+(subrepo?subrepo:site.code.repo)
-- var source_path = site.code.current_branch+(subrepo?source.replace("/"+subrepo,""):source)
+- var source_path = site.code.current_branch+'/content/'+(subrepo?source.replace("/"+subrepo,""):site.code.package?site.code.package+source:source)
 .utilities.u-pull-right
-    a(href=source_base+"/edit/"+source_path) Edit
+    a(href=origin?origin+"/edit/"+origin_path:source_base+"/edit/"+source_path) Edit
     |  - 
-    a(href=source_base+"/commits/"+source_path) Changes
+    a(href=origin?origin+"/commits/"+origin_path:source_base+"/commits/"+source_path) Changes
     |  - 
-    a(href=source_base+"/tree/"+source_path) Source
+    a(href=origin?origin+"/blob/"+origin_path:source_base+"/blob/"+source_path) Source
