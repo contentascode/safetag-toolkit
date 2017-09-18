@@ -210,7 +210,7 @@ $(document).ready(function() {
     })
     .then(function() {
       // Check if we are on a method page and grab its id.
-      var method = keyify(window.location.href.replace(/^.*methods\/(.*)\.guide.html/, '$1'));
+      var method = keyify(window.location.href.replace(/^.*methods\/(.*)\.guide/, '$1'));
       var isHome = /@safetag\/toolkit\/?#?$/.test(window.location.href);
       // Display Planning button in navbar-link (but not in methods)
       if (isHome) {

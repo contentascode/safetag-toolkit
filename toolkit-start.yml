@@ -33,9 +33,13 @@ plugins:
   # - metalsmith-packages:
   #     key: packages
 
+  # Ignore backup folders created by safetag link command.
+  - metalsmith-ignore:
+    - "*.orig/*"
+
   # Add tags to activities based on their location in the taxonomy page ASTs.
   - metalsmith-markdown-taxonomy:
-      pattern: 'browse/categories/*.md'
+      pattern: 'categories/*.md'
 
   # Transclude :[]() with hercule
   - metalsmith-transclude-transform:
@@ -59,7 +63,7 @@ plugins:
 
   # Load activities as a collection
   - metalsmith-dynamic-collections:
-      activities: activities/**/index.md
+      activities: activities/*.md
 
 
   # Copy client side assets
@@ -104,12 +108,12 @@ plugins:
 
   # Add metadata
   - metalsmith-filemetadata:
-    - pattern: "activities/*/*.md"
+    - pattern: "activities/*.md"
       preserve: 'true'
       metadata:
         content_type: activity
         lunr: true
-    - pattern: "activities/*/tasks/*.md"
+    - pattern: "activities/*/*.md"
       preserve: 'true'
       metadata:
         content_type: task
