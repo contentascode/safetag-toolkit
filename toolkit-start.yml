@@ -6,6 +6,11 @@ metadata:
   site:
     title: SAFETAG
     baseurl: '/@safetag/toolkit'
+    code:
+      current_branch: master
+      base: 'https://github.com/'
+      repo: 'contentascode/safetag-toolkit'
+      package: 'toolkit'
   navigation:
     methods:
       preparation: Preparation
@@ -109,6 +114,17 @@ plugins:
       metadata:
         content_type: task
 
+  # Add path information
+  - metalsmith-paths:
+      property: paths
+      directoryIndex: index.html
+
+  # Copy source markdown file link
+  - metalsmith-metacopy:
+      file:
+      - src: paths.href
+        dest: source
+
   # DEBUG:
   # - metalsmith-debug: {}
   # - metalsmith-writemetadata:
@@ -155,6 +171,17 @@ plugins:
 
   # - metalsmith-markdown:
   #     gfm: true
+
+
+  - metalsmith-permalinks:
+      relative: true
+      linksets:
+      - match:
+          collection: posts
+        pattern: blog/:datebasename
+      - match:
+          collection: pages
+        pattern: ":dir/:title"
 
   - metalsmith-debug: {}
 
