@@ -2,6 +2,8 @@
 id: {{id}}
 name: {{title}}
 description: {{description}}
+{{#if origin}}origin: {{origin}}{{/if}}
+{{#if origin_path}}origin_path: {{origin_path}}{{/if}}
 {{#each tag}}
 {{key}}: {{value}}
 {{/each}}

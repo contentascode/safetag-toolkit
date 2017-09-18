@@ -5,6 +5,8 @@ plugins:
 
   # Import folder structure
   - metalsmith-migrate-safetag:
+      origin: https://github.com/SAFETAG/SAFETAG
+      origin_path_prefix: master/en/
       activities: true
       methods: true
       references: true
