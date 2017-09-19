@@ -24,3 +24,4 @@ origin_path: master/en/methods/context_research.overview.md
 
 * RESEARCH: Search for background information that will help you better understand potential threats and overall context for the organization and the audit process.
 
+:[](../references/footnotes.md)

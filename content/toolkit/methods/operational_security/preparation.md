@@ -6,3 +6,4 @@ origin: https://github.com/SAFETAG/SAFETAG
 origin_path: master/en/methods/operational_security/preparation.md
 ---
 
+

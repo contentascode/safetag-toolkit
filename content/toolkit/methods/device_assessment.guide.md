@@ -49,3 +49,4 @@ origin_path: master/en/methods/device_assessment.guide.md
 
 :[](guides/device_assessment/examples/device_checklist/index.md)
 
+:[](../references/footnotes.md)

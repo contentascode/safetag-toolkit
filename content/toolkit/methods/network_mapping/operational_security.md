@@ -12,3 +12,4 @@ origin_path: master/en/methods/network_mapping/operational_security.md
   * Study outputs for any obviously embarrassing personal information (especially traffic sniffing or personal devices connected to the network) before sharing.
   * Treat captured network traffic with the utmost security and empathetic responsibility. They may contain very personal data, passwords, and more. These should not be shared except in specific, intentional samples with anyone, including the organization itself.
 
+

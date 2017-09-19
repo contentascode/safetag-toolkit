@@ -89,4 +89,4 @@ msf exploit(java_jre17_exec) >
 Figure 1: Attacker in control of the victim’s computer through a remote command shell
 
 
-
+:[](../references/footnotes.md)

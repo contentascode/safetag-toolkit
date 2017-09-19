@@ -33,3 +33,4 @@ Terminology used in this framework
     Item/sub-item: Used interchangeably in this context. Refers to the subsections of a note, under a particular “title heading” (“0.1. Terms,” above, is an example of a title heading). This content typically consists of one or more blocks of text, and may include embedded images. Special title headings can be used to flag content for various purposes, such as inclusion in a generated report.
 
 
+

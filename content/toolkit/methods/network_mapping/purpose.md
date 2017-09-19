@@ -9,3 +9,4 @@ Mapping an organization's network exposes the multitude of devices connected to 
 
 This process also reveals outside service usage (such as google services, dropbox, or others) which serve -- intentionally or not -- as shadow infrastructure for the organization. In combination with beacon research from the network discovery process, many devices can be associated with users. 
 
+

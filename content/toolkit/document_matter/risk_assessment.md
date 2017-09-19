@@ -92,3 +92,4 @@ Threat analysis is the process of identifying possible attackers and gathering b
 * Does the threat actor currently have the desire to conduct an attack against this type of organization?
 * Is the organization a priority threat target for the threat actor? 
 
+

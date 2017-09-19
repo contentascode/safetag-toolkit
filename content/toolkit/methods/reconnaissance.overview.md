@@ -24,3 +24,4 @@ origin_path: master/en/methods/reconnaissance.overview.md
 
 :[](../methods/reconnaissance/approaches.md)
 
+:[](../references/footnotes.md)

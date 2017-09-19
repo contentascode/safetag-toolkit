@@ -35,3 +35,4 @@ origin_path: master/en/methods/network_access.guide.md
 
 
 
+:[](../references/footnotes.md)

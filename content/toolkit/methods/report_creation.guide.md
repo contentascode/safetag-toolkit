@@ -41,3 +41,4 @@ origin_path: master/en/methods/report_creation.guide.md
 </div>
 
 
+:[](../references/footnotes.md)

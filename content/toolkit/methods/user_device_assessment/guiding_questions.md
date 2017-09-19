@@ -10,3 +10,4 @@ origin_path: master/en/methods/user_device_assessment/guiding_questions.md
 * What are the organizational processes that staff take part in and the tools and communication channels that are used in those process'?
 * What are the existing in/formal security practices that the participants use to address risks.
 
+

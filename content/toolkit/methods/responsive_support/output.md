@@ -10,3 +10,4 @@ origin_path: master/en/methods/responsive_support/output.md
 * Enhanced organizational capacity
 * Mitigation of critical risks.
 
+

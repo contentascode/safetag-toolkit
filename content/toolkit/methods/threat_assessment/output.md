@@ -13,3 +13,4 @@ origin_path: master/en/methods/threat_assessment/output.md
   * Latest general cyber-security threats
   * Identify existing in/formal security practices that the participants use to address risks.
 
+

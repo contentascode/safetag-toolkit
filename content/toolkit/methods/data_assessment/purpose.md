@@ -10,3 +10,4 @@ Sensitive files are often stored across multiple devices with different levels o
 An adversary who obtains a laptop, workstation, or backup drive will be able to read or modify sensitive information on the device, even if that staff member has set a strong account password. This applies to threats involving loss, theft, and confiscation, but also to "checkpoint" scenarios in which they may only have access for a few minutes. Furthermore, in the event of a burglary or office raid, an adversary could obtain all sensitive information on the organization's devices, possibly even undetected.
 
 
+

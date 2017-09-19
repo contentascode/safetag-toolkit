@@ -13,3 +13,4 @@ origin_path: master/en/document_matter/preparation/approaches.md
 * **Prepare Systems:** Update and test your systems, A/V and audit tools. [^latest_version_of_tools], prepare storage devices and systems to reflect the required operational security, and ensure you have power supply adapters, cables and relevant adapters, usb drives, external wireless cards and any other equipment needed for testing. [^travel_kit_appendix]^, ^[^NIST_SP_800-115-travel_prep]
 
 
+

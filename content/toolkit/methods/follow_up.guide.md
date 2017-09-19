@@ -39,3 +39,4 @@ origin_path: master/en/methods/follow_up.guide.md
 
 
 
+:[](../references/footnotes.md)

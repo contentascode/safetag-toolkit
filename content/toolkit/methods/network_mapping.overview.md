@@ -23,3 +23,4 @@ origin_path: master/en/methods/network_mapping.overview.md
 ### Approaches
 
 :[](../methods/network_mapping/approaches.md)
+:[](../references/footnotes.md)

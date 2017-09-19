@@ -17,3 +17,4 @@ origin_path: master/en/methods/training.overview.md
 ### Approach
 
 :[](guides/training/approach.md)
+:[](../references/footnotes.md)

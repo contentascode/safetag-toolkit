@@ -32,3 +32,4 @@ Covered in full in Physical Assessment:
 <div class="boxtext">
 :[](../../activities/check_user_browser_vulns/index.md)
 </div>
+

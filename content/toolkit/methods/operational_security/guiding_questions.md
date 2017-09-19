@@ -15,3 +15,4 @@ origin_path: master/en/methods/operational_security/guiding_questions.md
 * Do staff travel with organizational information?
 * How are backups managed? Where are they stored?
 
+

@@ -10,3 +10,4 @@ origin_path: master/en/document_matter/preparation/operational_security.md
   * Determine the correct visa process for your trip.
   * Carefully consider packing needs and explanations 
 
+

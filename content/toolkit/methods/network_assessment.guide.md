@@ -20,3 +20,4 @@ origin_path: master/en/methods/network_assessment.guide.md
 
 ### Approaches
 
+:[](../references/footnotes.md)

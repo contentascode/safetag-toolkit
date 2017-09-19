@@ -10,3 +10,4 @@ SAFETAG is an auditing framework designed to connect small civil society organiz
 
 The debrief allows the auditor to ensure that they leave the host and its staff ready to start addressing their digital security. By providing some immediate outcomes to the host and its staff, and in combination with training or security consultation in the Responsive Support section, the auditor can ensure that the host sees the audit as a guide instead of a condemnation. 
 
+

@@ -33,3 +33,4 @@ origin_path: master/en/methods/network_discovery.guide.md
 </div>
 
 
+:[](../references/footnotes.md)

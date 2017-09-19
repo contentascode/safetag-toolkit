@@ -37,3 +37,4 @@ origin_path: master/en/methods/capacity_assessment.guide.md
 
 
 
+:[](../references/footnotes.md)

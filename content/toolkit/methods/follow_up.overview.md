@@ -19,3 +19,4 @@ origin_path: master/en/methods/follow_up.overview.md
 ### Approaches
 :[](../methods/follow_up/approaches.md)
 
+:[](../references/footnotes.md)

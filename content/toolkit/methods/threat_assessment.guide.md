@@ -39,3 +39,4 @@ origin_path: master/en/methods/threat_assessment.guide.md
 
 
 
+:[](../references/footnotes.md)

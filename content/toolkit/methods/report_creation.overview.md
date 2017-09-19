@@ -19,3 +19,4 @@ origin_path: master/en/methods/report_creation.overview.md
 ### Approaches
 
 :[](../reporting/report_creation/approaches.md)
+:[](../references/footnotes.md)

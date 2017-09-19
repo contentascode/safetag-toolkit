@@ -23,3 +23,4 @@ origin_path: master/en/methods/operational_security.overview.md
 ### Approaches
 
 :[](../methods/physical_assessment/approaches.md)
+:[](../references/footnotes.md)

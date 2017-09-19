@@ -30,3 +30,4 @@ origin_path: master/en/methods/interviews.overview.md
 * FACILITATED: Group interviews with key staff with short follow up interviews.
 * FACILITATED: Formal interviews with key staff followed by informal one on one interviews with other staff.
 
+:[](../references/footnotes.md)

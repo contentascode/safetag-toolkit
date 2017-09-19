@@ -12,3 +12,4 @@ origin_path: master/en/methods/context_research/output.md
     * Legal risks to host and auditor conducting a SAFETAG audit.
   * Modifications to the audit plan as necessary.
 
+

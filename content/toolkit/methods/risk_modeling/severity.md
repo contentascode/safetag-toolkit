@@ -6,3 +6,4 @@ origin: https://github.com/SAFETAG/SAFETAG
 origin_path: master/en/methods/risk_modeling/severity.md
 ---
 
+

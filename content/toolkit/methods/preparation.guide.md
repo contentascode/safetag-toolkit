@@ -39,3 +39,4 @@ origin_path: master/en/methods/preparation.guide.md
 
 
 
+:[](../references/footnotes.md)

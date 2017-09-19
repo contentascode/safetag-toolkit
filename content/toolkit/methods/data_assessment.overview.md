@@ -24,3 +24,4 @@ origin_path: master/en/methods/data_assessment.overview.md
 
 :[](../methods/data_assessment/approaches.md)
 
+:[](../references/footnotes.md)

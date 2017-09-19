@@ -24,3 +24,4 @@ origin_path: master/en/methods/threat_assessment.overview.md
 
 :[](../methods/threat_assessment/approaches.md)
 
+:[](../references/footnotes.md)

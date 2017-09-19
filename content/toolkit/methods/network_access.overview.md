@@ -23,3 +23,4 @@ origin_path: master/en/methods/network_access.overview.md
 
 :[](../methods/network_access/approaches.md)
 
+:[](../references/footnotes.md)

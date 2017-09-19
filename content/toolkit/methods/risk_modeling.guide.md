@@ -41,3 +41,4 @@ origin_path: master/en/methods/risk_modeling.guide.md
 
 
 
+:[](../references/footnotes.md)

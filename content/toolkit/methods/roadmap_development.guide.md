@@ -39,3 +39,4 @@ origin_path: master/en/methods/roadmap_development.guide.md
 </div>
 
 
+:[](../references/footnotes.md)

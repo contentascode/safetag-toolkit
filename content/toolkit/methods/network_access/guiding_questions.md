@@ -10,3 +10,4 @@ origin_path: master/en/methods/network_access/guiding_questions.md
  * How secure is the password for the wifi network?
  * How are guests provided Internet access?
  
+

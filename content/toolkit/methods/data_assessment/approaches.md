@@ -12,3 +12,4 @@ origin_path: master/en/methods/data_assessment/approaches.md
 
 If it was not possible to conduct these activities in person, you can conduct them remotely through applying one of the remote facilitation approaches described in the [Remote Facilitation](#appendix-remote-facilitation) appendix.
 
+

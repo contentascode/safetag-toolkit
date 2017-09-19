@@ -23,3 +23,4 @@ origin_path: master/en/methods/capacity_assessment.overview.md
 ### Approaches
 
 :[](../methods/capacity_assessment/approaches.md)
+:[](../references/footnotes.md)

@@ -19,3 +19,4 @@ origin_path: master/en/methods/recommendation_development.overview.md
 ### Approaches
 
 :[](../reporting/recommendation_development/approaches.md)
+:[](../references/footnotes.md)

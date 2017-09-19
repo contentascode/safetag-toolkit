@@ -44,3 +44,4 @@ origin_path: master/en/methods/interviews.guide.md
 
 
 
+:[](../references/footnotes.md)

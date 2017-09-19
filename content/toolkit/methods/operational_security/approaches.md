@@ -10,3 +10,4 @@ origin_path: master/en/methods/operational_security/approaches.md
 * **Mapping potential physical vulnerabilities with digital security impacts:**  Document potential vulnerabilities to the organization's information security based on physical aspects -- e.g. unencrypted devices which could be stolen, written passwords, or even wireless network metadata.
 * **A Day In the Life:** Have staff walk you through a usual "day in their life" showing you what devices they use, how they use them, and what data they have to interact with to conduct their work.
 
+

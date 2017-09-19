@@ -45,3 +45,4 @@ origin_path: master/en/methods/assessment_plan.guide.md
 
 
 
+:[](../references/footnotes.md)

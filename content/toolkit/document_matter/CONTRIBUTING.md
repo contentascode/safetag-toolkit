@@ -166,3 +166,4 @@ Generally speaking, these sections won't be updated very often.
 [templates]: https://github.com/SAFETAG/SAFETAG/tree/master/en/templates
 [content-types]: https://github.com/SAFETAG/SAFETAG/blob/master/en/document_matter/how_to_read_this_guide.guide.md
 
+

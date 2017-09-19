@@ -11,3 +11,4 @@ This Section:
   * relies primarily on third-party data sources and observation and light probing of the organization’s infrastructure;
   * can generally be carried out from any secure Internet connection.
   
+

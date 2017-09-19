@@ -12,3 +12,4 @@ origin_path: master/en/methods/responsive_support/guiding_questions.md
 * Is the support you want to provide (troubleshooting, fixes, upgrades, training, etc.) critical to the security of the organization? If not, can you provide that support without taking away from the audit?
 * Will you have the capacity to support software or hardware that you provided while providing support?
 
+

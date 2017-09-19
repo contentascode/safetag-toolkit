@@ -10,3 +10,4 @@ origin_path: master/en/methods/network_access/preparation.md
 * Knowledge of wireless networking and the aircrack suite of tools
 
 
+

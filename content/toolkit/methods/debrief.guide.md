@@ -35,3 +35,4 @@ origin_path: master/en/methods/debrief.guide.md
 </div>
 
 
+:[](../references/footnotes.md)

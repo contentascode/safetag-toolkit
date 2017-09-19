@@ -24,3 +24,4 @@ origin_path: master/en/methods/user_device_assessment.overview.md
 
 :[](../methods/user_device_assessment/approaches.md)
 
+:[](../references/footnotes.md)

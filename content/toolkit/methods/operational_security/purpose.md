@@ -11,3 +11,4 @@ For many organizations, digital threats that depend on physical access are consi
 
 Depending on the specific threats for each organization, the auditor should consider the challenges of not only one-time exfiltration of data as well as potential ways an adversary could use physical access or proximity to the organization or its devices to gain ongoing remote access, track, or cause harm to the organization through the outright destruction of data.
 
+

@@ -11,3 +11,4 @@ origin_path: master/en/methods/reconnaissance/guiding_questions.md
 * What is the pattern for staff e-mail addresses?
 * Have any of the the organization's servers, users, or e-mail accounts been compromised in the past?
 
+

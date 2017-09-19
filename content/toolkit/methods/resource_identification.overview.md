@@ -13,3 +13,4 @@ origin_path: master/en/methods/resource_identification.overview.md
 ### Approach
 
 :[](guides/resource_identification/approach.md)
+:[](../references/footnotes.md)

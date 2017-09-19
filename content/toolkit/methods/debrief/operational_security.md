@@ -7,3 +7,4 @@ origin_path: master/en/methods/debrief/operational_security.md
 ---
 
 
+

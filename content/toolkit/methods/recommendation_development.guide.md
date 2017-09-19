@@ -46,3 +46,4 @@ origin_path: master/en/methods/recommendation_development.guide.md
 
 
 
+:[](../references/footnotes.md)

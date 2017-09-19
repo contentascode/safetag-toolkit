@@ -13,3 +13,4 @@ origin_path: master/en/methods/assessment_plan.overview.md
 ### Approach
 
 :[](guides/assessment_plan/approach.md)
+:[](../references/footnotes.md)

@@ -16,3 +16,4 @@ origin_path: master/en/methods/capacity_assessment/activities.md
 :[](../../activities/capacity_assessment_cheatsheet/index.md)
 </div>
 
+

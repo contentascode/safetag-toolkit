@@ -16,3 +16,4 @@ origin_path: master/en/document_matter/disclaimer.md
 
   * **SAFETAG audits do not provide an exhaustive and verifiable outputs that a professional industry standard security-audit would provide.** Many low-income vulnerable groups have neither the money, time, or manpower to respond to a full security audit. SAFETAG uses a customized combination of selected assessment techniques derived from standards in the security auditing world to provide an organization driven risk assessment and mitigation consultation that aims to help this type of organization identify practices and resources that will allow them to strategically move towards greater security.
 
+

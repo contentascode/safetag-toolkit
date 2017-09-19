@@ -28,3 +28,4 @@ While more completely defined below in the Risk Assessment and Agency Building s
 
 To make SAFETAG approachable, a core evaluation template which links together a series of specific objectives, each with a variety of linked activities, that contribute towards the goals and their required information needs is represented here.  Experienced Auditors will likely come up with their own approaches, and the SAFETAG project welcomes such contributions.
 
+

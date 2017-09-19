@@ -14,3 +14,4 @@ origin_path: master/en/methods/operational_security/output.md
 * Office Map with potential vulnerable locations and the extent of wifi access outside of the controlled office space.
 * Discussion of potential risks associated with broadcast wireless data.
 
+

@@ -19,3 +19,4 @@ origin_path: master/en/methods/debrief.overview.md
 ### Approaches
 :[](../methods/debrief/approaches.md)
 
+:[](../references/footnotes.md)

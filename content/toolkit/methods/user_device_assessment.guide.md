@@ -41,3 +41,4 @@ origin_path: master/en/methods/user_device_assessment.guide.md
 
 
 
+:[](../references/footnotes.md)

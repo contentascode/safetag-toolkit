@@ -38,3 +38,4 @@ origin_path: master/en/methods/responsive_support.guide.md
 
 
 
+:[](../references/footnotes.md)

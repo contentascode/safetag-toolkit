@@ -19,3 +19,4 @@ origin_path: master/en/methods/roadmap_development.overview.md
 ### Approaches
 
 :[](../reporting/roadmap_development/approaches.md)
+:[](../references/footnotes.md)

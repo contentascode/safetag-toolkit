@@ -10,3 +10,4 @@ origin_path: master/en/methods/risk_modeling/output.md
   * A list of organizational assets.
 
 
+

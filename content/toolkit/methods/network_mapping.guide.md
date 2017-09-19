@@ -36,3 +36,4 @@ origin_path: master/en/methods/network_mapping.guide.md
 </div>
 
 
+:[](../references/footnotes.md)

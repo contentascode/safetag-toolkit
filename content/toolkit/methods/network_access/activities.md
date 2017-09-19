@@ -22,3 +22,4 @@ origin_path: master/en/methods/network_access/activities.md
 :[](../../activities/mac_filtering/index.md)
 </div>
 
+

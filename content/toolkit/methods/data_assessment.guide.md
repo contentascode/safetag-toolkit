@@ -34,3 +34,4 @@ origin_path: master/en/methods/data_assessment.guide.md
 
 
 
+:[](../references/footnotes.md)

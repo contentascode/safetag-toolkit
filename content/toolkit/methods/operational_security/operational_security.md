@@ -10,3 +10,4 @@ origin_path: master/en/methods/operational_security/operational_security.md
 * Note relevant laws regarding wireless signal monitoring.
 * Ensure and mapping tools used do not themselves leak or share data
 
+

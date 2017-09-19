@@ -17,3 +17,4 @@ origin_path: master/en/methods/capacity_assessment/output.md
  * Past, current, or desired use of websites, blogs, social media and other web-based tools and platforms to conduct outreach, manage information, advocate or engage with specific groups.
  * Past, current, or desired use of mobile telephony and related software and hardware for activities such as sms management and data collection.
 
+

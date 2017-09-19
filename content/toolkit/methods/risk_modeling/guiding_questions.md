@@ -13,3 +13,4 @@ origin_path: master/en/methods/risk_modeling/guiding_questions.md
 * Are those adversaries capable of carrying out these threats?
 
 
+

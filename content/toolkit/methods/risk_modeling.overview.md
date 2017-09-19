@@ -18,3 +18,4 @@ origin_path: master/en/methods/risk_modeling.overview.md
 :[](../methods/risk_modeling/guiding_questions.md)
 ### Approaches
 :[](../methods/risk_modeling/approaches.md)
+:[](../references/footnotes.md)

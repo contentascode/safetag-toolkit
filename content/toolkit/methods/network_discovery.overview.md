@@ -23,3 +23,4 @@ origin_path: master/en/methods/network_discovery.overview.md
 
 :[](../methods/network_discovery/approaches.md)
 
+:[](../references/footnotes.md)

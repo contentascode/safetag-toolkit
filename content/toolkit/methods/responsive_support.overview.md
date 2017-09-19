@@ -19,3 +19,4 @@ origin_path: master/en/methods/responsive_support.overview.md
 ### Approaches
 :[](../methods/responsive_support/approaches.md)
 
+:[](../references/footnotes.md)

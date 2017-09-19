@@ -14,3 +14,4 @@ origin_path: master/en/methods/risk_assessment.overview.md
 
 :[](guides/risk_modeling/approach.md)
 
+:[](../references/footnotes.md)

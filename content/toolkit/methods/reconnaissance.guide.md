@@ -39,3 +39,4 @@ origin_path: master/en/methods/reconnaissance.guide.md
 
 
 
+:[](../references/footnotes.md)

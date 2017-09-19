@@ -22,3 +22,4 @@ origin_path: master/en/methods/context_research/activities.md
 :[](../../activities/technical_context_research/index.md)
 </div>
 
+

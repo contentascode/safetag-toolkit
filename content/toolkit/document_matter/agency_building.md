@@ -24,3 +24,4 @@ A common refrain, among auditors, software developers and other specialists in t
 
 **Example:** Examples can include a lack of funding, lack of authority within an organization to mandate practices to their staff, resistance to change, high staff turnover, or digital illiteracy. 
 
+

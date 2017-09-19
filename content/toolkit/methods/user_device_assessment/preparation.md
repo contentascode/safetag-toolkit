@@ -11,3 +11,4 @@ origin_path: master/en/methods/user_device_assessment/preparation.md
 * Basic systems administration experience for common operating systems
 
 
+

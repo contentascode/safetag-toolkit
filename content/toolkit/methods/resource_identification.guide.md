@@ -44,3 +44,4 @@ origin_path: master/en/methods/resource_identification.guide.md
 :[](../references/training_resources.md)
 :[](../references/emergency_resources.md)
 :[](../references/resource_lists.md)
+:[](../references/footnotes.md)

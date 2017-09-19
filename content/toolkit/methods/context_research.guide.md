@@ -34,3 +34,4 @@ origin_path: master/en/methods/context_research.guide.md
 </div>
 
 
+:[](../references/footnotes.md)

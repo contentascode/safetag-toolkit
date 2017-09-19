@@ -9,3 +9,4 @@ origin_path: master/en/methods/capacity_assessment/preparation.md
 * Review or create a set of interview questions to keep you on track
 * Have a secure note-taking process ready
 
+

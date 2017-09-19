@@ -16,3 +16,4 @@ origin_path: master/en/methods/preparation.overview.md
 :[](../document_matter/preparation/guiding_questions.md)
 ### Approach
 :[](../document_matter/preparation/approaches.md)
+:[](../references/footnotes.md)
