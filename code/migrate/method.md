@@ -6,3 +6,4 @@ layout: method.pug
 {{#if origin_path}}origin_path: {{origin_path}}{{/if}}
 ---
 {{{contents}}}
+{{#if footnotes}}{{{footnotes}}}{{/if}}
