@@ -30,6 +30,14 @@ metadata:
       follow_up: Follow Up
 plugins:
 
+  - metalsmith-debug: {}
+
+  - metalsmith-env:
+      variables:
+        CI: false
+
+  - metalsmith-debug: {}
+
   # - metalsmith-packages:
   #     key: packages
 
@@ -186,8 +194,6 @@ plugins:
       - match:
           collection: pages
         pattern: ":dir/:title"
-
-  - metalsmith-debug: {}
 
   # Wrap rendered file in html templates.
   - metalsmith-layouts:
