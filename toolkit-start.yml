@@ -179,7 +179,7 @@ plugins:
   # Interpret Markdown with Pandoc
   - metalsmith-pandoc:
       pattern: "**/*.md"
-      from: markdown_github+definition_lists+raw_html+markdown_in_html_blocks+link_attributes+header_attributes+footnotes
+      from: markdown_github+definition_lists+raw_html+markdown_in_html_blocks+link_attributes+header_attributes+footnotes+superscript+subscript
 
   # - metalsmith-markdown:
   #     gfm: true
