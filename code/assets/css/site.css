@@ -637,21 +637,21 @@ div#results {
   margin-left: -15px;
 }
 
-:target:before {
+.docs-section :target:before {
   content: "";
   display: block;
   height: 80px;
   margin: -80px 0 0;
 }
 
-li[id] {
+.docs-section li[id] {
   list-style: none;
   margin-left: 0;
   padding-right: 0;
   counter-increment: step-counter;
 }
 
-li[id]:before {
+.docs-section li[id]:before {
   content: "";
   display: block;
   height: 80px;
@@ -660,6 +660,6 @@ li[id]:before {
   content: counter(step-counter) ".";
 }
 
-li[id] > * {
+.docs-section li[id] > * {
   margin-left: 20px;
 }
