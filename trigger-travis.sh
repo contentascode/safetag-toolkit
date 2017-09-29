@@ -5,8 +5,8 @@
 # variables
 USER=$1
 REPO=$2
-TOKEN=$3
-BRANCH=$4
+BRANCH=$3
+TOKEN=$4
 MESSAGE=",\"message\": \"Triggered from upstream build of $TRAVIS_REPO_SLUG by commit "`git rev-parse --short HEAD`"\""
 
 # for debugging
