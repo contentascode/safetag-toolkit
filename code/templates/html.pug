@@ -28,4 +28,5 @@ html
       anchors.add('h1,h2,h3');
     })
   
-  script(src='http://localhost:35730/livereload.js')
+  if (watch) 
+    script(src='http://localhost:35730/livereload.js')
