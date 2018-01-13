@@ -1,0 +1,10 @@
+extends html
+
+block main
+  .docs-section
+    if (title) 
+      img(src="images/logo.svg",style="margin-top:25px", width="100%")
+      h1.docs-header(style="margin-top:5px;margin-bottom:4rem")= title
+    else
+      .space 
+    != contents
