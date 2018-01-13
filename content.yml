@@ -9,6 +9,7 @@
 # to use shorthand names in metadata and transclusion.
 name: SAFETAG Toolkit
 packages:
+  safetag: safetag-toolkit
   # activities: safetag-activities@^0.0.1
   # context-research: activity-context-research@^1.0.0
   # network-mapping: activity-network-mapping@^1.0.0
@@ -19,20 +20,24 @@ packages:
 # This will deploy the workspaces when using `safetag init`.
 workspace:
   '@safetag/migrate':
-    start: migrate.yml
+    run: migrate.yml
   '@safetag/toolkit':
-    init: toolkit-init.yml
-    start: toolkit-start.yml
+    source: content/toolkit
+    start: toolkit.yml
+    preview: web
     # can be used with metalsmith-symlink to override activities folder with migration folder
     # packages:
     #   activities: activities
     # main: index.md
     # # An `edit` mode should create symlinks and handle git and packaging workflow.
     # mode: view
+  '@safetag/guide':
+    source: content/guide
+    start: guide.yml
 
-# This will create an audits folder and watch for new *.audit.yml files and
-# use the audit.yml configuration to setup a new audit folder.
-  '@safetag/audits':
-    init: audits-init.yml
-    start: audits-start.yml
+  # This will create an audits folder and watch for new *.audit.yml files and
+  # use the audit.yml configuration to setup a new audit folder.
+  # '@safetag/audits':
+  #   init: audits-init.yml
+  #   start: audits-start.yml
   # reports:
