@@ -62,8 +62,9 @@ plugins:
 
       # Process .
       patterns:
-        - browse/**/*.md
+        - categories/**/*.md
         - methods/**/*.md
+        - index.guide.md
 
   # Deal with top level frontmatter.
   # - metalsmith-matters: true
@@ -178,12 +179,16 @@ plugins:
 
   # Interpret Markdown with Pandoc
   - metalsmith-pandoc:
+      pattern: "**/index.guide.md"
+      from: markdown_github+definition_lists+raw_html+markdown_in_html_blocks+link_attributes+header_attributes+footnotes+superscript+subscript
+      args: ['--standalone', '--table-of-contents', '--toc-depth=2', '-V toc-title:"Table of Contents"', '--template=/Users/jun/.content/packages/safetag-toolkit/code/template.markdown']
+
+  - metalsmith-pandoc:
       pattern: "**/*.md"
       from: markdown_github+definition_lists+raw_html+markdown_in_html_blocks+link_attributes+header_attributes+footnotes+superscript+subscript
 
   # - metalsmith-markdown:
   #     gfm: true
-
 
   - metalsmith-permalinks:
       relative: true
