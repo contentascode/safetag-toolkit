@@ -1,2 +1,2 @@
 script:
-  - ./trigger-travis.sh contentascode safetag master $TOKEN
+  - if [ -n "$TRAVIS_TAG" ]; then ./trigger-travis.sh contentascode safetag master $TOKEN; fi
