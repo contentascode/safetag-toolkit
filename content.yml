@@ -34,6 +34,7 @@ workspace:
   '@safetag/guide':
     source: content/guide
     start: guide.yml
+    preview: web
 
   # This will create an audits folder and watch for new *.audit.yml files and
   # use the audit.yml configuration to setup a new audit folder.

@@ -1,16 +1,16 @@
 ---
-source: content/toolkit
+source: content/guide
 clean: false
 frontmatter: true
 metadata:
   site:
     title: SAFETAG
-    baseurl: '/@safetag/toolkit'
+    baseurl: '/@safetag/guide'
     code:
       current_branch: master
       base: 'https://github.com/'
       repo: 'contentascode/safetag-toolkit'
-      package: 'toolkit'
+      package: 'guide'
   navigation:
     methods:
       preparation: Preparation
@@ -49,12 +49,20 @@ plugins:
   - metalsmith-markdown-taxonomy:
       pattern: 'categories/*.md'
 
+  # Strip files of footnotes to avoid duplicate with index.guide.md
+  - metalsmith-text-replace:
+     "**/**":
+       find: ":[](../references/footnotes.md)"
+       replace: ' '
+
   # Transclude :[]() with hercule
   - metalsmith-transclude-transform:
       permalinks: true
       folders: true
 
   - metalsmith-transclude:
+      warning: true
+
       comments: true
 
       # Merge frontmatter of transcluded files into the parent file frontmatter.
@@ -64,11 +72,13 @@ plugins:
       patterns:
         - categories/**/*.md
         - methods/**/*.md
-        - index.guide.md
+        - activities/**/*.md
+        - index.md
+
+  - metalsmith-remark-lint: {}
 
   # Deal with top level frontmatter.
   # - metalsmith-matters: true
-
 
   # Load activities as a collection
   - metalsmith-dynamic-collections:
@@ -179,9 +189,9 @@ plugins:
 
   # Interpret Markdown with Pandoc
   - metalsmith-pandoc:
-      pattern: "**/index.guide.md"
+      pattern: "**/index.md"
       from: markdown_github+definition_lists+raw_html+markdown_in_html_blocks+link_attributes+header_attributes+footnotes+superscript+subscript
-      args: ['--standalone', '--table-of-contents', '--toc-depth=2', '-V toc-title:"Table of Contents"', '--template=/Users/jun/.content/packages/safetag-toolkit/code/template.markdown']
+      args: ['--standalone', '--table-of-contents', '--toc-depth=4', '-V toc-title:"Table of Contents"', '--template=/Users/jun/.content/packages/safetag-toolkit/code/template.markdown']
 
   - metalsmith-pandoc:
       pattern: "**/*.md"

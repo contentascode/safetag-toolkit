@@ -28,15 +28,12 @@ metadata:
       threat_assessment: Threat Assessment
       responsive_support: Responsive Support
       follow_up: Follow Up
-plugins:
 
-  - metalsmith-debug: {}
+plugins:
 
   - metalsmith-env:
       variables:
         CI: false
-
-  - metalsmith-debug: {}
 
   # - metalsmith-packages:
   #     key: packages
@@ -54,7 +51,11 @@ plugins:
       permalinks: true
       folders: true
 
+  - metalsmith-debug: {}
+
   - metalsmith-transclude:
+      warning: true
+
       comments: true
 
       # Merge frontmatter of transcluded files into the parent file frontmatter.
@@ -64,11 +65,11 @@ plugins:
       patterns:
         - categories/**/*.md
         - methods/**/*.md
+        - activities/**/*.md
         - index.guide.md
 
   # Deal with top level frontmatter.
   # - metalsmith-matters: true
-
 
   # Load activities as a collection
   - metalsmith-dynamic-collections:
