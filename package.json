@@ -34,7 +34,7 @@
     "metalsmith-pandoc": "^0.2.3",
     "metalsmith-paths": "^3.0.1",
     "metalsmith-permalinks": "^0.5.0",
-    "metalsmith-remark-lint": "^0.0.4",
+    "metalsmith-remark-lint": "^0.0.5",
     "metalsmith-search-meta": "github:iilab/metalsmith-search-meta",
     "metalsmith-serve": "^0.0.7",
     "metalsmith-text-replace": "^1.0.1",
