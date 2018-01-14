@@ -11,6 +11,7 @@ plugins:
       methods: true
       references: true
       document_matter: true
+      guides: true
       images: true
 
   - metalsmith-debug: {}
