@@ -7,7 +7,7 @@ h6,
 nav a,
 .links small a,
 .links small {
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .links small {
@@ -29,6 +29,10 @@ body .post {
 
 li > p {
   display: inline;
+}
+
+a:focus {
+  outline: none;
 }
 
 .post a,
@@ -61,7 +65,7 @@ p img {
 }
 
 .anchorjs-link {
-  transition: all .25s linear;
+  transition: all 0.25s linear;
 }
 *:hover > .anchorjs-link {
   margin-left: -1.125em !important;
@@ -170,7 +174,7 @@ blockquote p {
 .docs-header {
   text-transform: uppercase;
   font-size: 1.4rem;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-weight: 600;
 }
 .value-img {
@@ -187,9 +191,9 @@ blockquote p {
   text-transform: uppercase;
   height: 30px;
   line-height: 30px;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
   font-weight: 600;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 .docs-example .row,
 .docs-example.row,
@@ -224,7 +228,7 @@ blockquote p {
 .example-header {
   font-weight: 600;
   margin-top: 1.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .example-description {
   margin-bottom: 1.5rem;
@@ -319,7 +323,7 @@ blockquote p {
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 600;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     margin-right: 35px;
     text-decoration: none;
     line-height: 6.5rem;
@@ -353,16 +357,16 @@ blockquote p {
     background: #fff;
     border: 1px solid #eee;
     border-radius: 4px;
-    -webkit-filter: drop-shadow(0 0 6px rgba(0, 0, 0, .1));
-    -moz-filter: drop-shadow(0 0 6px rgba(0, 0, 0, .1));
-    filter: drop-shadow(0 0 6px rgba(0, 0, 0, .1));
+    -webkit-filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.1));
+    -moz-filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.1));
   }
   .popover-item:first-child .popover-link:after,
   .popover-item:first-child .popover-link:before {
     bottom: 100%;
     left: 50%;
     border: solid transparent;
-    content: " ";
+    content: ' ';
     height: 0;
     width: 0;
     position: absolute;
@@ -397,10 +401,10 @@ blockquote p {
     border-bottom: 1px solid #eee;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.0rem;
+    font-size: 1rem;
     font-weight: 600;
     text-align: center;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
   }
   .popover-item:first-child .popover-link {
     border-radius: 4px 4px 0 0;
@@ -622,6 +626,12 @@ button:focus {
   margin-top: -42px;
 }
 
+.boxtext {
+  background-color: lightblue;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
 .greybox {
   background-color: lightgrey;
   padding: 15px;
@@ -638,8 +648,8 @@ div#results {
 }
 
 .docs-section :target:before {
-  content: "";
-  display: block;
+  content: '';
+  display: inline-block;
   height: 80px;
   margin: -80px 0 0;
 }
@@ -652,14 +662,14 @@ div#results {
 }
 
 .docs-section li[id]:before {
-  content: "";
+  content: '';
   display: block;
   height: 80px;
   padding-top: 80px;
   margin: -60px 0 0;
-  content: counter(step-counter) ".";
+  content: counter(step-counter) '.';
 }
 
 .docs-section li[id] > * {
-  margin-left: 20px;
+  margin-left: 45px;
 }
