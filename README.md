@@ -1,0 +1,1 @@
+[![Travis](https://img.shields.io/travis/contentascode/safetag.svg)](https://travis-ci.org/contentascode/safetag) [![npm](https://img.shields.io/npm/dt/safetag.svg)](https://www.npmjs.com/package/safetag) [![GitHub license](https://img.shields.io/github/license/contentascode/safetag.svg)](https://github.com/contentascode/safetag/blob/master/LICENSE)
