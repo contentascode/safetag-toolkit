@@ -187,11 +187,16 @@ plugins:
       - description
       - duration
 
+  # Copy template.markdown to .pandoc which is default datadir since we can't pass --template with $HOME
+  - metalsmith-assets-improved:
+      src: code/template.markdown
+      dest: ../../../../.pandoc/templates/safetag-guide-template.markdown
+
   # Interpret Markdown with Pandoc
   - metalsmith-pandoc:
       pattern: "**/index.md"
       from: markdown_github+definition_lists+raw_html+markdown_in_html_blocks+link_attributes+header_attributes+footnotes+superscript+subscript
-      args: ['--standalone', '--table-of-contents', '--toc-depth=4', '-V toc-title:"Table of Contents"', '--template=/Users/jun/.content/packages/safetag-toolkit/code/template.markdown']
+      args: ['--standalone', '--table-of-contents', '--toc-depth=4', '-V toc-title:"Table of Contents"', '--template=safetag-guide-template.markdown']
 
   - metalsmith-pandoc:
       pattern: "**/*.md"
