@@ -1,6 +1,7 @@
 ---
 id: {{id}}
-name: {{title}}
+name: {{{title}}}
+description: {{{description}}}
 layout: method.pug
 {{#if origin}}origin: {{origin}}{{/if}}
 {{#if origin_path}}origin_path: {{origin_path}}{{/if}}

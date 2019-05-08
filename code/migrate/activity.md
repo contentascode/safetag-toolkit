@@ -1,9 +1,15 @@
 ---
 id: {{id}}
-name: {{title}}
-description: {{description}}
+name: {{{title}}}
+description: {{{description}}}
 {{#if origin}}origin: {{origin}}{{/if}}
 {{#if origin_path}}origin_path: {{origin_path}}{{/if}}
+{{#if authors}}authors: {{authors}}{{/if}}
+{{#if org_size_under}}org_size_under: {{org_size_under}}{{/if}}
+{{#if remote_options}}remote_options: {{remote_options}}{{/if}}
+{{#if skills_required}}skills_required: {{skills_required}}{{/if}}
+{{#if time_required_minutes}}time_required_minutes: {{time_required_minutes}}{{/if}}
+{{#if approach_category}}approach: {{approach_category}}{{/if}}
 {{#each tag}}
 {{key}}: {{value}}
 {{/each}}
@@ -29,7 +35,7 @@ description: {{description}}
 {{/if}}
 
 {{#if opsec}}
-## Considerations
+## Operational Security
 
 {{{opsec}}}
 {{/if}}
@@ -44,6 +50,13 @@ description: {{description}}
 ## Recommendation
 
 {{{recommendations}}}
+{{/if}}
+
+
+{{#if output}}
+## Outputs
+
+{{{output}}}
 {{/if}}
 
 {{#if special}}{{{special}}}{{/if}}
