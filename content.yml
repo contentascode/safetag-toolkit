@@ -31,10 +31,16 @@ workspace:
     # main: index.md
     # # An `edit` mode should create symlinks and handle git and packaging workflow.
     # mode: view
+  '@safetag/browser':
+    source: content/toolkit
+    start: browser.yml
+    preview: web
   '@safetag/guide':
     source: content/guide
     start: guide.yml
-
+  '@safetag/raw':
+    source: content/tookit
+    start: raw.yml
   # This will create an audits folder and watch for new *.audit.yml files and
   # use the audit.yml configuration to setup a new audit folder.
   # '@safetag/audits':

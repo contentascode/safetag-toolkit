@@ -17,14 +17,16 @@
     "filter.js": "github:perfectwebteam/filter.js",
     "handlebars": "^4.0.10",
     "lodash": "^4.17.4",
+    "metalsmith-assets-copy": "0.0.2",
     "metalsmith-assets-improved": "github:contentascode/metalsmith-assets-improved#release",
+    "metalsmith-contentascode-next": "^0.0.1",
     "metalsmith-debug": "^1.1.0",
     "metalsmith-dynamic-collections": "^0.0.1",
     "metalsmith-env": "^2.0.0",
     "metalsmith-filemetadata": "^1.0.0",
     "metalsmith-ignore": "^0.1.2",
     "metalsmith-layouts": "^1.8.1",
-    "metalsmith-lunr": "^0.2.1",
+    "metalsmith-lunr": "github:contentascode/metalsmith-lunr",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-markdown-taxonomy": "^0.0.2",
     "metalsmith-matters": "^1.2.0",
@@ -44,6 +46,7 @@
     "metalsmith-writemetadata": "github:contentascode/metalsmith-writemetadata",
     "metalsmith-yaml": "github:astralfrontier/metalsmith-yaml",
     "pug": "^2.0.0-rc.2",
+    "safetag-next": "^0.0.1",
     "sortablejs": "^1.6.0"
   }
 }

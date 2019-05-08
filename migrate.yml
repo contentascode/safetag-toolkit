@@ -1,8 +1,6 @@
----
 clean: false
 frontmatter: true
 plugins:
-
   # Import folder structure
   - metalsmith-migrate-safetag:
       origin: https://github.com/SAFETAG/SAFETAG
@@ -12,6 +10,7 @@ plugins:
       references: true
       document_matter: true
       guides: true
+      reporting: true
       images: true
 
   - metalsmith-debug: {}
@@ -19,6 +18,6 @@ plugins:
   # Wrap rendered file in html templates.
   - metalsmith-layouts:
       engine: handlebars
-      pattern: "**/*.md"
+      pattern: '**/*.md'
       directory: code/migrate
       default: activity.md

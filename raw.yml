@@ -1,0 +1,229 @@
+source: content/toolkit
+clean: false
+frontmatter: true
+metadata:
+  site:
+    title: SAFETAG
+    baseurl: '/@safetag/toolkit'
+    code:
+      current_branch: master
+      base: 'https://github.com/'
+      repo: 'contentascode/safetag-toolkit'
+      package: 'toolkit'
+  navigation:
+    methods:
+      preparation: Preparation
+      context_research: Context Research
+      capacity_assessment: Capacity Assessment
+      reconnaissance: Reconnaissance
+      network_discovery: Network Discovery
+      network_access: Network Access
+      network_mapping: Network Mapping
+      user_device_assessment: User Device Assessment
+      vulnerability_scanning: Vulnerability Scanning and Assessment
+      data_assessment: Data Asssessment
+      physical_assessment: Physical Assessment
+      risk_modeling: Process Mapping and Risk Modeling
+      threat_assessment: Threat Assessment
+      responsive_support: Responsive Support
+      follow_up: Follow Up
+plugins:
+  - metalsmith-debug: {}
+
+  - metalsmith-env:
+      variables:
+        CI: false
+
+  - metalsmith-debug: {}
+
+  # - metalsmith-packages:
+  #     key: packages
+
+  # Ignore backup folders created by safetag link command.
+  - metalsmith-ignore:
+      - '*.orig/*'
+
+  # Add tags to activities based on their location in the taxonomy page ASTs.
+  - metalsmith-markdown-taxonomy:
+      pattern: 'categories/*.md'
+
+  # Strip files of footnotes to avoid duplicate with index.guide.md
+  # - metalsmith-text-replace:
+  #     '**/**':
+  #       find: ':[](../references/footnotes.md)'
+  #       replace: ' '
+
+  # Transclude :[]() with hercule
+  - metalsmith-transclude-transform:
+      permalinks: true
+      folders: true
+
+  - metalsmith-transclude:
+      warning: true
+      comments: false
+
+      # Merge frontmatter of transcluded files into the parent file frontmatter.
+      frontmatter: true
+
+      # Process .
+      patterns:
+        - categories/**/*.md
+        - methods/**/*.md
+        - activities/**/*.md
+        - index.md
+
+  - metalsmith-remark-lint: {}
+  #
+  # # Deal with top level frontmatter.
+  # # - metalsmith-matters: true
+  #
+  # # Load activities as a collection
+  # - metalsmith-dynamic-collections:
+  #     activities: activities/*.md
+  #
+  #
+  # # Copy client side assets
+  # - metalsmith-assets-improved:
+  #     replace: all
+  #     src: code/assets
+  #     dest: .
+  #
+  # # Add lodash
+  # - metalsmith-assets-improved:
+  #     replace: old
+  #     src: node_modules/lodash/lodash.min.js
+  #     dest: ./js/lodash.min.js
+  #
+  # # Add SortableJS
+  # - metalsmith-assets-improved:
+  #     replace: old
+  #     src: node_modules/sortablejs/Sortable.min.js
+  #     dest: ./js/sortable.min.js
+  #
+  # # Copy filter.js module. Using old version from previous project instead.
+  # # - metalsmith-assets-improved:
+  # #     replace: old
+  # #     src: node_modules/filter.js/dist
+  # #     dest: ./js
+  #
+  # # Copy js-yaml module
+  # - metalsmith-assets-improved:
+  #     replace: old
+  #     src: node_modules/js-yaml/dist
+  #     dest: ./js
+  #
+  # # Copy filter.js module example styles and jquery dependencies
+  # - metalsmith-assets-improved:
+  #     replace: old
+  #     src: node_modules/filter.js/examples
+  #     dest: ./filter.js
+  # - metalsmith-assets-improved:
+  #     replace: old
+  #     src: node_modules/filter.js/examples/data
+  #     dest: ./data
+  #
+  # # Add metadata
+  # - metalsmith-filemetadata:
+  #   - pattern: "activities/*.md"
+  #     preserve: 'true'
+  #     metadata:
+  #       content_type: activity
+  #       lunr: true
+  #   - pattern: "activities/*/*.md"
+  #     preserve: 'true'
+  #     metadata:
+  #       content_type: task
+  #
+  # # Add path information
+  # - metalsmith-paths:
+  #     property: paths
+  #     directoryIndex: index.html
+  #
+  # # Copy source markdown file link
+  # - metalsmith-metacopy:
+  #     file:
+  #     - src: paths.href
+  #       dest: source
+  #
+  # # DEBUG:
+  # # - metalsmith-debug: {}
+  # # - metalsmith-writemetadata:
+  # #     pattern: [ "**/*.md "]
+  # #     yaml: true
+  # #     ignorekeys:
+  # #       - contents
+  # #       - stats
+  # #       - mode
+  #
+  # # Process metadata
+  # - metalsmith-lunr:
+  #     fields:
+  #       name: 10
+  #       content_type: 10
+  #       activity: 10
+  #       context: 10
+  #       framework: 10
+  #       situation: 10
+  #       tool: 10
+  #       description: 10
+  #       # keywords: 10
+  #
+  # - metalsmith-search-meta:
+  #     path: searchMeta.json
+  #     pad: true
+  #     properties:
+  #     - id
+  #     - name
+  #     - content_type
+  #     - content_type
+  #     - activity
+  #     - context
+  #     - framework
+  #     - tool
+  #     - variations
+  #     - description
+  #     - duration
+  #
+  # Copy template.markdown to .pandoc which is default datadir since we can't pass --template with $HOME
+  - metalsmith-assets-improved:
+      src: code/template.markdown
+      dest: ../../../../.pandoc/templates/safetag-guide-template.markdown
+
+  # Interpret Markdown with Pandoc
+  - metalsmith-pandoc:
+      pattern: '**/index.md'
+      from: markdown_github+definition_lists+raw_html+markdown_in_html_blocks+link_attributes+header_attributes+footnotes+superscript+subscript
+      args:
+        [
+          '--standalone',
+          '--table-of-contents',
+          '--toc-depth=4',
+          '-V toc-title:"Table of Contents"',
+          '--template=safetag-guide-template.markdown',
+        ]
+
+  - metalsmith-pandoc:
+      pattern: '**/*.md'
+      from: markdown_github+definition_lists+raw_html+markdown_in_html_blocks+link_attributes+header_attributes+footnotes+superscript+subscript
+  #
+  # # - metalsmith-markdown:
+  # #     gfm: true
+  #
+  # - metalsmith-permalinks:
+  #     relative: true
+  #     linksets:
+  #       - match:
+  #           collection: posts
+  #         pattern: blog/:datebasename
+  #       - match:
+  #           collection: pages
+  #         pattern: ':dir/:title'
+  #
+  # # Wrap rendered file in html templates.
+  # - metalsmith-layouts:
+  #     engine: pug
+  #     pattern: "**/*.html"
+  #     directory: code/templates
+  #     includes: includes
+  #     default: page.pug
+  #     cache: true
