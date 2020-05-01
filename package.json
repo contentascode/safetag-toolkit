@@ -5,7 +5,9 @@
   "main": "content.yml",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postversion": "git push --follow-tags"
+    "postversion": "git push --follow-tags",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -48,6 +50,8 @@
     "metalsmith-yaml": "github:astralfrontier/metalsmith-yaml",
     "pug": "^2.0.0-rc.2",
     "safetag-next": "^0.0.1",
-    "sortablejs": "^1.6.0"
-  }
+    "sortablejs": "^1.6.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
