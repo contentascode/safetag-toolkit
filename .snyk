@@ -1,0 +1,32 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - lodash:
+        patched: '2020-05-01T04:07:10.262Z'
+    - metalsmith-assets-improved > lodash:
+        patched: '2020-05-01T04:07:10.262Z'
+    - metalsmith-markdown-taxonomy > lodash:
+        patched: '2020-05-01T04:07:10.262Z'
+    - metalsmith-migrate-safetag > lodash:
+        patched: '2020-05-01T04:07:10.262Z'
+    - metalsmith-transclude-transform > lodash:
+        patched: '2020-05-01T04:07:10.262Z'
+    - metalsmith-markdown-taxonomy > async > lodash:
+        patched: '2020-05-01T04:07:10.262Z'
+    - metalsmith-packages > async > lodash:
+        patched: '2020-05-01T04:07:10.262Z'
+    - metalsmith-pandoc > async > lodash:
+        patched: '2020-05-01T04:07:10.262Z'
+    - metalsmith-remark-lint > async > lodash:
+        patched: '2020-05-01T04:07:10.262Z'
+    - metalsmith-transclude > async > lodash:
+        patched: '2020-05-01T04:07:10.262Z'
+    - metalsmith-transclude > hercule > lodash:
+        patched: '2020-05-01T04:07:10.262Z'
+    - metalsmith-transclude > hercule > async > lodash:
+        patched: '2020-05-01T04:07:10.262Z'
+    - metalsmith-watch > gaze > globule > lodash:
+        patched: '2020-05-01T04:07:10.262Z'
