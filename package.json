@@ -16,7 +16,7 @@
   "dependencies": {
     "filter.js": "github:perfectwebteam/filter.js",
     "handlebars": "^4.0.10",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.20",
     "metalsmith-assets-copy": "0.0.2",
     "metalsmith-assets-improved": "github:contentascode/metalsmith-assets-improved#release",
     "metalsmith-contentascode-next": "^0.0.1",
