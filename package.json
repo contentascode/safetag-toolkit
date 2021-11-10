@@ -15,7 +15,7 @@
   "license": "CC-BY-SA-3.0",
   "dependencies": {
     "filter.js": "github:perfectwebteam/filter.js",
-    "handlebars": "^4.0.10",
+    "handlebars": "^4.0.12",
     "lodash": "^4.17.4",
     "metalsmith-assets-copy": "0.0.2",
     "metalsmith-assets-improved": "github:contentascode/metalsmith-assets-improved#release",
@@ -46,7 +46,7 @@
     "metalsmith-watch": "^1.0.3",
     "metalsmith-writemetadata": "github:contentascode/metalsmith-writemetadata",
     "metalsmith-yaml": "github:astralfrontier/metalsmith-yaml",
-    "pug": "^2.0.0-rc.2",
+    "pug": "^3.0.0",
     "safetag-next": "^0.0.1",
     "sortablejs": "^1.6.0"
   }
